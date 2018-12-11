@@ -1,0 +1,115 @@
+.OrderExpress {
+
+}
+
+.OrderExpress .basic-info {
+    background: #fff;
+    padding: 0.24rem 0;
+}
+
+.OrderExpress .basic-info>div {
+    padding: 0.02rem 0.24rem;
+}
+
+.OrderExpress .basic-info>div>label {
+    color: #555;
+    font-size: 0.26rem;
+}
+
+.OrderExpress .basic-info>div>span {
+    font-size: 0.26rem;
+}
+
+.OrderExpress .express-history {
+    margin-top: 0.16rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.OrderExpress .express-history li {
+    width: 100%;
+    overflow: hidden;
+}
+
+.OrderExpress .express-history li * {
+    float: left;
+    display: block;
+}
+
+.OrderExpress .express-history li>div:first-child {
+    width: 0.81rem;
+    height: 1.2rem;
+}
+
+.OrderExpress .express-history li .node-current .node {
+    position: absolute;
+    width: 0.32rem;
+    height: 0.32rem;
+    background: #ff4242;
+    border: 0.06rem solid #fce2e6;
+    border-radius: 0.32rem;
+    margin: 0.36rem 0 0 0.24rem;
+}
+
+.OrderExpress .express-history li .node-current .line {
+    position: absolute;
+    width: 0.04rem;
+    background: #ddd;
+    height: 1.3rem;
+    margin: 0.68rem 0 0 0.38rem;
+}
+
+.OrderExpress .express-history li .node-final .node {
+    position: absolute;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #ddd;
+    border-radius: 0.06rem;
+    margin: 0.45rem 0 0 0.34rem;
+}
+
+.OrderExpress .express-history li .node-final .line {
+    position: absolute;
+    width: 0.04rem;
+    background: #ddd;
+    height: 0.48rem;
+    margin: 0 0 0 0.38rem;
+}
+
+.OrderExpress .express-history li .node-basic .node {
+    position: absolute;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: #ddd;
+    border-radius: 0.06rem;
+    margin: 0.45rem 0 0 0.34rem;
+}
+
+.OrderExpress .express-history li .node-basic .line {
+    position: absolute;
+    width: 0.04rem;
+    background: #ddd;
+    height: 1.9rem;
+    margin: 0 0 0 0.38rem;
+}
+
+.OrderExpress .express-history li .express-info {
+    width: 6.69rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.OrderExpress .express-history li:last-child .express-info {
+    border-bottom: 0;
+}
+
+.OrderExpress .express-history li .express-info label {
+    font-size: 0.28rem;
+    padding: 0.32rem 0.2rem 0 0;
+    width: 100%;
+}
+
+.OrderExpress .express-history li .express-info span {
+    font-size: 0.26rem;
+    color: #999;
+    padding: 0.12rem 0 0.32rem 0;
+}

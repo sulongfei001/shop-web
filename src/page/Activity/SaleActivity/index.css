@@ -1,0 +1,297 @@
+.promotion-index-root {
+    overflow: hidden;
+}
+.promotion-index-root .promotion-li {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    height: .88rem;
+    line-height: .88rem;
+    opacity: 0.7;
+    font-size: .32rem;
+    color: #000000;
+}
+
+.promotion-index-root .promotion-head-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .24rem;
+    color: #FFFFFF;
+    line-height: .63rem;
+    letter-spacing: 0;
+}
+
+.promotion-index-root .promotion-price {
+    display: inline-block;
+    width: .13rem;
+    height: .22rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.promotion-index-root .promotion-head {
+    padding: 0 .4rem;
+    height: .63rem;
+    white-space: nowrap;   
+    background: #F77F7A;
+}
+
+.promotion-index-root .promotion-head .promotion-head-box {
+    /* display: inline-block;
+    vertical-align: middle; */
+    min-width: 6.63rem;
+    height: .3rem;
+    line-height: .3rem;
+    overflow: hidden;
+    white-space: nowrap
+}
+.promotion-index-root .promotion-head .promotion-head-txt {
+    text-align: center;
+    font-size: .24rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.promotion-index-root .promotion-content {
+    margin-top: 1.51rem;
+    overflow: auto;
+    background-color: #FFFFFF;
+}
+.promotion-index-root .promotion-content li {
+    padding: .3rem .4rem;
+    
+    position: relative;
+    width: 100%;
+    height: 2.3rem;
+}
+.promotion-index-root .promotion-content li::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 5.26rem;
+    height: 1px;
+    background: #F4F4F4;
+    bottom: 0;
+    right: 0;
+}
+.promotion-index-root .promotion-goods-img {
+    width: 1.64rem;
+    height: 1.64rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+.promotion-index-root .promotion-content .promotion-goods-info {
+    width: 4.86rem;
+    height: 1.64rem;
+    float: left;
+    margin-left: .2rem;
+    position: relative;
+}
+.promotion-index-root .promotion-content .promotion-goods-info p {
+    width: 4.86rem;
+    height: .84rem;
+    font-size: .32rem;
+    color: #2A2A2A;
+    letter-spacing: 0;
+    line-height: .42rem;
+    word-break:break-all;
+}
+.promotion-index-root .price {
+    /* position: absolute;
+    left: 0;
+    bottom: 0; */
+    font-size:.32rem;
+    color: #FF4242;
+    letter-spacing: 0;
+    line-height: .5rem;
+    height: .5rem;
+}
+.promotion-index-root .promotion-content .promotion-goods-info .add-cart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: .42rem;
+    height: .38rem;
+    background: url("./img/cart@3x.png") no-repeat 0 0;
+    background-size: cover;
+}
+.promotion-index-root .promotion-foot {
+    width: 100%;
+    height: .98rem;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50);
+}
+.promotion-index-root .promotion-foot>div {
+    float: left;
+    height: .98rem;
+}
+
+.promotion-index-root .promotion-foot .total {
+    width: 3.5rem;
+    background: #FFFFFF;
+    padding-top: .14rem;
+    padding-left: .2rem;
+}
+ 
+.promotion-index-root .promotion-foot .total .total-price{
+    font-size: .32rem;
+    color: #000000;
+    /* letter-spacing: .04rem; */
+    height: .32rem;
+    margin-bottom: .14rem;
+ }
+ 
+.promotion-index-root .promotion-foot .total .total-tip {
+    font-size: .24rem;
+    color: #666666;
+    letter-spacing: 0;
+}
+
+.promotion-index-root .promotion-foot .look {
+    width: 2rem;
+    line-height: .98rem;
+    font-size: .32rem;
+    color: #FFFFFF;
+    text-align: center;
+    background: #FCCE51;
+}
+
+.promotion-index-root .promotion-foot .cart {
+    width: 2rem;
+    line-height: .98rem;
+    font-size: .32rem;
+    color: #FFFFFF;
+    text-align: center;
+    background: #FF4242;
+}
+.promotion-index-root .gift-box {
+    width: 100%;
+    height: 7.055rem;
+    position: relative;
+    overflow: auto;
+    padding-bottom: .985rem;
+    -webkit-overflow-scrolling:touch;
+}
+.promotion-index-root .gift {
+    height: 6.075rem;
+    padding-top: .105rem;
+}
+.promotion-index-root .gift .gift-sel {
+    height: 1.64rem;
+    line-height: 2.3rem;
+    float: left;
+}
+.promotion-index-root .gift .gift-sel .sel {
+    display: block;
+    width: .35rem;
+    height:.35rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.promotion-index-root .gift .gift-item {
+    min-height: 2.3rem;
+    padding: 0 .4rem;
+    position: relative;
+    padding-top: .24rem;
+}
+.promotion-index-root .gift .gift-item::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 5.26rem;
+    height: 1px;
+    background: #F4F4F4;
+    bottom: 0;
+    right: 0;
+}
+
+.promotion-index-root .gift .gift-info {
+    float: left;
+    width: 4.21rem;
+    height: 1.64rem;
+    position: relative;
+}
+.promotion-index-root .gift .gift-info>p {
+    height: .84rem;
+    font-size: .32rem;
+    color: #2A2A2A;
+    letter-spacing: 0;
+    line-height: .42rem;
+}
+
+
+.promotion-index-root .gift .gift-tip {
+    width: 4.26rem;
+    background: #F77F7A;
+    height: .38rem;
+    line-height: .38rem;
+    text-align: center;
+    font-size: .24rem;
+    color: #FFFFFF;
+    letter-spacing: .03rem;
+}
+.promotion-index-root .gift .gift-goods-img {
+    width: 1.64rem;
+    height: 1.64rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+ }
+ .promotion-index-root .gift .img-tip {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.5;
+    background: #000000;
+    height: .44rem;
+    line-height: .44rem;
+    font-size: .18rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+ }
+.promotion-index-root .gift-box .gift-foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.50);
+    height: .98rem;
+    line-height: .98rem;
+    width: 100%;
+    text-align: center;
+}
+
+.promotion-index-root .gift-box .gift-foot .gift-sel-info {
+    width: 5.25rem;
+    font-size: .32rem;
+    color: #000000;
+    letter-spacing: .04rem;
+    float: left;
+}
+
+.promotion-index-root .gift-box .gift-foot .gift-btn {
+    width: 2.25rem;
+    float: left;
+    font-size: .32rem;
+    color: #FFFFFF;
+    letter-spacing: .04rem;
+}
+
+.promotion-index-root .sku-limit-buy{
+    display: inline-block;
+    vertical-align: middle;
+    width: .8rem;
+    height: .35rem;
+    background: url("../../Home//labal3_xianshigou@2x.png") no-repeat 0 0;
+    background-size: .8rem .32rem;
+    margin-right: .1rem;
+    }

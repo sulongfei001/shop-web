@@ -1,0 +1,70 @@
+.DistrictSelect {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.DistrictSelect .split {
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+
+.DistrictSelect .menu a.close {
+    float: right;
+    margin: 0.32rem 0.32rem 0 0;
+    height: 0.32rem;
+    width: 0.32rem;
+    background-size: 0.32rem 0.32rem;
+    display: block;
+}
+
+.DistrictSelect .menu a.func {
+    font-size: 0.28rem;
+    height: 1.02rem;
+    margin-left: 0.32rem;
+    display: inline-block;
+    line-height: 1.02rem;
+    width: 1.12rem;
+    text-align: center;
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+}
+
+.DistrictSelect .menu a.active {
+    border-bottom: solid 4px #ff4242;
+}
+
+.DistrictSelect .content {
+    height: 6.4rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.DistrictSelect .content a {
+    padding: 0.26rem 0.32rem;
+    display: block;
+    font-size: 0.28rem;
+    margin-left: 0.32rem;
+}
+
+.DistrictSelect .slide-enter {
+    opacity: 0.5;
+    transform: translateY(7.68rem);
+}
+
+.DistrictSelect .slide-enter.slide-enter-active {
+    opacity: 1;
+    transition: all 200ms ease-in;
+}
+
+.DistrictSelect .slide-exit {
+    opacity: 1;
+}
+
+.DistrictSelect .slide-exit.slide-exit-active {
+    opacity: 0.5;
+    transform: translateY(7.68rem);
+    transition: all 200ms ease-in;
+}

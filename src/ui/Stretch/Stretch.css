@@ -1,0 +1,25 @@
+.stretch-enter {
+    opacity: 0.01;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.stretch-enter.stretch-enter-active {
+    opacity: 1;
+    transition: opacity,max-height 200ms ease-in;
+    overflow: hidden;
+    max-height: 5rem;
+}
+
+.stretch-exit {
+    opacity: 1;
+    overflow: hidden;
+    max-height: 5rem;
+}
+
+.stretch-exit.stretch-exit-active {
+    opacity: 0.01;
+    transition: opacity,max-height 200ms ease-in;
+    max-height: 0;
+    overflow: hidden;
+}

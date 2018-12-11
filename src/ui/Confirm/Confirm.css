@@ -1,0 +1,57 @@
+.Confirm {
+    position: relative;
+    z-index: 9;
+}
+.Confirm .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.8;
+    z-index: 200;
+}
+
+.Confirm .box {
+    background: #fff;
+    border-radius: 10px;
+    position: fixed;
+    min-width: 4rem;
+    max-width: 7rem;
+    left: 50%;
+    top: 40%;
+    z-index: 200
+}
+
+.Confirm .box h5 {
+    display: block;
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 0.24rem;
+}
+
+.Confirm .message {
+    padding-top: 0.24rem;
+    font-size: 0.24rem;
+    text-align: center;
+    color: #666;
+    display: block;
+}
+
+.Confirm .func {
+    margin-top: 0.24rem;
+    border-top: 1px solid #ddd;
+}
+
+.Confirm .func a {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 0.24rem 0;
+    font-size: 0.3rem;
+}
+
+.Confirm .func a.cancel {
+    border-right: 1px solid #ddd;
+}

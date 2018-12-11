@@ -1,0 +1,82 @@
+.Alert .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.8;
+    z-index: 200;
+}
+
+.Alert .box {
+    background: #fff;
+    border-radius: 10px;
+    position: fixed;
+    min-width: 4rem;
+    max-width: 7rem;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+    -webkit-transform: translate(-50%,-40%);
+    z-index: 200;
+}
+.Alert .box2 {
+    background: #fff;
+    border-radius: 10px;
+    position: fixed;
+    width: 5.6rem;
+    left: 50%;
+    top: 40%;
+    height: 2.91rem;
+    transform: translate(-50%,-40%);
+    -webkit-transform: translate(-50%,-40%);
+    z-index: 200;
+}
+.Alert h5 {
+    display: block;
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 0.24rem;
+    margin-bottom: -0.1rem;
+}
+
+.Alert .message {
+    padding: 0.24rem;
+    font-size: 0.24rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    display: block;
+}
+
+.Alert .alert-confirm {
+    padding: 0.24rem;
+    font-size: 0.24rem;
+    text-align: center;
+    color: #ff4242;
+    display: block;
+}
+
+.Alert .double-btn {
+    font-size: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top:1px solid #D2D3D5;
+}
+.Alert .left-btn {
+    border-right: 1px solid #D2D3D5;
+}
+.Alert .left-btn,.right-btn {
+    display:inline-block;
+    vertical-align: middle;
+    width: 50%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+}
+.Alert .double-txt {
+    padding: 0 .52rem;
+    text-align: center;
+}

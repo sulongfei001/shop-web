@@ -1,0 +1,233 @@
+
+.App * {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.App .route-container {
+    overflow: auto;
+}
+
+.App .horizontal {
+    background: no-repeat top center;
+    background-size: 1.45rem 1.26rem;
+    margin-top: 1rem;
+    padding-top: 1.6rem;
+    font-size: 0.24rem;
+    text-align: center;
+    width: 100%;
+}
+
+.App .no-weixin {
+    margin: 1rem;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.App .no-weixin img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+}
+
+.one-txt {
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+}
+.two-txt {
+    overflow: hidden;
+    /*文字超出用省略号*/
+    text-overflow: ellipsis;
+    /*盒子模型*/
+    display: -webkit-box;
+    /*显示的文本行数*/
+    -webkit-line-clamp: 2;
+    /*子元素的垂直排列方式*/
+    /* autoprefixer: off*/
+   -webkit-box-orient: vertical !important;
+  /* autoprefixer: on*/
+}
+
+.fl {
+    float:left;
+}
+.fr {
+    float:right !important;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+  zoom:1;
+}
+.margin-auto {
+    margin:0 auto;
+}
+.mr20 {
+    margin-right: .2rem;
+}
+.ml10 {
+    margin-left: .1rem;
+}
+.ml30 {
+    margin-left:.3rem;
+}
+.mt10 {
+    margin-top: .1rem;
+}
+.ml16 {
+    margin-left: .16rem;
+}
+.ml20 {
+    margin-left: .2rem;
+}
+.mt30 {
+    margin-top: .3rem;
+}
+.mb30 {
+    margin-bottom:.3rem;
+}
+.mb20 {
+    margin-bottom: .2rem;
+}
+.mt20 {
+    margin-top: .2rem;
+}
+.color-main {
+    color: #ff4242;
+}
+.color-333 {
+    color: #333333;
+}
+.color-000 {
+    color: #000000;
+}
+.color-green {
+    color: #02BB00;
+}
+.color-999 {
+    color: #999999 !important;
+}
+.color-fff {
+    color: #ffffff;
+}
+.color-888 {
+    color: #888888;
+}
+.color-dfd {
+    color: #DFDFDF;
+}
+.color-golden {
+    color: rgb(239, 194, 106)
+}
+.color-white {
+    color: rgba(255,255,255,0.7);
+}
+.bac-white {
+    background-color: #ffffff;
+}
+.bac-main {
+    background-color: #ff4242;
+}
+.bac-orange {
+    background-color: #F48F18;
+}
+.bac-grey {
+    background-color: #DFDFDF;
+}
+.padding-40 {
+    padding: 0 0.4rem;
+}
+.padding-30 {
+    padding: 0 .3rem;
+}
+.padding-l-10 {
+    padding-left: .1rem;
+}
+.f14 {
+    font-size: .14rem;
+}
+.f20 {
+    font-size: .2rem;
+}
+.f24 {
+    font-size: .24rem;
+}
+.f26 {
+    font-size: .26rem;
+}
+.f28 {
+    font-size: .28rem;
+}
+.f30 {
+    font-size: .30rem;
+}
+.f36 {
+    font-size: .36rem !important;
+}
+.f42 {
+    font-size: .42rem;
+}
+.f48 {
+    font-size: .48rem;
+}
+.f72 {
+    font-size: .72rem;
+}
+.txt-center{
+    text-align: center;
+}
+
+/* 父盒子里面只有一个子元素，垂直居中 */
+.one-el-middle {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* 按钮通用大小 */
+.btn {
+    display: block;
+    width: 1.3rem;
+    height: .5rem;  
+    line-height: .5rem;  
+    border-radius: .08rem;
+}
+/* 目前兼容性比较好的垂直水平居中 需要给父级盒子设置相对定位 */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.inline-block-middle{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+.break20 {
+    height: 2rem;
+    width: 100%;
+}
+
+/* 缺货提示 */
+.no-stock-tip {
+    position: absolute;
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .32rem;
+    color: #ffffff;
+    opacity: 0.5;
+    background: #000000;
+    left: 0;
+    bottom: 0;
+}
+.h20 {
+    height: .2rem;
+}

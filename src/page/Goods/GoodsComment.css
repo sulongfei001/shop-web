@@ -1,0 +1,57 @@
+.GoodsComment {
+
+}
+
+.GoodsComment .comment-list {
+    background: #fff;
+}
+
+.GoodsComment .comment-item {
+    border-top: 1px solid #ddd;
+    padding: 0.4rem 0.31rem 0 0;
+}
+
+.GoodsComment .comment-item:first-child {
+    border-top: 0;
+}
+
+.GoodsComment .comment-item .avatar {
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    margin: -0.02rem 0 0 0.31rem;
+}
+
+.GoodsComment .comment-item label {
+    width: 100%;
+    padding: 0 0 0 1rem;
+}
+
+.GoodsComment .comment-item p {
+    width: 100%;
+    padding: 0.1rem 0 0.1rem 1rem;
+}
+
+.GoodsComment .comment-item .pics {
+    padding: 0 0 0.3rem 1rem;
+}
+
+.GoodsComment .comment-item .pics img {
+    width: 1.28rem;
+    height: 1.28rem;
+    margin-right: 0.2rem;
+}
+
+.GoodsComment .empty {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.3rem;
+    padding-top: 2.3rem;
+    background: no-repeat top center;
+    background-size: 1.82rem 2.06rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+}

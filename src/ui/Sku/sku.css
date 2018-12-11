@@ -1,0 +1,111 @@
+
+ .sku-select {
+    padding: 0.21rem;
+}
+
+ .sku-select .pic {
+    
+    width: 1.69rem;
+    height: 1.69rem;
+    border: 1px solid #ccc;
+    margin-top: -0.5rem;
+    background: no-repeat center;
+    background-size: 1.69rem 1.69rem;
+}
+.sku-select .sku-selected-info {
+    width: 4.5rem;
+    margin-left: .2rem;
+}
+.sku-select .property-box {
+    overflow: auto;
+    max-height: 4.82rem;
+    margin-top: .4rem;
+}
+ .sku-select .price {
+    font-size: 0.36rem;
+    color: #ff4242;
+  }
+
+ .sku-select .chosen {
+    font-size: 0.36rem;
+    color: #ff4242;
+}
+
+ .sku-select .property-item {
+    margin-top: 0.31rem;
+}
+
+ .sku-select .property-item h6 {
+    font-size: 0.32rem;
+    padding-bottom: 0.18rem;
+    border-bottom: 1px solid #ddd;
+}
+
+ .sku-select .property-item a {
+    margin-right: 0.18rem;
+    margin-top: 0.2rem;
+    display: inline-block;
+    font-size: 0.24rem;
+    padding: 0.18rem;
+    border: solid 1px #ddd;
+    border-radius: 2px;
+}
+
+ .sku-select .property-item a.disabled {
+    color: #999;
+}
+
+ .sku-select .property-item a.selected {
+    border-color: #ff4242;
+}
+
+
+
+.sku-select .buy-number {
+    padding-top: 0.2rem;
+    border-top: 1px solid #ddd;
+    margin-top: 0.2rem;
+}
+
+.sku-select .buy-number label {
+    display: inline-block;
+    width: 50%;
+}
+
+.sku-select .buy-number .buy-func {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+.sku-select .buy-number .buy-func a {
+    border: 1px solid #ddd;
+    border-right: 0;
+    width: 0.51rem;
+    height: 0.45rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.sku-select .buy-number .buy-func .disabled {
+    color: #ddd;
+}
+
+.sku-select .buy-number .buy-func .disabled span {
+    color: #ddd;
+}
+
+.sku-select .buy-number .buy-func .minus {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.sku-select .buy-number .buy-func .number span {
+    font-size: 0.24rem;
+}
+
+.sku-select .buy-number .buy-func .plus {
+    border-right: 1px solid #ddd;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}

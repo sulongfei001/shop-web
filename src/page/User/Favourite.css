@@ -1,0 +1,88 @@
+.Favourite {
+
+}
+
+.Favourite .fav-items {
+    background: #fff;
+    margin-top: 0.2rem;
+}
+
+.Favourite .fav-item {
+    border-top: 1px solid #ddd;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Favourite .fav-item:first-child {
+    border-top: 0;
+}
+
+.Favourite .fav-item .fav-sku {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.Favourite .fav-item .fav-del {
+    width: 14%;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    height: 2rem;
+    background: #ff4242;
+    color: #fff;
+    font-size: 0.3rem;
+    padding-top: 0.8rem;
+    margin-right: -14%;
+}
+
+.Favourite .fav-item .fav-sku .pic {
+    width: 1.72rem;
+    height: 2rem;
+    background: no-repeat center;
+    background-size: 1.64rem 1.64rem;
+    margin-left: 0.2rem;
+    float: left;
+}
+
+.Favourite .fav-item .fav-sku h6 {
+    font-size: 0.26rem;
+    padding: 0.16rem 0.1rem 0.04rem 0.2rem;
+    width: 5rem;
+    float: left;
+}
+
+.Favourite .fav-item .fav-sku label {
+    font-size: 0.26rem;
+    width: 5rem;
+    padding: 0 0.2rem;
+    float: left;
+    color: #666;
+}
+
+.Favourite .fav-item .fav-sku span {
+    font-size: 0.28rem;
+    width: 5rem;
+    padding: 0.2rem 0.1rem 0 0.2rem;
+    color: #ff4242;
+    float: left;
+}
+
+.Favourite .fav-item .fav-sku span em {
+    font-size: 0.24rem;
+    color: #ff4242;
+}
+
+.Favourite .empty {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.3rem;
+    padding-top: 2.3rem;
+    background: no-repeat top center;
+    background-size: 1.82rem 2.06rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+}
+

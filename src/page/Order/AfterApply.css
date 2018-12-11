@@ -1,0 +1,117 @@
+.AfterApply {
+
+}
+
+.AfterApply .after-header {
+    background: #fff;
+    overflow: hidden;
+}
+
+.AfterApply .after-header a {
+    width: 50%;
+    float: left;
+    padding: 0.2rem 0;
+    text-align: center;
+    font-size: 0.3rem;
+}
+
+.AfterApply .after-header a.active {
+    color: #ff4242;
+    border-bottom: 0.04rem solid #ff4242;
+}
+
+.AfterApply .apply-item {
+    background: #fff;
+    margin: 0.2rem 0 0 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.AfterApply .apply-item .info {
+    padding: 0.12rem 0.2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.AfterApply .apply-item .info label {
+    display: block;
+    color: #666;
+    font-size: 0.24rem;
+    margin-bottom: 0.04rem;
+}
+
+.AfterApply .apply-item .info label:last-child {
+    margin-bottom: 0;
+}
+
+.AfterApply .apply-item .details {
+    padding: 0.12rem 0.2rem;
+    overflow: hidden;
+}
+
+.AfterApply .apply-item .details .pic {
+    width: 1.64rem;
+    height: 1.64rem;
+    background: no-repeat center;
+    background-size: 1.64rem 1.64rem;
+    float: left;
+    margin: 0 0.2rem  0 0;
+}
+
+.AfterApply .apply-item .details h6 {
+    font-size: 0.28rem;
+    width: 5.2rem;
+    float: left;
+    padding: 0.04rem 0 0 0;
+}
+
+.AfterApply .apply-item .details label {
+    font-size: 0.26rem;
+    width: 5.2rem;
+    padding: 0.04rem 0 0 0;
+    float: left;
+}
+
+.AfterApply .apply-item .details label em {
+    margin-left: 0.06rem;
+    font-size: 0.26rem;
+    color: #666;
+}
+
+.AfterApply .apply-item .details span {
+    font-size: 0.3rem;
+    padding: 0.16rem 0 0 0;
+    color: #ff4242;
+    float: left;
+}
+
+.AfterApply .apply-item .details span em {
+    font-size: 0.24rem;
+    color: #ff4242;
+}
+
+.AfterApply .apply-item .buttons {
+    float: right;
+    overflow: hidden;
+}
+
+.AfterApply .apply-item .buttons a {
+    text-align: center;
+    padding: 0.08rem 0.3rem;
+    border: 1px solid #ff4242;
+    color: #ff4242;
+    font-size: 0.26rem;
+    border-radius: 0.04rem;
+    float: left;
+}
+.AfterApply .icon-promotion {
+    width: .78rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/complimentary@3x.png') no-repeat 0 0;
+    background-size: cover;
+}
+.AfterApply .icon-add-price {
+    width: .82rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/AddPrice@2x.png') no-repeat 0 0;
+    background-size: cover;
+}

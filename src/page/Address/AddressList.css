@@ -1,0 +1,100 @@
+.AddressList {
+
+}
+
+.AddressList>ul {
+    overflow: hidden;
+    margin-bottom: 1.02rem;
+}
+
+.AddressList>ul * {
+    float: left;
+}
+
+.AddressList>ul li {
+    width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0.2rem;
+    background: #fff;
+}
+
+.AddressList>ul li .not-supported {
+    position: absolute;
+    font-size: 0.24rem;
+    color: #ff4242;
+    margin: 0.36rem 0 0 5.1rem;
+}
+
+.AddressList>ul li h6 {
+    padding: 0.3rem 0.22rem 0.25rem 0.22rem;
+    font-size: 0.32rem;
+    width: 100%;
+}
+
+.AddressList>ul li span {
+    padding: 0 0.22rem 0.28rem 0.22rem;
+    font-size: 0.26rem;
+    color: #666;
+    width: 100%
+}
+
+.AddressList>ul li .buttons {
+    border-top: 1px solid #eee;
+    padding: 0.28rem 0.22rem;
+    width: 100%;
+}
+
+.AddressList>ul li .buttons a {
+    font-size: 0.26rem;
+    line-height: 0.28rem;
+    height: 0.28rem;
+    color: #666;
+    display: block;
+}
+
+.AddressList>ul li .buttons .del {
+    float: right;
+    background: no-repeat left center;
+    background-size: 0.28rem 0.28rem;
+    padding-left: 0.44rem;
+}
+
+.AddressList>ul li .buttons .edit {
+    float: right;
+    background: no-repeat left center;
+    background-size: 0.28rem 0.28rem;
+    padding-left: 0.44rem;
+    margin-right: 0.28rem;
+}
+
+.AddressList>ul li .buttons .default {
+    background: no-repeat left center;
+    background-size: 0.28rem 0.28rem;
+    padding-left: 0.44rem;
+}
+
+.AddressList .new {
+    display: block;
+    margin: 0.22rem 0.32rem;
+    background: #ff4242;
+    color: #fff;
+    font-size: 0.32rem;
+    text-align: center;
+    padding: 0.18rem 0;
+    border-radius: 4px;
+}
+
+.AddressList .empty {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.3rem;
+    padding-top: 2.3rem;
+    background: no-repeat top center;
+    background-size: 1.82rem 2.06rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+}
+

@@ -1,0 +1,124 @@
+.my-coupons {
+}
+.my-coupons .my-coupons-head {
+  border-bottom: 1px solid #e8e8e8;
+  height: 0.88rem;
+  width: 100%;
+}
+.my-coupons .my-coupons-head > li {
+  float: left;
+  width: 33.333%;
+  /* height: .88rem; */
+  line-height: 0.88rem;
+  text-align: center;
+}
+.my-coupons .my-coupons-head .active {
+  position: relative;
+}
+.my-coupons .my-coupons-head .active::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 0.79rem;
+  height: 0.06rem;
+  background-color: red;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.my-coupons .my-coupons-list {
+  padding: 0.3rem 0;
+}
+.my-coupons .my-coupons-list > li {
+  width: 6.7rem;
+  height: 1.245rem;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+}
+.my-coupons .list-left {
+  border: 1px solid #979797;
+  border-right: 1px dashed #979797;
+  border-radius: 0.08rem 0 0 0.08rem;
+  height: 1.245rem;
+  width: 1.73rem;
+  position: relative;
+}
+.my-coupons .list-center {
+  width: 3.11rem;
+  height: 1.245rem;
+  padding: 0.2rem 0 0.2rem 0.1rem;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+}
+.my-coupons .list-right {
+  width: 1.86rem;
+  height: 1.245rem;
+  position: relative;
+  /* line-height: 1.245rem;
+  text-align: center; */
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  border-right: 1px solid #979797;
+  border-radius: 0 0.08rem 0.08rem 0;
+}
+
+.my-coupons .h90 {
+  width: 100%;
+  height: 0.9rem;
+}
+.h178 {
+  width: 100%;
+  height: 1.78rem;
+}
+.my-coupons .ticket-type {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.92rem;
+  line-height: 0.39rem;
+  height: 0.39rem;
+  background-color: #ff4242;
+  opacity: 0.4;
+  margin-right: 0.14rem;
+  text-align: center;
+  border-radius: 0.04rem;
+  font-size: 0.24rem;
+  color: #ffffff;
+}
+.my-coupons .ticket-rule {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.93rem;
+  height: 0.39rem;
+  line-height: 0.39rem;
+  font-size: 0.24rem;
+}
+
+.my-coupons .nodata {
+  width: 100%;
+  height: 3.61rem;
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.my-coupons .nodata-img {
+  width: 1.671rem;
+  height: 1.16rem;
+  background: url('./no-data@3x.png') no-repeat 0 0;
+  background-size: cover;
+  margin: 0 auto;
+}
+.my-coupons .nodata-tip {
+  height: 0.32rem;
+  font-size: 0.32rem;
+  color: #000000;
+  letter-spacing: 0.04rem;
+  margin-top: 0.46rem;
+}
+.my-coupons .nodata-goods-title {
+  display: block;
+  text-align: center;
+  padding: 0.2rem 0;
+  background: #fff;
+  font-size: 0.32rem;
+}

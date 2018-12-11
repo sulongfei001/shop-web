@@ -1,0 +1,36 @@
+.CustomerService {
+
+}
+
+.CustomerService .info {
+    margin-top: 0.98rem;
+    padding: 2.8rem 0.52rem 0 0.52rem;
+    background: no-repeat top center;
+    background-size: 3.13rem 2.22rem;
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+}
+
+.CustomerService .strong {
+    font-weight: bold;
+    font-size: 0.26rem;
+}
+
+.CustomerService .tag {
+    font-weight: bold;
+    color: #ff4242;
+    font-size: 0.26rem;
+}
+
+.CustomerService .qr {
+    margin-top: 0.9rem;
+    padding: 0 0.52rem 0 0.52rem;
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+
+.CustomerService .qr img {
+    width: 3.15rem;
+    height: 3.15rem;
+}

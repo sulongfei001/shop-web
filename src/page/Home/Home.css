@@ -1,0 +1,149 @@
+.Home {
+    background: #f9f9f9;
+}
+
+.Home .announce {
+    overflow: hidden;
+    background: #f77f7a;
+}
+
+.Home .announce * {
+    float: left;
+}
+
+.Home .announce .container {
+    width: 100%;
+    overflow: hidden;
+}
+.Home .couponscenter-img {
+    width: 100%;
+    height: 2rem;
+    object-fit: cover;
+}
+
+.Home .announce label {
+    color: #fff;
+    font-size: 0.26rem;
+    padding-left: 0.4rem;
+    float: left;
+    animation: home_notice 10s linear infinite;
+}
+
+.Home .content1 {
+    background: #fff;
+    overflow: hidden;
+}
+
+.Home .content1 img{
+    float: left;
+    width: 6.7rem;
+    height: 2rem;
+    margin: 0.2rem 0 0.24rem 0.4rem;
+   
+}
+
+.Home .content2 {
+    background: #fff;
+    overflow: hidden;
+}
+
+.Home .content2 .banner {
+    float: left;
+    width: 100%;
+    height: 3.6rem;
+   
+}
+
+.Home .content2 * {
+    float: left;
+}
+
+.Home .content2-container {
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Home .content2 .goods-list {
+    padding: 0.5rem 0;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.Home .content2 .goods-item {
+    margin-left: 0.2rem;
+    width: 2rem;
+}
+
+.Home .content2 .goods-item:first-child {
+    margin-left: 0.4rem;
+}
+
+.Home .content2 .goods-item-img {
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.Home .content2 .goods-item-name {
+    height: 0.84rem;
+    font-size: 0.24rem;
+    font-weight: normal;
+    color: #2A2A2A;
+    line-height: .42rem;
+    word-break: break-all;
+}
+
+.Home .content2 .price {
+    /*margin-top: 0.18rem;*/
+    color: #f00;
+    font-size: 0.24rem;
+    width: 100%;
+}
+
+.Home .content3 {
+    background: #fff;
+    overflow: hidden;
+    padding: 0.1rem 0 0.1rem 0.4rem;
+}
+
+.Home .content3 .banner1 {
+    float: left;
+    width: 3.35rem;
+    height: 3.32rem;
+   
+}
+
+.Home .content3 .banner2 {
+    float: left;
+    width: 3.35rem;
+    height: 1.66rem;
+
+}
+
+.Home .content4 {
+    background: #fff;
+    overflow: hidden;
+}
+
+.Home .content4 img{
+    float: left;
+    width: 6.7rem;
+    height: 3.02rem;
+    margin: 0.1rem 0 0.1rem 0.4rem;
+ 
+}
+
+@keyframes home_notice {
+    0% {
+        transform: translateX(7.5rem);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}

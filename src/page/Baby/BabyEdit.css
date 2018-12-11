@@ -1,0 +1,241 @@
+.BabyEdit {
+    background-color: #fff;
+}
+
+.BabyEdit .baby_sex {
+    width: 100%;
+    text-align: center;
+}
+
+.BabyEdit .baby_sex .sex_title {
+    width: 100%;
+    padding-top: 0.64rem;
+}
+
+.BabyEdit .baby_sex .sex_choose {
+    width: 100%;
+    margin-top: 0.4rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.BabyEdit .baby_sex .sex_choose .choose_one,
+.BabyEdit .baby_sex .sex_choose .choose_two
+{
+    width: 1.8rem;
+    height: 1.8rem;
+    background: no-repeat top center;
+    background-size: 1.8rem 1.8rem;
+    float: left;
+}
+.BabyEdit .baby_sex .sex_choose .choose_one{
+    margin-left: 1.53rem;
+}
+.BabyEdit .baby_sex .sex_choose .choose_two{
+    margin-left: 1.03rem;
+}
+.BabyEdit .baby_photo_update{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.3rem;
+    border-bottom: 1px solid #E8E8E8;
+}
+.BabyEdit .baby_photo_update .photo_title{
+    width: 1.5rem;
+    line-height: 1.64rem;
+    float: left;
+    margin-left: 0.27rem;
+    font-size: 0.32rem;
+    color: #666666;
+}
+.BabyEdit .baby_photo_update .photo{
+    width: 2rem;
+    overflow: hidden;
+    float: right;
+}
+.BabyEdit .baby_photo_update .photo .photo_update{
+    width: 1.27rem;
+    height: 1.27rem;
+    background: no-repeat top center;
+    background-size: 1.27rem 1.27rem;
+    float: left;
+    margin-top: 0.18rem;
+    border-radius: 0.1rem;
+}
+.BabyEdit .baby_photo_update .photo .arrows{
+    width: 0.3rem;
+    float: right;
+    background: no-repeat right center;
+    background-size: 0.16rem 0.25rem;
+    margin-right: 0.3rem;
+    padding-top: 1.3rem;
+    overflow: hidden;
+}
+.BabyEdit .baby_photo_update .photo .arrows span{
+    color: #000000;
+    margin-right: 0.3rem;
+    font-size: 0.32rem;
+}
+
+.BabyEdit .baby_message{
+    width: 100%;
+}
+.BabyEdit .baby_message ul{
+    width: 100%;
+}
+.BabyEdit .baby_message ul li{
+    width: 100%;
+    height: 0.92rem;
+    line-height: 0.92rem;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.BabyEdit .baby_message ul li .changeSex{
+    width: 4.4rem;
+}
+.BabyEdit .baby_message ul li .changeSex select{
+    width: 2.4rem;
+    border: none;
+    outline: none;
+    margin-left: 2.4rem;
+    appearance:none;
+    direction: rtl;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    display: inline-block;
+}
+
+.BabyEdit .baby_message ul li .changeSex select option::-ms-expand{
+    display: none;
+}
+.BabyEdit .baby_message ul li .changeSex select option{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+}
+.BabyEdit .baby_message ul li .changeSex select option:hover{
+    color:#fff;
+    background-color:#1E90FF;
+    margin-right: 5rem ;
+}
+.BabyEdit .baby_message ul li span{
+    width: 1.5rem;
+    margin-left: 0.27rem;
+    display: inline-block;
+    color: #666666;
+}
+.BabyEdit .baby_message ul li input{
+    width: 4.4rem;
+    border: none;
+    outline: none;
+    margin-left: 0.4rem;
+    text-align: right;
+}
+.BabyEdit .baby_message ul li .arrows{
+    width: 0.6rem;
+    float: right;
+    background: no-repeat right center;
+    background-size: 0.16rem 0.25rem;
+    margin-right: 0.3rem;
+    overflow: hidden;
+}
+.BabyEdit .baby_message ul li .arrows span{
+    width: 1rem;
+    color: #000000;
+    margin-right: 0.3rem;
+    font-size: 0.32rem;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #B2B2B2;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#B2B2B2;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:#B2B2B2;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:#B2B2B2;
+}
+.BabyEdit .baby_empty{
+    width: 100%;
+    height: 1.81rem;
+}
+.BabyEdit .baby_save_btn{
+    width: 100%;
+}
+.BabyEdit .baby_save_btn span:first-child{
+    width: 50%;
+    text-align: center;
+    background-color: #333333;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.BabyEdit .baby_save_btn span:last-child{
+    width: 50%;
+    text-align: center;
+    background-color: #cccccc;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.BabyEdit .baby_save_btn_next{
+    width: 100%;
+}
+.BabyEdit .baby_save_btn_next span:first-child{
+    width: 50%;
+     text-align: center;
+     background-color: #333333;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+ }
+.BabyEdit .baby_save_btn_next span:last-child{
+    width: 50%;
+    text-align: center;
+    background-color: #E2041B;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.BabyEdit .baby_save_btn span,
+.BabyEdit .baby_save_btn_next span
+{
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+    float: left;
+    font-size: 0.32rem;
+    line-height: 0.98rem;
+    display: block;
+}
+.BabyEdit .baby_redact{
+    width: 100%;
+    background: #E2041B;
+    text-align: center;
+}
+.BabyEdit .baby_redact span{
+    line-height: 0.98rem;
+    color: #ffffff;
+    font-size: 0.32rem;
+ }
+
+.BabyEdit .baby_message ul li .detailedAddress{
+    width: 4.4rem;
+}
+.BabyEdit .babyLabel{
+    width: 4.4rem;
+    color: #000000;
+    margin-left: 0.4rem;
+    text-align: right;
+    display: inline-block;
+}
+.BabyEdit .babyLabelSelected{
+    width: 2.59rem;
+    color: #B2B2B2;
+    margin-left: 0.4rem;
+}
+.Confirm .message{
+    padding: 0.2rem 0.2rem 0 0.2rem;
+}

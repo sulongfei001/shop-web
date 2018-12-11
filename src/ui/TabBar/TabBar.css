@@ -1,0 +1,51 @@
+.TabBar {
+    overflow: hidden;
+    margin: 0 auto;
+    background: #fff;
+    border-top: 1px #ddd solid;
+    position: relative;
+
+}
+
+.TabBar * {
+    display: block;
+}
+
+.TabBar ul {
+    width: 100%;
+}
+
+.TabBar li {
+    float: left;
+    text-align: center;
+}
+
+.TabBar li a {
+    width: 100%;
+    height: 0.99rem;
+    text-align: center;
+    padding: 0.12rem 0 0 0;
+    background: no-repeat top 0.16rem center;
+    background-size: 0.4rem 0.4rem;
+}
+
+.TabBar li img {
+    height: 0.48rem;
+    margin: 0 auto;
+}
+
+.TabBar li label {
+    clear: both;
+    font-size: 0.24rem;
+    width: 100%;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.TabBar .tabbar-active {
+    position: absolute;
+    bottom: 0;
+    height: 0.04rem;
+    background: #ff4242;
+    transition: left 200ms;
+}

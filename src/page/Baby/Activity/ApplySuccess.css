@@ -1,0 +1,210 @@
+.ApplySuccess{
+    width: 100%;
+    height: 100%;
+    background: #D4F2FF;
+}
+.ApplySuccess .SuccessTitle{
+    width: 100%;
+    height: 2.9rem;
+}
+.ApplySuccess .SuccessTitle .TitleImg{
+    width: 5.61rem;
+    height: 2.11rem;
+    background: no-repeat center center;
+    background-size: 5.61rem 2.11rem;
+    margin-left: 0.98rem;
+}
+.ApplySuccess .SuccessMessage{
+    width: 6.52rem;
+    margin-left: 0.46rem;
+}
+.ApplySuccess .SuccessMessage .MessageBaby{
+    width: 6.53rem;
+    height: 2rem;
+    background: #0D7AC7;
+    border-radius: 0.30rem 0.30rem 0 0;
+    position: relative;
+}
+.ApplySuccess .SuccessMessage .MessageBaby .TitleCap{
+    width: 1.2rem;
+    height: 1.9rem;
+    background: no-repeat center center;
+    background-size: 1.2rem 1.9rem;
+    margin-left: 0.98rem;
+    position: absolute;
+    left: -0.2rem;
+    top: -1.98rem;
+    z-index: 100;
+}
+.ApplySuccess .SuccessMessage .MessageBaby .BabyPhoto{
+    width: 1.85rem;
+    height: 1.85rem;
+    background: no-repeat center center;
+    background-size: 1.85rem 1.85rem;
+    border: 2px solid #19B5F3;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.71rem;
+    top: -0.45rem;
+}
+.ApplySuccess .SuccessMessage .MessageBaby .BabyNumber {
+    width: 2rem;
+    height: 0.26rem;
+    position: absolute;
+    left: 0.7rem;
+    top: 1.47rem;
+}
+.ApplySuccess .SuccessMessage .MessageBaby .BabyNumber p{
+    font-size: 0.25rem;
+    color: #ffffff;
+ }
+
+.ApplySuccess .SuccessMessage .MessageBaby .BabyMessage{
+    width: 3.03rem;
+    height: 1.04rem;
+    margin-left: 2.85rem;
+    padding-top: 0.27rem;
+}
+.ApplySuccess .SuccessMessage .MessageBaby .BabyMessage p{
+    font-size: 0.28rem;
+    color: #ffffff;
+}
+.ApplySuccess .SuccessMessage .MessageContent{
+    width: 6.52rem;
+    background: #ffffff;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentTitle{
+    width: 100%;
+    padding-top: 0.18rem;
+    line-height: 0.4rem;
+    padding-bottom: 0.18rem;
+    background: #F6A623;
+    overflow: hidden;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentTitle label{
+    width: 100%;
+    height: auto;
+    margin-left: 0.32rem;
+    display: block;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentTitle label p:first-child{
+    font-size: 0.24rem;
+    color: #000;
+    font-weight: 600;
+    float: left;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentTitle label p:last-child{
+    width: 80%;
+    font-size: 0.24rem;
+    color: #000;
+    font-weight: 600;
+    float: left;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentHint{
+    width: 100%;
+    height: auto;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentHint .ContentNotice{
+    width: 100%;
+    margin-top: 0.24rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentHint .noticeChange{
+    margin-top: 0.05rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentHint .ContentNotice .noticeImg{
+    height: 28px;
+    background: no-repeat left center;
+    background-size: 1.27rem 0.28rem;
+    margin-left: 0.34rem;
+    margin-right: 0.34rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentHint .ContentNotice .noticeMessage{
+    margin-left: 0.34rem;
+    margin-right: 0.34rem;
+    height: 0.68rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentHint .ContentNotice .noticeMessage span{
+    font-size: 0.24rem;
+    font-weight: 600;
+    margin-top: 0.05rem;
+    display: block;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentReminder{
+    width: 100%;
+    height: 3rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentReminder p{
+    width: 100%;
+    height: 0.4rem;
+    font-size: 0.22rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentReminder .next{
+    color: #0D7AC7;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentPrompt{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.32rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentPrompt span{
+    font-size: 0.36rem;
+    color: #D0021B;
+    font-weight: 600;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentProgram{
+    width: 100%;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentProgram .Program{
+    width: 100%;
+    height: 0.53rem;
+    line-height: 0.53rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentProgram .Program .ProgramTitle{
+    background: #7ED321;
+    border-radius: 0.19rem;
+    padding: 0.1rem 0.2rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentProgram .Program .ProgramTitle span{
+    color: #ffffff;
+    font-size: 0.3rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentImg{
+    padding: 0.3rem 0.25rem 0.2rem 0.25rem;
+}
+.ApplySuccess .SuccessMessage .MessageContent .ContentImg .Img{
+    height: 3.49rem;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    display: block;
+    border-radius: 0.19rem;
+}
+.ApplySuccess .SuccessMessage .MessageAddress{
+    width: 6.52rem;
+    background: #0D7AC7;
+    overflow: hidden;
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.ApplySuccess .SuccessMessage .MessageAddress p:first-child{
+    width: 0.8rem;
+    float: left;
+    color: #ffffff;
+    font-size: 0.22rem;
+    margin-left: 0.36rem;
+    margin-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+.ApplySuccess .SuccessMessage .MessageAddress p:last-child{
+    width: 5rem;
+    float: left;
+    color: #ffffff;
+    font-size: 0.22rem;
+    margin-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+.ApplySuccess .footer {
+    font-size: 0.22rem;
+    text-align: center;
+    margin: 0.8rem 0 0.2rem 0;
+}

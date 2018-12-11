@@ -1,0 +1,106 @@
+.OrderComments {
+
+}
+
+.OrderComments .status-list {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.OrderComments .status-list .status-link {
+    width: 100%;
+    overflow: hidden;
+}
+
+.OrderComments .status-list .status-link a {
+    float: left;
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+
+.OrderComments .status-list .status-active {
+    float: left;
+    width: 50%;
+    height: 0.04rem;
+    background: #ff4242;
+    transition: margin-left 200ms;
+}
+
+.OrderComments .status-list .status-active2 {
+    float: left;
+    width: 50%;
+    height: 0.04rem;
+    background: #ff4242;
+    transition: margin-left 200ms;
+    margin-left: 50%;
+}
+
+.OrderComments .goods-list {
+    margin-top: 1.14rem;
+}
+
+.OrderComments .goods-item {
+    overflow: hidden;
+    padding: 0.2rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0.2rem;
+    background: #fff;
+}
+
+.OrderComments .goods-item .pic {
+    float: left;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: no-repeat center;
+    background-size: 1.6rem 1.6rem;
+    margin-right: 0.2rem;
+}
+
+.OrderComments .goods-item h6 {
+    float: left;
+    font-size: 0.28rem;
+    width: 5rem;
+    height: 1rem;
+}
+
+.OrderComments .goods-item .buttons {
+    text-align: right;
+    float: left;
+    width: 5rem;
+    height: 0.6rem;
+}
+
+.OrderComments .goods-item .buttons a {
+    font-size: 0.28rem;
+    padding: 0.08rem;
+    border: 1px solid #999;
+    border-radius: 0.04rem;
+    margin-left: 0.2rem;
+    text-align: center;
+    width: 1.7rem;
+    float: right;
+}
+
+.OrderComments .goods-item .buttons a:first-child {
+    border-color: #ff4242;
+    color: #ff4242;
+}
+
+.OrderComments .icon-promotion {
+    display: inline-block;
+    width: .78rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/complimentary@3x.png') no-repeat 0 0;
+    background-size: cover;
+}
+.OrderComments .icon-add-price {
+    display: inline-block;
+    width: .82rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/AddPrice@2x.png') no-repeat 0 0;
+    background-size: cover;
+}

@@ -1,0 +1,61 @@
+.GoodsList {
+
+}
+
+.GoodsList .category-header {
+    display: block;
+    text-align: center;
+    padding: 0.2rem 0;
+    background: #fff;
+}
+
+.GoodsList .category-header label {
+    font-size: 0.3rem;
+    padding-right: 0.36rem;
+    background: no-repeat right center;
+    background-size: 0.27rem 0.16rem;
+    margin-left: 0.36rem;
+}
+
+.GoodsList .goods-sort {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+
+.GoodsList .goods-sort a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 0.3rem;
+    padding: 0.4rem 0;
+}
+
+.GoodsList .goods-sort a.active {
+    color: #ff4242;
+}
+
+.GoodsList .goods-sort a em {
+    color: #ff4242;
+    font-size: 0.3rem;
+    padding: 0 0 0 0.06rem;
+}
+
+.GoodsList .GoodsListView {
+    padding-top: 2.5rem;
+}
+
+.GoodsList .empty {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 0.3rem;
+    padding-top: 2.3rem;
+    background: no-repeat top center;
+    background-size: 1.82rem 2.06rem;
+    position: absolute;
+    top: 50%;
+    margin-top: -2rem;
+}

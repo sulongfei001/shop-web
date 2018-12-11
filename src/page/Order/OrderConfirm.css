@@ -1,0 +1,744 @@
+.OrderConfirm {
+
+}
+
+.OrderConfirm .address {
+    background: #fff no-repeat 7rem center;
+    background-size: 0.2048rem 0.32rem;
+    display: block;
+    overflow: hidden;
+}
+
+.OrderConfirm .address * {
+    float: left;
+}
+
+.OrderConfirm .address .not-supported {
+    position: absolute;
+    font-size: 0.24rem;
+    color: #ff4242;
+    margin: 0.49rem 0 0 4.5rem;
+}
+
+.OrderConfirm .address h6 {
+    display: block;
+    padding: 0.44rem 0.49rem 0 0.49rem;
+    font-size: 0.3rem;
+    width: 100%;
+}
+
+.OrderConfirm .address .content {
+    padding: 0 0.49rem 0.33rem 0.49rem;
+    margin-top: 0.2rem;
+    display: block;
+    background: no-repeat 0.13rem 0.08rem;
+    background-size: 0.24rem 0.32rem;
+}
+
+.OrderConfirm .address .content em {
+    font-size: 0.3rem;
+    color: #ff4242;
+    margin-right: 0.1rem;
+}
+
+.OrderConfirm .address .content label {
+    font-size: 0.3rem;
+    color: #8e8e8e;
+}
+
+.OrderConfirm .break {
+    background: #f9f9f9;
+    clear: both;
+    height: 0.16rem;
+}
+
+.OrderConfirm .sku-details {
+    background: #fff;
+    padding: 0.28rem 0.22rem;
+    overflow: hidden;
+}
+.OrderConfirm .sku-details .complimentaryGoods{
+    width: 95%;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-top: 0.1rem;
+    clear: both;
+}
+.OrderConfirm .sku-details .complimentaryGoods .complimentaryTitle{
+    width: 15%;
+    float: left;
+    font-size: 0.26rem;
+}
+
+.OrderConfirm .sku-details .complimentaryGoods .complimentaryList{
+    width: 85%;
+    float: left;
+    padding: 0 0.1rem;
+}
+
+.OrderConfirm .sku-details .complimentaryGoods .complimentaryList ul,
+.OrderConfirm .sku-details .complimentaryGoods .complimentaryList ul li
+{
+    width: 100%;
+}
+
+.OrderConfirm .sku-details .complimentaryGoods .complimentaryList ul li span
+{
+    width: 100%;
+}
+
+.OrderConfirm .sku-details .complimentaryGoods .complimentaryList ul li span label{
+    width: 90%;
+    font-size: 0.24rem;
+    color: #999999;
+    float: left;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    margin-top: 0;
+}
+.OrderConfirm .sku-details .complimentaryGoods .complimentaryList ul li span em{
+    width: 10%;
+    font-size: 0.24rem;
+    color: #999999;
+    float: left;
+}
+
+.OrderConfirm .sku-details * {
+    float: left;
+}
+
+.OrderConfirm .sku-details ul{
+    width: 100%;
+}
+.OrderConfirm .sku-details ul li{
+    width: 100%;
+}
+.OrderConfirm .sku-details ul .liTop{
+    margin-bottom: 0.25rem;
+}
+
+.OrderConfirm .sku-details img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.15rem;
+}
+
+
+.OrderConfirm .sku-details h6 {
+    font-size: 0.28rem;
+    width: 5rem;
+    margin-top: 0.03rem;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.OrderConfirm .sku-details .property {
+    font-size: 0.26rem;
+    color: #6f6f6f;
+    width: 5rem;
+}
+
+.OrderConfirm .sku-details .price {
+    font-size: 0.3rem;
+    color: #ff4242;
+  
+}
+
+.OrderConfirm .link {
+    border-top: 1px solid #eee;
+    overflow: hidden;
+    background: #fff;
+}
+
+.OrderConfirm .link2 {
+    border-bottom: 1px solid #eee;
+}
+
+.OrderConfirm .link * {
+    float: left;
+}
+
+.OrderConfirm .link li {
+    width: 7.5rem;
+    border-bottom: 1px solid #eee;
+    background: no-repeat 7rem center;
+    background-size: 0.2048rem 0.32rem;
+}
+
+.OrderConfirm .link li>a {
+    width: 100%;
+    padding: 0.32rem;
+    display: block;
+}
+
+.OrderConfirm .link li>a>span {
+    font-size: 0.28rem;
+    padding: 0.04rem 0.5rem 0 0;
+    float:left;
+    width: 70%;
+    text-align: right;
+}
+
+.OrderConfirm .link li>a>label {
+    font-size: 0.32rem;
+    width: 30%;
+}
+
+.OrderConfirm .link li>a>span.goods-price {
+    font-size: 0.32rem;
+    color: #ff4242;
+    padding: 0.04rem 0.32rem 0 0;
+    float:right;
+}
+
+.OrderConfirm .link li>a>span.goods-price em {
+    font-size: 0.24rem;
+    color: #ff4242;
+    padding-top: 0.08rem;
+    margin-right: 0.04rem;
+    float: none;
+}
+
+.OrderConfirm .link li>a>span.express-price {
+    font-size: 0.32rem;
+    padding: 0.04rem 0.32rem 0 0.4rem;
+}
+
+.OrderConfirm .link li>a>span.express-price em {
+    font-size: 0.24rem;
+    padding: 0.08rem 0 0 0.4rem;
+    margin-right: 0.04rem;
+    background: no-repeat left center;
+    background-size: 0.32rem 0.32rem;
+    float: none;
+}
+
+.OrderConfirm .service-tag {
+    font-size: 0.28rem;
+    padding-left: 0.4rem;
+    background: no-repeat left center;
+    background-size: 0.32rem 0.32rem;
+    margin-left: 0.28rem;
+    float: right;
+}
+
+.OrderConfirm .buttons {
+    border-top: 1px solid #eee;
+}
+
+.OrderConfirm .buttons * {
+    float: left;
+}
+
+.OrderConfirm .buttons label {
+    display: block;
+    width: 66.7%;
+    background: #fff;
+    color: #ff4242;
+    font-size: 0.3rem;
+    text-align: right;
+    padding-right: 0.2rem;
+    line-height: 1rem;
+}
+
+.OrderConfirm .buttons a {
+    display: block;
+    width: 33.3%;
+    background: #ff4242;
+    color: #fff;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.OrderConfirm .tag-details {
+    border-bottom: 1px solid #eee;
+    padding: 0.3rem 0.54rem;
+}
+
+.OrderConfirm .tag-details h6 {
+    font-size: 0.26rem;
+}
+
+.OrderConfirm .tag-details p {
+    font-size: 0.26rem;
+    color: #999;
+    margin-top: 0.1rem;
+}
+
+.OrderConfirm .tag-details:last-child {
+    border-bottom: 0;
+}
+
+.OrderConfirm .invoice-details .lines {
+    overflow: hidden;
+}
+
+
+.OrderConfirm .invoice-details .lines * {
+    float: left;
+}
+
+.OrderConfirm .invoice-details .lines li {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding: 0.26rem 0.31rem;
+}
+
+.OrderConfirm .invoice-details .lines li>label {
+    font-size: 0.34rem;
+}
+
+.OrderConfirm .invoice-details .lines li label.top-margin {
+    margin-top: 0.22rem;
+}
+
+.OrderConfirm .invoice-details .lines li>span {
+    float: right;
+    font-size: 0.34rem;
+    padding-right: 0.32rem;
+}
+
+.OrderConfirm .invoice-details .lines li .tags {
+    clear: both;
+    width: 100%;
+    margin-top: 0.26rem;
+}
+
+.OrderConfirm .invoice-details .lines li .tags a {
+    padding: 0.06rem 0.26rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.28rem;
+    margin-right: 0.18rem;
+}
+
+.OrderConfirm .invoice-details .lines li .tags a.active {
+    border-color: #ff4242;
+}
+
+.OrderConfirm .invoice-details .lines li input[type=text] {
+    width: 100%;
+    font-size: 0.28rem;
+    margin-top: 0.22rem;
+    background: #f9f9f9;
+    border: 0;
+    padding: 0.2rem 0.15rem;
+    border-radius: 4px;
+}
+
+.OrderConfirm .invoice-details .lines li a.help {
+    position: absolute;
+    background: no-repeat center;
+    background-size: 0.3rem 0.3rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    display: block;
+    margin-top: 2.1rem;
+    margin-left: 6.4rem;
+}
+
+.OrderConfirm .express-list {
+    background: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.98rem;
+}
+
+.OrderConfirm .express-list * {
+    float: left;
+}
+
+.OrderConfirm .express-list h5 {
+    padding: 0.21rem 0.32rem 0 0.32rem;
+    font-size: 0.36rem;
+    color: #000;
+}
+
+.OrderConfirm .express-list .subtitle {
+    padding: 0 0.32rem 0.24rem 0.32rem;
+    font-size: 0.24rem;
+    color: #999;
+}
+
+.OrderConfirm .express-list .break {
+    width: 100%;
+}
+
+.OrderConfirm .express-list .express-item {
+    border-top: 1px solid #eee;
+}
+
+.OrderConfirm .express-list .express-item h6 {
+    padding: 0.2rem 0.32rem;
+    font-size: 0.32rem;
+    width: 100%;
+}
+
+.OrderConfirm .express-list .express-item .sku-item {
+    border-top: 1px solid #eee;
+    padding: 0.2rem 0.3rem;
+    background: no-repeat left center;
+}
+
+.OrderConfirm .express-list .express-item .sku-item .logo {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.2rem;
+}
+
+.OrderConfirm .express-list .express-item .sku-item .name {
+    width: 4.8rem;
+    font-size: 0.28rem;
+    margin-top: 0.05rem;
+}
+
+.OrderConfirm .express-list .express-item .sku-item .property {
+    width: 4.8rem;
+    font-size: 0.28rem;
+}
+
+.OrderConfirm .express-list .express-item .sku-item .property>span {
+    float: none;
+    color: #666;
+    font-size: 0.24rem;
+}
+
+.OrderConfirm .express-list .express-item .sku-item .price {
+    font-size: 0.28rem;
+    color: #ff4242;
+    margin-top: 0.35rem;
+}
+
+.OrderConfirm .express-list .express-item .sku-item .price>em {
+    font-size: 0.2rem;
+    color: #ff4242;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    /* margin-top: 0.08rem; */
+    margin-right: 0.02rem;
+}
+
+.OrderConfirm .express-list .confirm {
+    height: 0.98rem;
+    background: #ff4242;
+    text-align: center;
+    color: #fff;
+    font-size: 0.28rem;
+    line-height: 0.98rem;
+    display: block;
+    width: 100%;
+}
+
+.OrderConfirm .express-prices {
+    background: #fff;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.OrderConfirm .express-prices h6 {
+    font-size: 0.36rem;
+    padding: 0.4rem 0;
+    width: 100%;
+    text-align: center;
+}
+.OrderConfirm .express-prices .item {
+    padding: 0 0.32rem 0.32rem 0.32rem;
+    overflow: hidden;
+}
+.OrderConfirm .express-prices .item label {
+    width: 20%;
+    display: inline-block;
+    font-size: 0.32rem;
+    float: left;
+}
+.OrderConfirm .express-prices .item .pricesPostage{
+    width: 80%;
+    float: left;
+}
+.OrderConfirm .express-prices .item .postage {
+    width: 60%;
+    display: inline-block;
+    font-size: 0.24rem;
+    text-align: left;
+    padding: 0.04rem 0;
+    color: #999999;
+}
+.OrderConfirm .express-prices .item .price {
+    width: 40%;
+    display: inline-block;
+    font-size: 0.32rem;
+    text-align: right;
+}
+.OrderConfirm .express-prices .item span {
+    width: 80%;
+    display: inline-block;
+    font-size: 0.32rem;
+    text-align: right;
+}
+.OrderConfirm .express-prices .discount-item {
+    margin-bottom: 0.2rem;
+}
+
+.OrderConfirm .express-prices .discount-item label {
+    width: 100%;
+    font-size: 0.3rem;
+    color: #999;
+    text-align: center;
+    display: block;
+}
+
+.OrderConfirm .express-prices .discount-item span {
+    width: 100%;
+    font-size: 0.3rem;
+    color: #999;
+    text-align: center;
+    display: block;
+}
+
+.OrderConfirm .express-prices .confirm {
+    width: 100%;
+    padding: 0.32rem 0;
+    border-top: 1px solid #eee;
+    font-size: 0.32rem;
+    text-align: center;
+    display: block;
+    color: #2fb20a;
+}
+
+.OrderConfirm .payment {
+    background: #fff;
+    width: 100%;
+}
+
+.OrderConfirm .payment .header {
+    width: 100%;
+    text-align: center;
+}
+
+.OrderConfirm .payment .header .close {
+    position: absolute;
+    width: 0.32rem;
+    height: 0.32rem;
+    margin: 0.3rem 0 0 6.8rem;
+    display: block;
+    background: no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.OrderConfirm .payment .header .title {
+    font-size: 0.34rem;
+    line-height: 0.92rem;
+    margin: auto;
+    padding-left: 0.4rem;
+    background: no-repeat left center;
+    background-size: 0.34rem 0.34rem;
+}
+
+.OrderConfirm .payment .header .title span {
+    font-size: 0.34rem;
+    margin-left: 0.37rem;
+}
+
+.OrderConfirm .payment .weixin {
+    line-height: 1.19rem;
+    border-top: 1px solid #eee;
+    width: 100%;
+    display: block;
+    padding-left: 1rem;
+    background: no-repeat 0.24rem center;
+    background-size: 0.54rem 0.54rem;
+}
+
+.OrderConfirm .payment .submit {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 0.3rem;
+    background: #ff4242;
+    color: #fff;
+    line-height: 1rem;
+}
+
+.OrderConfirm .link.invoice {
+    margin-bottom: 1.2rem;
+}
+.OrderConfirm .verify{
+    width: 100%;
+    background: #ffffff;
+}
+.OrderConfirm .verify .header {
+    width: 100%;
+    text-align: center;
+}
+
+.OrderConfirm .verify .header .close {
+    position: absolute;
+    width: 0.32rem;
+    height: 0.32rem;
+    margin: 0.3rem 0 0 6.8rem;
+    display: block;
+    background: no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.OrderConfirm .verify .header .title {
+    font-family: PingFangSC-Medium;
+    font-size: 0.34rem;
+    line-height: 0.92rem;
+    margin: auto;
+    padding-left: 0.4rem;
+    background: no-repeat left center;
+    background-size: 0.34rem 0.34rem;
+}
+.OrderConfirm .verify .reminder{
+    width: 100%;
+    height: 0.32rem;
+}
+.OrderConfirm .verify .reminder .reminderTitle{
+    font-size: 0.32rem;
+    background: no-repeat left center;
+    background-size: 0.32rem 0.32rem;
+    margin-left: 0.31rem;
+    font-family: PingFangSC-Regular;
+    padding-left: 0.41rem;
+}
+.OrderConfirm .verify .message{
+    width: 6.9rem;
+    height: 1.8rem;
+    margin-top: 0.33rem;
+    margin-left: 0.31rem;
+}
+.OrderConfirm .verify .message .messageName,
+.OrderConfirm .verify .message .messageRank
+{
+    width: 100%;
+    height: 0.8rem;
+}
+.OrderConfirm .verify .message .messageRank{
+    margin-top: 0.2rem;
+}
+.OrderConfirm .verify .message .messageName input,
+.OrderConfirm .verify .message .messageRank input
+{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline:none;
+    background:rgba(249,249,249,1);
+    padding: 0.1rem;
+    border-radius: 4px;
+    line-height: 0.8rem;
+}
+.OrderConfirm .verify .message .messageName input::-webkit-input-placeholder,
+.OrderConfirm .verify .message .messageRank input::-webkit-input-placeholder
+{
+    color:#999;
+    font-size: 0.28rem;
+    font-family: PingFangSC-Light;
+}
+.OrderConfirm .verify .introduce{
+    width: 100%;
+    height: 0.26rem;
+    margin-top: 0.25rem;
+}
+.OrderConfirm .verify .introduce .introduceImg{
+    width: 0.32rem;
+    height: 0.32rem;
+    display: inline-block;
+    background: no-repeat left center;
+    background-size: 0.32rem 0.32rem;
+    margin-left: 5.1rem;
+    vertical-align: bottom;
+}
+.OrderConfirm .verify .introduce .introduceTitle{
+    font-size: 0.28rem;
+    background: no-repeat left center;
+    background-size: 0.32rem 0.32rem;
+    margin-left: 5.1rem;
+    font-family: PingFangSC-Regular;
+    padding-left: 0.35rem;
+    color:rgba(153,153,153,1);
+}
+.OrderConfirm .verify .verifyBtn{
+    width: 100%;
+    height: 1rem;
+    font-family: PingFangSC-Light;
+    background: #ff4242;
+    display: inline-block;
+    margin-top: 0.3rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #ffffff;
+    font-size: 0.3rem;
+}
+.OrderConfirm .autonym {
+    background: #fff;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.OrderConfirm .autonym h6 {
+    font-family: PingFangSC-Regular;
+    font-size: 0.36rem;
+    padding: 0.45rem 0 0.4rem 0;
+    width: 100%;
+    text-align: center;
+    margin-left: 0.09rem;
+    font-weight: 600;
+}
+
+.OrderConfirm .autonym .confirm {
+    height: 0.98rem;
+    text-align: center;
+    color: #00C200;
+    font-size: 0.36rem;
+    line-height: 0.98rem;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+}
+.OrderConfirm .autonym ul{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-bottom: 0.4rem;
+}
+.OrderConfirm .autonym ul li{
+    font-family: PingFangSC-Light;
+    font-size: 0.3rem;
+    line-height: 0.42rem;
+}
+.OrderConfirm .autonym ul li:last-child{
+    letter-spacing: 0.08rem;
+}
+.OrderConfirm .promotion-info {
+    width: 5rem;
+    margin-top: 0.2rem;
+}
+.OrderConfirm .icon-promotion {
+    width: .78rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/complimentary@3x.png') no-repeat 0 0;
+    background-size: cover;
+}
+.OrderConfirm .icon-add-price {
+    display: inline-block;
+    vertical-align: middle;
+    width: .82rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/AddPrice@2x.png') no-repeat 0 0;
+    background-size: cover;
+}
+.OrderConfirm .limit-buy-img {
+    float: none;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: .8rem;
+    height: .32rem;
+    background: url('../Home/labal3_xianshigou@2x.png') no-repeat 0 0;
+    background-size: .8rem .32rem;
+    margin-right: .2rem;
+}

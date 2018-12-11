@@ -1,0 +1,732 @@
+.GoodsDetails {
+    background: #fff;
+}
+
+.GoodsDetails .back-home {
+    position: absolute;
+    width: 0.78rem;
+    height: 0.78rem;
+    background: no-repeat top center;
+    background-size: 0.78rem 0.78rem;
+    margin: 0.4rem 0.4rem;
+    z-index: 1;
+}
+
+.GoodsDetails .property-select {
+    background: #fff;
+    padding-top: 0.32rem;
+    border-top: 1px solid #eee;
+}
+
+.GoodsDetails .property {
+    overflow: hidden;
+    padding: 0 0.32rem 0.12rem 0.32rem;
+    white-space: nowrap;
+}
+.GoodsDetails .property-name {
+float: none !important;
+}
+.GoodsDetails .property-img {
+    float: none !important;
+    padding-right: .46rem;
+}
+.GoodsDetails .property * {
+    float: left;
+}
+
+.GoodsDetails .property label {
+    font-size: 0.36rem;
+    opacity: 0.87;
+}
+
+.GoodsDetails .property:first-child label {
+    line-height: 0.8rem;
+}
+
+.GoodsDetails .property a {
+    color: #999;
+    font-size: 0.24rem;
+    display: block;
+    border: 2px solid #eee;
+    margin-left: .4rem;
+    margin-bottom: .2rem;
+}
+
+.GoodsDetails .property:first-child a {
+    padding: 0;
+}
+
+.GoodsDetails .property a.selected {
+    border: 2px solid #ff4242;
+    border-radius: 4px;
+}
+
+.GoodsDetails .property img {
+    height: 0.88rem;
+    width: .88rem;
+}
+
+.GoodsDetails .info {
+    padding: 0 0.32rem 0.32rem 0.32rem;
+    background: #fff;
+    word-break: break-all;
+}
+
+.GoodsDetails .info h4 {
+    font-size: 0.3rem;
+    font-weight: 600;
+}
+
+.GoodsDetails .info .subtitle {
+    font-size: 0.24rem;
+    color: #666;
+}
+
+.GoodsDetails  .info .price-info {
+    margin-top: 0.064rem;
+}
+
+.GoodsDetails .info .vipSale-price{
+    color: #F48F18;
+    font-size: .3rem;
+}
+
+.GoodsDetails  .info .sale-price {
+    color: #ff4242;
+    font-size: .3rem;
+}
+
+.GoodsDetails  .info .price {
+    color: #ccc;
+    text-decoration: line-through;
+    margin-left: 0.096rem;
+    font-size: 0.24rem;
+}
+
+.GoodsDetails .other-info {
+    border-top: 1px solid #eee;
+    overflow: hidden;
+}
+.GoodsDetails .other-info .coupons-type{
+    width: 4rem;
+    margin-left: 0.2rem;
+}
+
+.GoodsDetails .other-info * {
+    float: left;
+}
+
+.GoodsDetails .other-info li {
+    border-bottom: 1px solid #eee;
+    /* padding: 0 0.32rem; */
+    padding-right: 0.32rem;
+    line-height: 0.896rem;
+    width: 100%;
+}
+
+.GoodsDetails .other-info a {
+    width: 100%;
+}
+
+.GoodsDetails .other-info li label {
+    width: 1.76rem;
+    padding-left: 0.32rem;
+}
+
+.GoodsDetails .other-info .arrow {
+    height: 0.24rem;
+    float: right;
+    margin-top: 0.32rem;
+}
+
+.GoodsDetails .tags div {
+    width: 4.9rem;
+    padding: 0.2rem 0 0.2rem 0;
+}
+
+.GoodsDetails .tags span {
+    margin: 0.12rem 0.16rem 0 0;
+    line-height: 0.24rem;
+}
+
+.GoodsDetails .tags span em {
+    font-size: 0.24rem;
+    line-height: 0.24rem;
+}
+
+.GoodsDetails .tags span img {
+    height: 0.24rem;
+    margin-right: 0.064rem;
+}
+
+.GoodsDetails .break {
+    background: #f9f9f9;
+    clear: both;
+    height: 0.16rem;
+}
+
+.GoodsDetails .comments {
+    overflow: hidden;
+}
+
+.GoodsDetails .comments * {
+    float: left;
+    display: block;
+}
+
+.GoodsDetails .comments h5 {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+.GoodsDetails .comments a {
+    width: 100%;
+    font-size: 0.3rem;
+    padding: 0.16rem 0.32rem;
+}
+
+.GoodsDetails .comments .arrow {
+    float: right;
+    height: 0.24rem;
+    margin-top: 0.16rem;
+}
+
+.GoodsDetails .comments .comment {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.GoodsDetails .comments .comment .container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all 0.3s;
+}
+
+.GoodsDetails .comments ul {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.GoodsDetails .comments li {
+    padding: 0.32rem;
+}
+
+.GoodsDetails .comments .avatar {
+    height: 0.58rem;
+    border-radius: 0.58rem;
+}
+
+.GoodsDetails .comments .nickname {
+    font-size: 0.26rem;
+    margin: 0.08rem 0 0 0.256rem;
+}
+
+.GoodsDetails .comments p {
+    width: 3.52rem;
+    font-size: 0.24rem;
+    margin-top: 0.16rem;
+    height: 1.28rem;
+    overflow: hidden;
+    clear: left;
+}
+
+.GoodsDetails .comments .pic {
+    height: 2rem;
+    float: right;
+}
+
+.GoodsDetails .recommends {
+    overflow: hidden;
+}
+
+.GoodsDetails .recommends * {
+    float: left;
+    display: block;
+}
+
+.GoodsDetails .recommends h5 {
+    border-top: 1px solid #eee;
+    width: 100%;
+    font-size: 0.36rem;
+    padding: 0.16rem 0.32rem;
+}
+
+.GoodsDetails .recommends .recommend {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.GoodsDetails .recommends .recommend .container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all 0.3s;
+}
+
+.GoodsDetails .recommends ul {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.GoodsDetails .recommends li {
+    padding: 0 0.11rem;
+}
+
+.GoodsDetails .recommends li a {
+    background: no-repeat top center;
+    background-size: 2.38rem 2.38rem;
+    height: 4rem;
+    display: block;
+}
+
+.GoodsDetails .recommends label {
+    clear: both;
+    width: 2.38rem;
+    font-size: 0.24rem;
+    text-align: center;
+    color: #888;
+    padding: 2.596rem 0.16rem 0.096rem 0.16rem;
+    height: 3.3rem;
+    overflow: hidden;
+}
+
+.GoodsDetails .recommends span {
+    clear: both;
+    width: 2.38rem;
+    font-size: 0.288rem;
+    color: #ff4242;
+    padding: 0 0.16rem;
+    margin-top: 0.16rem;
+    overflow: hidden;
+}
+
+.GoodsDetails .parameters {
+    overflow: hidden;
+}
+
+.GoodsDetails .parameters h5 {
+    border-top: 1px solid #eee;
+    width: 100%;
+    font-size: 0.36rem;
+    padding: 0.16rem 0.32rem;
+}
+
+.GoodsDetails .parameters .table-container {
+    padding: 0 0.256rem;
+}
+
+.GoodsDetails .parameters table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.GoodsDetails .parameters table * {
+    float: none;
+}
+
+.GoodsDetails .parameters td {
+    border: 1px solid #ddd;
+    padding: 0.256rem 0.32rem;
+    font-size: 0.256rem;
+    color: #888;
+}
+
+.GoodsDetails .parameters tr td:first-child {
+    width: 1.7rem;
+}
+
+.GoodsDetails .parameters .pic-container {
+    margin: 0.32rem 0;
+    padding: 0 0.1rem;
+    overflow: hidden;
+}
+
+.GoodsDetails .parameters .pic-container img {
+    width: 100%;
+    float: left;
+}
+
+.GoodsDetails .tabs {
+    margin: auto;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    overflow:hidden;
+}
+
+.GoodsDetails .tabs .tab {
+    float: left;
+    width: 33.3333%;
+}
+
+.GoodsDetails .tabs .tab a {
+    padding: 0.256rem 0;
+    text-align: center;
+    display: block;
+}
+
+.GoodsDetails .tabs .indicator {
+    float: left;
+    width: 33.3333%;
+    height: 2px;
+    background: #ff4242;
+    display: block;
+    transition: margin-left 200ms;
+}
+
+.GoodsDetails .buttons {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    height: .98rem;
+}
+
+.GoodsDetails .buttons a {
+    height:.98rem;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+}
+
+/* .GoodsDetails .buttons .small {
+    width: 20%;
+    padding-top: 0.22rem;
+    background: no-repeat center 0.15rem;
+    background-size: 0.32rem 0.32rem;
+}
+
+.GoodsDetails .buttons .small label {
+    display: block;
+    font-size: 0.288rem;
+    padding-top: 0.3rem;
+} */
+
+.GoodsDetails .buttons .add-cart {
+    width: 30%;
+    background: #000;
+    color: #fff;
+    line-height: .98rem
+}
+
+.GoodsDetails .buttons .buy-now {
+    width: 30%;
+    background: #ff4242;
+    color: #fff;
+    line-height: .98rem
+}
+
+.GoodsDetails .buttons .stock-out {
+    width: 60%;
+    background: #dfdfdf;
+    color: #fff;
+    line-height: .98rem;
+}
+
+.GoodsDetails .final-break {
+    clear: both;
+    height: 1.12rem;
+}
+
+.GoodsDetails .more-parameter {
+    display: block;
+    color: #888;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 0.76rem;
+}
+
+.GoodsDetails .more-parameter img {
+    height: 0.128rem;
+    margin-left: 0.12rem;
+    margin-bottom: 0.032rem;
+}
+
+.GoodsDetails .tag-details {
+    border-bottom: 1px solid #eee;
+    padding: 0.3rem 0.54rem;
+}
+
+.GoodsDetails .tag-details h6 {
+    font-size: 0.26rem;
+}
+
+.GoodsDetails .tag-details p {
+    font-size: 0.26rem;
+    color: #999;
+    margin-top: 0.1rem;
+}
+
+.GoodsDetails .tag-details:last-child {
+    border-bottom: 0;
+}
+
+.GoodsDetails .rule-details {
+    padding: 0 0.54rem 0.3rem 0.54rem;
+}
+.GoodsDetails .rule-details p{
+    font-size: 0.26rem;
+    color: #999;
+    margin-top: 0.1rem;
+}
+.GoodsDetails .rule-details .detailsPostage{
+    font-size: 0.3rem;
+    color: #999;
+    margin-top: 0.1rem;
+}
+.GoodsDetails .rule-details .detailsPostageNext{
+    font-size: 0.26rem;
+    color: #999;
+    margin-top: 0.1rem;
+}
+.GoodsDetails .rule-details .detailsPostage span{
+    font-size: 0.3rem;
+    color: #999;
+}
+.GoodsDetails .rule-details .detailsPostage .PostageNumber{
+    color: #ff4242;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+.GoodsDetails .other-info .number{
+    color: #ff4242;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.GoodsDetails .other-info-promotion{
+    display: inline-block;
+    vertical-align: middle
+}
+
+.GoodsDetails .promotion-root{
+    width: 100%;
+    height: 7.055rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+.GoodsDetails .promotion  *{
+    display: inline-block;
+    vertical-align: middle;
+}
+.GoodsDetails .promotion {
+    width:100%;
+    border-bottom: 1px solid #C8C7CC;
+    padding: .2rem .4rem;
+    font-size: 0;
+}
+.GoodsDetails .promotion-type {
+    display: inline-block;
+    width: .78rem;
+    height: .32rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.GoodsDetails .complimentaryBox{
+    width: 100%;
+}
+.GoodsDetails .complimentaryBox .complimentary-type{
+    display: block;
+    margin-left: 0.1rem;
+    width: 10%;
+    float: left;
+}
+.GoodsDetails .complimentaryBox .complimentary-type span{
+    display: inline-block;
+    width: 100%;
+    height: .32rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.GoodsDetails .complimentaryBox .complimentary-content{
+    width: 88%;
+    float: left;
+}
+.GoodsDetails .complimentaryBox .complimentary-content div{
+    margin-left: 0.2rem;
+}
+.GoodsDetails .promotion .promotion-content {
+    width: 5.2rem;
+    font-size: .26rem;
+    color: #666666;
+    margin-left: .2rem;
+}
+.GoodsDetails .promotion .promotion-content-next{
+    width: 5.1rem;
+    font-size: .26rem;
+    color: #666666;
+    margin-left: .2rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.GoodsDetails .promotion .promotion-arrow {
+    width: .14rem;
+    height: .25rem;
+    object-fit: cover;
+    margin-left: 0.2rem;
+}
+.GoodsDetails .activity-info {
+    padding: .28rem .32rem;
+    font-size: 0.3rem;
+    border-top:1px solid #eee;
+}
+.GoodsDetails .activity-info > .title {
+    width: 1.44rem;
+}
+.GoodsDetails .activity-info > .content{
+    width: 5.4rem;
+}
+.GoodsDetails .activity-info .content .gifts-info,.redemption-info {
+    position: relative;
+    padding-left: .98rem;
+}
+.GoodsDetails .activity-info .content .gifts-info,.complimentary-info {
+    position: relative;
+    padding-left: .98rem;
+}
+.GoodsDetails .activity-info .content .gifts-info::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: .78rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/Group@3x.png') no-repeat 0 0;
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.GoodsDetails .activity-info .content .redemption-info::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: .82rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/AddPrice@2x.png') no-repeat 0 0;
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.GoodsDetails .activity-info .content .complimentary-info::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: .82rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/complimentaryIcon.png') no-repeat 0 0;
+    background-size: cover;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+.GoodsDetails .activity-info .activity-arrow {
+    height: 0.24rem;
+    margin-left: .34rem;
+}
+.GoodsDetails .limit-buy-root {
+    transition:all 200ms;
+    -webkit-transition: all 200ms;
+    width: 100%;
+    height: 1rem;
+    padding: 0 .2rem 0 .3rem;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.GoodsDetails .limit-buy-root .limit-buy-img {
+    width: 1.38rem;
+    height: .24rem;
+    background: url('./label_xianshigou@2x.png') no-repeat 0 0;
+    background-size: cover;
+    display: block;
+    margin-top: .14rem;
+}
+.GoodsDetails .limit-buy-root .limit-buy-time {
+    width:2.28rem;
+    height:.4rem;
+    line-height:.4rem;
+    background: rgba(240, 240, 240, .3);
+    border-radius: .04rem;
+    font-size: .24rem;
+    color: rgb(44, 29, 7);
+    text-align: center;
+}
+.GoodsDetails .limit-buy-root .countdown {
+    line-height: .4rem;
+
+ }
+ .GoodsDetails .limit-buy-root .countdown-title {
+     font-size: .2rem;
+     color:rgb(255, 46, 47);
+     text-align: center;
+ }
+.GoodsDetails .limit-buy-root .countdown > span:nth-child(odd) {
+    display: inline-block;
+ width:.32rem;
+ height: .4rem;
+ border-radius: .04rem;
+ text-align: center;
+ background-color: rgb(255,46,47);
+ font-size: .24rem;
+ color: rgb(255,255,255)
+}
+
+.GoodsDetails .limit-buy-root .countdown > span:nth-child(even) {
+    display: inline-block;
+    width: .3rem;
+    height: .4rem;
+    text-align: center;
+    color: rgb(255,46,47);
+    font-size: .2rem;
+}
+.GoodsDetails .sku-limit-buy{
+display: inline-block;
+vertical-align: middle;
+width: 1.38rem;
+height: .24rem;
+background: url("./label2_xianshigou@2x.png") no-repeat 0 0;
+background-size: cover;
+margin-left: .1rem;
+}
+.GoodsDetails .tab-bar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13.333%;
+    height: .98rem;
+    text-align: center;
+}
+.GoodsDetails .tab-bar> img {
+    display: block;
+    width: .32rem;
+    height: .32rem;
+    margin: .14rem auto;
+}
+
+.GoodsDetails .promotion-info{
+    width: 4.9rem;
+    float: left;
+    color: #666666;
+    margin-top: 0.2rem;
+}
+
+.GoodsDetails .promotionBox{
+    margin-bottom: 0.2rem;
+}
+.GoodsDetails .other-info li .complimentaryBox{
+    width: 100%;
+}
+.GoodsDetails .other-info li .complimentaryImg{
+    width: 1rem;
+    padding: 0.25rem 0;
+}
+.GoodsDetails .other-info li .complimentaryImg img{
+    width: 100%;
+}

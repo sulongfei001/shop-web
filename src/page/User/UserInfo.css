@@ -1,0 +1,74 @@
+.UserInfo {
+
+}
+
+.UserInfo .line {
+    background: #fff no-repeat right 0.2rem center;
+    background-size: 0.16rem 0.25rem;
+    padding: 0.3rem;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.UserInfo .line.margin {
+    margin-top: 0.2rem;
+    border-top: 1px solid #ddd;
+}
+
+.UserInfo .avatar {
+    float: left;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: no-repeat center;
+    background-size: 1.4rem 1.4rem;
+    border-radius: 1.4rem;
+}
+
+.UserInfo .nickname {
+    float: left;
+    margin: 0.5rem 0 0 0.2rem;
+    font-size: 0.3rem;
+}
+
+.UserInfo .line-label {
+    float: left;
+    font-size: 0.3rem;
+    width: 30%;
+}
+
+.UserInfo .line-content {
+    float: left;
+    font-size: 0.3rem;
+    color: #666;
+    width: 70%;
+    text-align: right;
+    padding: 0 0.2rem 0 0;
+}
+
+.UserInfo .line-content input[type=text] {
+    border: 0;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.UserInfo .submit {
+    display: block;
+    margin: 0 0.5rem 0.2rem 0.5rem;
+    text-align: center;
+    padding: 0.24rem 0;
+    background: #ff4242;
+    font-size: 0.3rem;
+    border-radius: 0.06rem;
+    color: #fff;
+}
+
+.UserInfo .genders {
+    background: #fff;
+}
+
+.UserInfo .genders a {
+    display: block;
+    padding: 0.25rem 0.15rem;
+}

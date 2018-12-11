@@ -1,0 +1,49 @@
+.DatePicker {
+
+}
+
+.DatePicker .menu {
+    background: #ff4242;
+    padding: 0 0.2rem;
+    overflow: hidden;
+}
+
+.DatePicker .menu a {
+    color: #fff;
+    font-size: 0.28rem;
+    padding: 0.16rem 0;
+}
+
+.DatePicker .cancel {
+    float: left;
+}
+
+.DatePicker .confirm {
+    float: right;
+}
+
+.DatePicker .content {
+    background: #fff;
+    overflow: hidden;
+    padding: 0.2rem 0.8rem;
+}
+
+.DatePicker .years {
+    float: left;
+    width: 33.3333%;
+    padding: 0 0.2rem 0 0;
+    border-right: 1px solid #ccc;
+}
+
+.DatePicker .months {
+    padding: 0 0.2rem;
+    width: 33.3333%;
+    float: left;
+}
+
+.DatePicker .days {
+    padding: 0 0.2rem;
+    width: 33.3333%;
+    float: left;
+    border-left: 1px solid #ccc;
+}

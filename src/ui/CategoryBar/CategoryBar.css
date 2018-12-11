@@ -1,0 +1,62 @@
+.CategoryBar {
+    width: 100%;
+    background: #fff;
+    overflow: auto;
+}
+
+.CategoryBar * {
+    display: block;
+}
+
+.CategoryBar ul {
+    overflow-x: auto;
+    padding: 0 0.4rem;
+    white-space: nowrap;
+    margin: .4rem 0;
+}
+
+.CategoryBar li {
+    text-align: center;
+    display: inline-block;
+    font-size: 0;
+
+}
+.CategoryBar li:nth-child(n+1) {
+    margin-right: .53rem;
+}
+.CategoryBar li:last-child{
+    margin-right: 0;
+}
+.CategoryBar li img {
+    width: .76rem;
+    height:.76rem;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: .1rem;
+}
+
+.CategoryBar .grid li a {
+    width: 100%;
+}
+
+.CategoryBar label {
+    font-size: 0.26rem;
+    color: #999;
+    padding-top: 1.12rem;
+    clear: both;
+}
+
+.CategoryBar span {
+    display: block;
+    font-size: .26rem;
+    color: #000000;
+    letter-spacing: 0;
+    height: .26rem;
+}
+.CategoryBar span {
+    display: block;
+    font-size: .26rem;
+    color: #000000;
+    letter-spacing: 0;
+    height: .26rem;
+}

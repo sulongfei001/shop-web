@@ -1,0 +1,46 @@
+.EditNickname {
+
+}
+
+.EditNickname .line {
+    background: #fff no-repeat right 0.2rem center;
+    background-size: 0.16rem 0.25rem;
+    padding: 0.3rem;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.EditNickname .line-label {
+    float: left;
+    font-size: 0.3rem;
+    width: 30%;
+}
+
+.EditNickname .line-content {
+    float: left;
+    font-size: 0.3rem;
+    color: #666;
+    width: 70%;
+    text-align: right;
+    padding: 0 0.2rem 0 0;
+}
+
+.EditNickname .line-content input[type=text] {
+    border: 0;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    text-align: right;
+}
+
+.EditNickname .submit {
+    display: block;
+    margin: 0 0.5rem 0.2rem 0.5rem;
+    text-align: center;
+    padding: 0.24rem 0;
+    background: #ff4242;
+    font-size: 0.3rem;
+    border-radius: 0.06rem;
+    color: #fff;
+}

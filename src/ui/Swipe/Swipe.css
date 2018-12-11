@@ -1,0 +1,47 @@
+.Swipe {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.Swipe .container {
+    overflow-x: hidden;
+    float: left;
+    transition: all 0.3s;
+}
+
+.Swipe .container::-webkit-scrollbar {
+    display: none;
+}
+
+.Swipe * {
+    float: left;
+    display: block;
+}
+
+.Swipe ul li a {
+    width: 100%;
+}
+
+.Swipe ul img {
+    width: 100%;
+}
+
+.Swipe .dots {
+    margin-top: -0.15rem;
+    z-index: 1;
+    opacity: 0.8;
+    padding-left: 50%;
+}
+
+.Swipe .dot {
+    width: 0.1rem;
+    height: 0.1rem;
+    margin-right: 0.04rem;
+    display: inline-block;
+    border-radius: 0.1rem;
+    background: #ddd;
+}
+
+.Swipe .dot.current {
+    background: #ff4242;
+}

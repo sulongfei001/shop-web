@@ -1,0 +1,29 @@
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: #eee;
+    min-height: 100%;
+}
+
+* {
+    font-family: "PingFangSC-Regular", "Helvetica Neue", "Source Sans Pro", Arial, sans-serif;
+    font-size: 0.32rem;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #000;
+    text-decoration: none;
+}
+
+#root {
+    vertical-align: baseline;
+}
+
+.clear {
+    clear: both;
+}

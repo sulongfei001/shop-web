@@ -1,0 +1,108 @@
+.get-coupons-root {
+  height: 7.05rem;
+  overflow: auto;
+  position: relative;
+}
+.get-coupons-root .get-coupons {
+  width: 100%;
+}
+.get-coupons-root .can-coupons {
+  line-height: 0.88rem;
+  font-size: 0.28rem;
+  color: #000000;
+  letter-spacing: 0.035rem;
+}
+.get-coupons-root .yet-coupons {
+  height: 0.28rem;
+  font-size: 0.28rem;
+  color: #ff4242;
+  letter-spacing: 0.035rem;
+  white-space: nowrap;
+  margin-top: 0.1rem;
+}
+.get-coupons-root .coupons-info {
+  width: 6.7rem;
+  height: 1.245rem;
+  border: 1px solid #979797;
+  border-radius: 0.08rem;
+  font-size: 0;
+}
+.get-coupons-root .item-left,
+.item-center,
+.item-right {
+  height: 1.245rem;
+}
+.get-coupons-root .item-left {
+  width: 1.73rem;
+  border-right: 1px dashed #979797;
+  text-align: center;
+  position: relative;
+}
+.get-coupons-root .item-center {
+  width: 3.11rem;
+  padding: 0.2rem 0 0.2rem 0.1rem;
+}
+.get-coupons-root .ticket-title {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.93rem;
+  line-height: 0.39rem;
+}
+.get-coupons-root .item-price-id {
+  font-size: 0.24rem;
+  color: #000000;
+  letter-spacing: 0.04rem;
+}
+.get-coupons-root .item-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.get-coupons-root .item-price {
+  font-size: 0.48rem;
+  color: #000000;
+  letter-spacing: 0.04rem;
+}
+.get-coupons-root .item-rule {
+  width: 1.73rem;
+}
+.get-coupons-root .item-type,
+.item-time {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.get-coupons-root .item-type {
+  height: 0.39rem;
+}
+.get-coupons-root .item-right {
+  position: relative;
+  width: 1.8rem;
+}
+.get-coupons-root .ticket-type {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.92rem;
+  line-height: 0.39rem;
+  background-color: #ff4242;
+  opacity: 0.4;
+  margin-right: 0.14rem;
+  text-align: center;
+  border-radius: 0.04rem;
+}
+.get-coupons-root .item-btn {
+  display: block;
+  height: 0.5rem;
+  width: 1.3rem;
+  line-height: 0.5rem;
+  text-align: center;
+  border-radius: 0.08rem;
+}
+.get-coupons-root .bac-get {
+  background-color: #f48f18;
+}
+
+.get-coupons-root .bac-use {
+  background-color: #ff4242;
+}

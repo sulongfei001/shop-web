@@ -1,0 +1,66 @@
+.activity_pay_root {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(183, 242, 213, 1);
+    overflow: hidden;
+}
+
+.activity_pay_root .pay_logo {
+    display: block;
+    width: 2.43rem;
+    height: 1.75rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+}
+
+.activity_pay_root .pay_sub_logo {
+    width: 5.97rem;
+    height: 1.42rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: .2rem
+}
+
+.activity_pay_root .pay_content {
+    display: block;
+    width: 3.97rem;
+    height: 5.45rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+}
+
+.activity_pay_root .pay_agree{
+    display: block;
+    width:2.05rem;
+    height: .22rem;
+    margin: 0 auto;
+    margin-top: .9rem;
+}
+.activity_pay_root .pay_confirm {
+    width: 4.76rem;
+    height: .84rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: .28rem
+}
+
+.activity_pay_root .pay_cancel {
+    width: 4.76rem;
+    height: .84rem;
+    line-height: .84rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: .28rem;
+    text-align: center;
+    color: #fff;
+    background: #cccccc;
+    border-radius: .48rem;
+    -webkit-border-radius: .48rem;
+    -moz-border-radius: .48rem;
+    -ms-border-radius: .48rem;
+    -o-border-radius: .48rem;
+}

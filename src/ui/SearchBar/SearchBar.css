@@ -1,0 +1,24 @@
+.SearchBar {
+    background-color: #fff;
+    padding: 0.15rem 0.23rem;
+}
+
+.SearchBar input {
+    width: 100%;
+    border: 0;
+    background: #f3f5f5;
+    font-size: 0.32rem;
+    height: 0.72rem;
+    line-height: 0.72rem;
+    border-radius: 0.36rem;
+    padding-left: 0.72rem;
+    -webkit-appearance: none;
+}
+.SearchBar .icon {
+    position: absolute;
+    margin: 0.18rem 0 0 0.16rem;
+}
+.SearchBar img {
+    width: 0.36rem;
+    height: 0.36rem;
+}

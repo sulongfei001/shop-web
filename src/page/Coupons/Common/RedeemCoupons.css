@@ -1,0 +1,46 @@
+.redeem-coupons {
+  width: 100%;
+  height: 0.88rem;
+  background-color: #eee;
+}
+.redeem-coupons .coupons-code {
+  padding-left: .1rem;
+  box-sizing: border-box;
+  width: 5.7rem;
+  height: 0.62rem;
+  line-height: 0.62rem;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.08rem;
+  margin-top: 0.13rem;
+}
+
+.redeem-coupons .coupons-code::-ms-input-placeholder {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #979797;
+  letter-spacing: -0.8px;
+}
+.redeem-coupons .coupons-code::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #979797;
+  letter-spacing: -0.8px;
+}
+.redeem-coupons .coupons-code::input-placeholder {
+  text-align: center;
+  font-size: 0.24rem;
+  color: #979797;
+  letter-spacing: -0.8px;
+}
+.redeem-coupons .submit {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.62rem;
+  line-height: 0.62rem;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.08rem;
+  margin-top: 0.13rem;
+}

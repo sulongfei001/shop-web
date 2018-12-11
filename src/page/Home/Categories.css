@@ -1,0 +1,62 @@
+.Categories {
+    overflow: hidden;
+}
+
+.Categories .splitter {
+    position: absolute;
+    top: 1.03rem;
+    left: 1.62rem;
+    width: 1px;
+    bottom: 1.03rem;
+    background: #dedede;
+}
+
+.Categories .category-menu {
+    width: 1.62rem;
+    border-top: 1px solid #dedede;
+    float: left;
+    padding: 0.11rem 0;
+}
+
+.Categories .category-menu a {
+    font-size: 0.28rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0.67rem 0;
+    line-height: 0.5rem;
+}
+
+.Categories .category-menu a.active {
+    border-left: 0.06rem solid #ff4242;
+    color: #ff4242;
+    padding-right: 0.06rem;
+}
+
+.Categories .category-submenu {
+    width: 5.87rem;
+    float: left;
+    border-top: 1px solid #dedede;
+    overflow: hidden;
+}
+
+.Categories .category-submenu .banners {
+    margin: 0.3rem 0.3rem 0 0.3rem;
+}
+
+.Categories .category-submenu h6 {
+    text-align: center;
+    font-size: 0.24rem;
+    margin: 0.4rem 0;
+}
+
+.Categories .category-submenu .menu-item {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    padding-top: 1.24rem;
+    background: no-repeat top center;
+    background-size: 0.94rem 0.94rem;
+    font-size: 0.24rem;
+    margin-bottom: 0.65rem;
+}

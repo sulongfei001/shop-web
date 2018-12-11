@@ -1,0 +1,19 @@
+.ActivityPandect{
+    
+}
+
+.ActivityPandect a{
+    display: block;
+    background: no-repeat;
+    background-size: 100% 100%;
+    height: 2.5rem;
+    margin: 0.4rem 0;
+}
+.ActivityPandect label{
+    display: block;
+    float: left;
+    color: white;
+    margin-top: 1.8rem;
+    margin-left: 0.4rem;
+}
+

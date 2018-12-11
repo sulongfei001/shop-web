@@ -1,0 +1,87 @@
+.GoodsListView {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.GoodsListView h4 {
+    width: 100%;
+    text-align: left;
+    padding: 0.3rem 0.4rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+}
+
+.GoodsListView ul {
+    width: 100%;
+    padding: 0 0.4rem;
+}
+
+.GoodsListView li {
+    width: 3.2rem;
+    margin-bottom: 0.24rem;
+}
+.GoodsListView li:nth-child(odd) {
+    margin-right: .3rem;
+}
+.GoodsListView li a {
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+
+.GoodsListView li  .pic {
+    height: 3.2rem;
+    width: 3.2rem;
+}
+.GoodsListView li  p {
+    text-align: left;
+    width: 100%;
+    /* min-height: .4rem; */
+    /*height: .85rem;*/
+    overflow: hidden;
+    margin: 0.1rem 0;
+    font-size: 0.24rem;
+}
+
+.GoodsListView li em {
+    font-size: 0.24rem;
+    color: #ff4242;
+    margin-top: 0.06rem;
+}
+
+.GoodsListView .info {
+    width: 100%;
+}
+
+.GoodsListView .praise {
+    font-size: 0.26rem;
+    color: #999;
+}
+
+.GoodsListView .price {
+    color: #f00;
+    line-height: .32rem;
+}
+.GoodsListView .color-main{
+    font-size: .24rem;
+}
+.GoodsListView .activity-img {
+    width: .72rem;
+    height: .32rem;
+}
+.GoodsListView .vipPrice{
+    color: #cccccc;
+    line-height: .32rem;
+}
+.GoodsListView .vipColor-main{
+    color: #F48F18;
+    font-size: .3rem;
+}
+.GoodsListView .vipColor-main em{
+    color: #F48F18;
+}
+.GoodsListView .vipColor-main .vipLabel img{
+    width: 0.9rem;
+    margin-left: 0.2rem;
+}

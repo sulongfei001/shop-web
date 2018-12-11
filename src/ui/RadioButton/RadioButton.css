@@ -1,0 +1,25 @@
+.RadioButton {
+    width: 0.9rem;
+    height: 0.5rem;
+    background: #ccc;
+    border-radius: 0.4rem;
+    display: inline-block;
+    transition: background 300ms;
+}
+
+.RadioButton.checked {
+    background: #2fb20a;
+}
+
+.RadioButton .circle {
+    background: #fff;
+    width: 0.46rem;
+    height: 0.46rem;
+    border-radius: 0.46rem;
+    margin: 0.02rem;
+    transition: margin 300ms;
+}
+
+.RadioButton.checked .circle {
+    margin-left: 0.42rem;
+}

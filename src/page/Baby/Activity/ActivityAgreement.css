@@ -1,0 +1,96 @@
+.RegistrationNotice {
+    background: #B7F2D5;
+    padding: 0.38rem 0;
+}
+
+.RegistrationNotice .NoticeClause{
+    margin: 0 0.5rem;
+}
+
+.RegistrationNotice .NoticeClause .ClauseTitle{
+    width: 100%;
+    height: 0.9rem;
+    background: #FF8A02;
+    text-align: center;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.RegistrationNotice .NoticeClause .ClauseTitle span{
+    width: 1.61rem;
+    height: 0.4rem;
+    color: #ffffff;
+    font-size: 0.4rem;
+    display: inline-block;
+    padding-top: 0.2rem;
+}
+.RegistrationNotice .NoticeClause .ClauseContent{
+    width: 100%;
+    background: #ffffff;
+    line-height: 0.35rem;
+    padding: 0.25rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.RegistrationNotice .NoticeClause .ClauseContent p{
+
+font-size:.2rem;
+font-family:MicrosoftYaHei;
+color:rgba(155,155,155,1);
+line-height:.29rem;
+}
+.RegistrationNotice .NoticeClause .ClauseContent p:last-child{
+    margin-left: 3rem;
+}
+.RegistrationNotice .NoticeClause .ClauseContent .contentP{
+    margin-top: 0.29rem;
+}
+.RegistrationNotice .NoticeAgreement{
+    width: 100%;
+    height: 0.3rem;
+    overflow: hidden;
+    line-height: 0.3rem;
+    margin-top: 0.27rem;
+}
+.RegistrationNotice .NoticeAgreement .AgreementBtn{
+    width: 0.24rem;
+    height: 0.24rem;
+    border: 1px solid #cccccc;
+    float: left;
+    margin-left: 2.2rem;
+    background: no-repeat center center;
+    background-size: 0.24rem 0.24rem;
+}
+.RegistrationNotice .NoticeAgreement .AgreementTitle{
+    height: 0.25rem;
+    float: left;
+    font-size: 0.24rem;
+    margin-left: 0.25rem;
+    color: #666666;
+}
+.RegistrationNotice .NoticeButtonSelected{
+    width: 4.76rem;
+    height: 0.84rem;
+    background: url('../img/yuedubingtongyi.png') no-repeat 0 0;
+    background-size: 4.76rem .84rem;
+    border-radius: 0.66rem;
+    text-align: center;
+    line-height: 0.84rem;
+    margin-left: 1.38rem;
+    margin-top: 0.2rem;
+}
+.RegistrationNotice .NoticeButtonSelected span{
+    color: #ffffff;
+}
+.RegistrationNotice .NoticeButton{
+    width: 4.76rem;
+    height: 0.84rem;
+    background: #cccccc;
+    border-radius: 0.66rem;
+    text-align: center;
+    line-height: 0.84rem;
+    margin-left: 1.38rem;
+    margin-top: 0.2rem;
+}
+.RegistrationNotice .NoticeButton span{
+    font-size: 0.33rem;
+    color: #ffffff;
+}

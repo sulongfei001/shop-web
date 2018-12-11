@@ -1,0 +1,209 @@
+.OrderDetails {
+
+}
+
+.OrderDetails .order-header {
+    width: 100%;
+    display: block;
+    background: #ff4242 no-repeat right 0.28rem center;
+    background-size: 0.16rem 0.25rem;
+}
+
+
+.OrderDetails .order-header h6 {
+    color: #fff;
+    font-size: 0.32rem;
+    padding: 0.3rem 0.28rem 0.2rem 0.28rem;
+}
+
+.OrderDetails .order-header label {
+    font-size: 0.26rem;
+    color: #fff;
+    padding: 0 0.28rem;
+    width: 100%;
+    display: block;
+}
+
+.OrderDetails .order-header span {
+    width: 100%;
+    display: block;
+    padding: 0.12rem 0.28rem 0.24rem 0.28rem;
+    color: #fff;
+    font-size: 0.24rem;
+}
+
+.OrderDetails .order-address {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0.2rem 0;
+}
+
+.OrderDetails .order-address label {
+    width: 100%;
+    display: block;
+    margin-top: 0.1rem;
+    padding: 0.1rem 0.28rem 0.1rem 0.66rem;
+    background: no-repeat left 0.28rem center;
+    background-size: 0.24rem 0.32rem;
+    font-size: 0.3rem;
+}
+
+.OrderDetails .order-address span {
+    width: 100%;
+    display: block;
+    padding: 0 0.28rem 0.2rem 0.66rem;
+    font-size: 0.26rem;
+    color: #8e8e8e;
+}
+
+.OrderDetails .order-sku {
+    border-top: 1px solid #ddd;
+    background: #fff;
+    margin-top: 0.2rem;
+}
+
+.OrderDetails .order-sku a {
+    width: 100%;
+    display: block;
+    background: no-repeat left 0.28rem top 0.2rem;
+    height: 2rem;
+    background-size: 1.6rem 1.6rem;
+    padding: 0.2rem 0.28rem 0.2rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.OrderDetails .order-sku a h6 {
+    font-size: 0.26rem;
+    display: block;
+    margin-top: 0.04rem;
+}
+
+.OrderDetails .order-sku a label {
+    font-size: 0.24rem;
+    display: block;
+    margin-top: 0.04rem;
+}
+
+.OrderDetails .order-sku a label em {
+    font-size: 0.24rem;
+    color: #666;
+    margin-left: 0.1rem;
+}
+
+.OrderDetails .order-sku a span em {
+    font-size: 0.2rem;
+    color: #ff4242;
+}
+
+.OrderDetails .order-price {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    margin-top: 0.2rem;
+    overflow: hidden;
+    padding: 0.16rem 0 0 0;
+}
+
+.OrderDetails .order-price label {
+    width: 50%;
+    float: left;
+    color: #999;
+    font-size: 0.26rem;
+    line-height: 0.26rem;
+    padding: 0.1rem 0.28rem;
+}
+
+.OrderDetails .order-price span {
+    width: 50%;
+    float: left;
+    color: #999;
+    font-size: 0.26rem;
+    line-height: 0.26rem;
+    padding: 0.1rem 0.28rem;
+    text-align: right;
+}
+
+.OrderDetails .order-price h6 {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #ddd;
+    font-size: 0.28rem;
+    margin: 0.12rem 0 0 0;
+    padding: 0.2rem 0.28rem;
+    text-align: right;
+}
+
+.OrderDetails .order-price h6 em {
+    color: #ff4242;
+    font-size: 0.3rem;
+}
+
+.OrderDetails .order-info {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    margin: 0.2rem 0 1.2rem 0;
+    padding: 0.2rem 0;
+}
+
+.OrderDetails .order-invoice {
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 0.2rem 0;
+}
+
+.OrderDetails .order-invoice label {
+    padding: 0.1rem 0.28rem;
+    font-size: 0.26rem;
+    line-height: 0.26rem;
+    color: #999;
+    display: block;
+}
+
+.OrderDetails .order-info>label {
+    padding: 0.1rem 0.28rem;
+    font-size: 0.26rem;
+    color: #999;
+    display: block;
+    line-height: 0.26rem;
+}
+
+.OrderDetails .order-buttons {
+    background: #fff;
+    padding: 0.28rem;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+.OrderDetails .order-buttons a {
+    font-size: 0.28rem;
+    padding: 0.1rem 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.04rem;
+    margin-left: 0.2rem;
+}
+
+.OrderDetails .icon-promotion {
+    width: .78rem;
+    height: .32rem;
+    background: url('../Activity/SaleActivity/img/complimentary@3x.png') no-repeat 0 0;
+    background-size: cover;
+}
+
+.OrderDetails .icon-add-price {
+    display: inline-block;
+    vertical-align: middle;
+    width: .82rem;
+    height: .32rem;
+    background: url("../Activity/SaleActivity/img/AddPrice@2x.png") no-repeat 0 0;
+    background-size: cover;
+}
+.OrderDetails .icon-time-limit {
+    display: inline-block;
+    vertical-align: middle;
+    width:.82rem;
+    height:.32rem;
+    background: url('../Home/labal3_xianshigou@2x.png') no-repeat 0 0;
+    background-size: .82rem .28rem;
+}

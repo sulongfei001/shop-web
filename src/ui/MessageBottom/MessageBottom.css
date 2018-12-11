@@ -1,0 +1,41 @@
+.MessageBottom {
+    border-top: 1px solid #ccc;
+    background: #fff;
+}
+
+.MessageBottom .close {
+    float: right;
+    margin: 0.3rem 0.3rem 0 0;
+    width: 0.36rem;
+    height: 0.36rem;
+    display: block;
+    background: no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.MessageBottom .title{
+    text-align: center;
+    padding-top: 0.3rem;
+    padding-left: 0.66rem;
+    font-size: 0.36rem;
+    color: #999;
+    display: block;
+}
+
+.MessageBottom .left-title {
+    line-height: .98rem;
+    border-bottom: 1px solid #C8C7CC;
+    font-size: .32rem;
+    color: #000000;
+    letter-spacing: .04rem;
+    padding-left: .4rem;
+}
+.MessageBottom .confirm {
+    height: 0.98rem;
+    background: #ff4242;
+    text-align: center;
+    color: #fff;
+    font-size: 0.28rem;
+    line-height: 0.98rem;
+    display: block;
+}

@@ -1,0 +1,148 @@
+.ActivityList{
+    width: 100%;
+    height: 100%;
+    background: #D4F2FF;
+}
+
+.ActivityList .title {
+    height: 2.11rem;
+    background: no-repeat center center;
+    background-size: 5.61rem 2.11rem;
+    margin: 0 0 0.3rem 0;
+}
+
+.ActivityList .SessionContent{
+    margin:0 0.49rem 0 0.49rem;
+}
+.ActivityList .SessionContent .ContentList{
+    margin-bottom: 0.32rem;
+}
+.ActivityList .SessionContent .ContentList .ListTitle{
+    background: #0D7AC7;
+    border-radius: 0.3rem 0.3rem 0 0;
+    padding: 0.19rem 0.34rem;
+}
+.ActivityList .SessionContent .ContentList .ListTitle h4{
+    font-family: "PingFangSC-Semibold";
+    font-size: 0.35rem;
+    color: #ffffff;
+    display: block;
+}
+.ActivityList .SessionContent .ContentList .ListTitle span {
+    font-size: 0.28rem;
+    color: #fff;
+    display: block;
+}
+.ActivityList .SessionContent .ContentList .ListChange{
+    width: 100%;
+    background: #ffffff;
+    padding: 0.2rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.ActivityList .SessionContent .ContentList .ListChange .ChangeOption{
+    width: 5.84rem;
+    height: auto;
+    margin-left: 0.16rem;
+    padding: 0  0.2rem 0.06rem 0.2rem;
+    overflow: hidden;
+}
+.ActivityList .splitter {
+    height: 1px;
+    background: #979797;
+    transform: scaleY(0.5);
+}
+.ActivityList .SessionContent .ContentList .ListChange .ChangeOption .Option{
+    width: 50%;
+    height: 0.35rem;
+    float: left;
+    margin-bottom: 0.24rem;
+}
+.ActivityList .SessionContent .ContentList .ListChange .ChangeOption .Option span{
+    margin-right: 0.15rem;
+    font-size: 0.28rem;
+}
+.ActivityList .SessionContent .ContentList .ListChange .ChangeOption .Option .next{
+    color: #FF7502;
+}
+.ActivityList .SessionContent .ContentList .ListChange .ChangeOption .Option .changeOption{
+    width: 0.25rem;
+    height: 0.25rem;
+    display: inline-block;
+    border-radius: 0.125rem;
+    border: 0.01rem solid #979797;
+}
+.ActivityList .SessionContent .ContentList .ListChange .ChangeOption .Option .changeOptionNext{
+    width: 0.25rem;
+    height: 0.25rem;
+    display: inline-block;
+    background: #FF7502;
+    border-radius: 0.125rem;
+    border: 0.01rem solid #979797;
+}
+.ActivityList .SessionContent .ContentList .ListChange .ChangeDate{
+    width: 100%;
+    height: 0.51rem;
+}
+.ActivityList .SessionContent .ContentList .ListChange .ChangeDate p{
+    font-size: 0.28rem;
+    color: #9B9B9B;
+    padding-top: 0.165rem;
+    margin-left: 0.16rem;
+    font-weight: 600;
+}
+.ActivityList .SessionReminder{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.ActivityList .SessionReminder p{
+    font-size: 0.25rem;
+    color: #005693;
+    font-weight: 600;
+}
+.ActivityList .SessionButton{
+    width: 100%;
+    height: 1.6rem;
+    background: #D4F2FF;
+    padding-top: 0.5rem;
+}
+.ActivityList .SessionButton .btn{
+    width: 4.76rem;
+    height: 0.84rem;
+    background: #F6A623;
+    text-align: center;
+    display: block;
+    font-size: 0.33rem;
+    margin-left: 1.37rem;
+    border-radius: 0.66rem;
+    line-height: 0.84rem;
+    color: #ffffff;
+}
+.ActivityList .SessionAnnotation{
+    width: 100%;
+    height: 0.5rem;
+    background: #D4F2FF;
+    text-align: center;
+}
+.ActivityList .SessionAnnotation p{
+    font-size: 0.24rem;
+    color: #666666;
+}
+.ActivityList .unclickable{
+    background: #999999;
+    width: 0.25rem;
+    height: 0.25rem;
+    display: inline-block;
+    border-radius: 0.125rem;
+    border: 0.01rem solid #979797;
+}
+.ActivityList .SessionChange{
+    width: 100%;
+}
+.ActivityList .SessionChange div{
+    width:100%;
+    height: 1px;
+    background: #D4F2FF;
+}
+
+

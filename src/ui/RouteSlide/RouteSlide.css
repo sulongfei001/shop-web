@@ -1,0 +1,21 @@
+.route-slide-enter {
+    opacity: 0.8;
+    transform: translateX(7.5rem);
+}
+
+.route-slide-enter.route-slide-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 230ms ease-in;
+}
+
+.route-slide-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.route-slide-exit.route-slide-exit-active {
+    opacity: 0.1;
+    transform: translateY(5rem);
+    transition: all 230ms ease-in;
+}

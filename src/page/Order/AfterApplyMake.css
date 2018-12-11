@@ -1,0 +1,225 @@
+.AfterApplyMake {
+
+}
+
+.AfterApplyMake .sku {
+    background: #fff;
+    padding: 0.2rem;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.AfterApplyMake .sku .logo {
+    width: 1.64rem;
+    height: 1.64rem;
+    float: left;
+    background: no-repeat top center;
+    background-size: 1.64rem 1.64rem;
+    margin-right: 0.2rem;
+}
+
+.AfterApplyMake .sku h6 {
+    font-size: 0.28rem;
+    float: left;
+    width: 5rem;
+}
+
+.AfterApplyMake .sku label {
+    font-size: 0.26rem;
+    float: left;
+    width: 5rem;
+}
+
+.AfterApplyMake .sku label em {
+    font-size: 0.26rem;
+    color: #666;
+    margin-left: 0.1rem;
+}
+
+.AfterApplyMake .sku span {
+    font-size: 0.3rem;
+    color: #ff4242;
+    float: left;
+    margin-top: 0.2rem;
+}
+
+.AfterApplyMake .sku span em {
+    font-size: 0.24rem;
+    color: #ff4242;
+}
+
+.AfterApplyMake .reason {
+    padding: 0.2rem 0.24rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    background: #fff no-repeat right 0.28rem center;
+    background-size: 0.16rem 0.25rem;
+    overflow: hidden;
+    margin: 0.2rem 0 0 0;
+}
+
+.AfterApplyMake .reason label {
+    width: 50%;
+    float: left;
+    font-size: 0.3rem;
+}
+
+.AfterApplyMake .reason label em {
+    font-size: 0.24rem;
+    color: #ff4242;
+    margin: 0 0.1rem 0 0;
+}
+
+.AfterApplyMake .reason span {
+    width: 50%;
+    float: left;
+    font-size: 0.3rem;
+    text-align: right;
+    padding: 0 0.4rem 0 0;
+    color: #888;
+}
+
+.AfterApplyMake .number {
+    padding: 0.2rem 0.24rem;
+    display: block;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0.2rem 0 0 0;
+    overflow: hidden;
+}
+
+.AfterApplyMake .number label {
+    width: 50%;
+    display: inline-block;
+    font-size: 0.3rem;
+}
+
+.AfterApplyMake .number label em {
+    font-size: 0.24rem;
+    color: #ff4242;
+    margin: 0 0.1rem 0 0;
+}
+
+.AfterApplyMake .number span {
+    width: 50%;
+    display: inline-block;
+    font-size: 0.3rem;
+    text-align: right;
+}
+
+.AfterApplyMake .number span a {
+    font-size: 0.3rem;
+    border: 1px solid #ddd;
+    padding: 0.05rem 0.2rem;
+    border-right: 0;
+}
+
+.AfterApplyMake .number span a.disabled {
+    color: #ddd;
+}
+
+.AfterApplyMake .number span a:first-child {
+    border-top-left-radius: 0.08rem;
+    border-bottom-left-radius: 0.08rem;
+    font-weight: bold;
+}
+
+.AfterApplyMake .number span a:last-child {
+    border-top-right-radius: 0.08rem;
+    border-bottom-right-radius: 0.08rem;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.AfterApplyMake .description {
+    padding: 0.2rem 0.24rem;
+    display: block;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0.2rem 0 0 0;
+    overflow: hidden;
+}
+
+.AfterApplyMake .description label {
+    display: block;
+    font-size: 0.3rem;
+}
+
+.AfterApplyMake .description label em {
+    font-size: 0.24rem;
+    color: #ff4242;
+    margin: 0 0.1rem 0 0;
+}
+
+.AfterApplyMake .description textarea {
+    width: 100%;
+    margin: 0.1rem 0 0 0;
+    height: 2.9rem;
+    background: #f9f9f9;
+    border: 0;
+    font-size: 0.26rem;
+    padding: 0.08rem 0.12rem;
+}
+
+.AfterApplyMake .upload {
+    padding: 0.2rem 0.24rem;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0.2rem 0 1rem 0;
+    overflow: hidden;
+}
+
+.AfterApplyMake .upload label {
+    float: left;
+    font-size: 0.3rem;
+    width: 100%;
+}
+
+.AfterApplyMake .upload .button-upload {
+    float: left;
+    border: 1px dashed #999;
+    padding: 0.9rem 0 0.16rem 0;
+    font-size: 0.28rem;
+    text-align: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.3rem;
+    margin-right: 0.12rem;
+    color: #999;
+    background: no-repeat top 0.36rem center;
+    background-size: 0.4rem 0.38rem;
+}
+
+.AfterApplyMake .upload .pic {
+    float: left;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.3rem;
+    margin-right: 0.12rem;
+    background: no-repeat center;
+    background-size: 1.6rem 1.6rem;
+}
+
+.AfterApplyMake .submit {
+    display: block;
+    padding: 0.2rem 0;
+    margin: 0 0.5rem 0.1rem 0.5rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #fff;
+    background: #ff4242;
+    border-radius: 0.04rem;
+}
+
+.AfterApplyMake .reasons {
+    background: #fff;
+}
+
+.AfterApplyMake .reasons a {
+    display: block;
+    padding: 0.25rem 0.15rem;
+}

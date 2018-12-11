@@ -1,0 +1,155 @@
+
+.BabyInfo {
+    background: #ffffff;
+}
+
+.BabyInfo .baby_sex {
+    width: 100%;
+    text-align: center;
+}
+
+.BabyInfo .baby_sex .sex_title {
+    width: 100%;
+    padding-top: 0.64rem;
+}
+
+.BabyInfo .baby_sex .sex_choose {
+    width: 100%;
+    margin-top: 0.4rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.BabyInfo .baby_sex .sex_choose .choose_one
+{
+    width: 1.8rem;
+    height: 1.8rem;
+    background: no-repeat top center;
+    background-size: 1.8rem 1.8rem;
+    float: left;
+}
+.BabyInfo .baby_sex .sex_choose .choose_one{
+    margin-left: 2.88rem;
+}
+.BabyInfo .baby_photo{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0.3rem;
+    border-bottom: 1px solid #E8E8E8;
+}
+.BabyInfo .baby_photo .photo_title{
+    width: 1.5rem;
+    line-height: 1.64rem;
+    float: left;
+    margin-left: 0.27rem;
+    font-size: 0.32rem;
+    color: #666666;
+}
+.BabyInfo .baby_photo .photo{
+    width: 2rem;
+    overflow: hidden;
+    float: right;
+}
+.BabyInfo .baby_photo .photo_update{
+    width: 1.27rem;
+    height: 1.27rem;
+    background: no-repeat top center;
+    background-size: 1.27rem 1.27rem;
+    float: left;
+    margin-top: 0.18rem;
+    border-radius: 0.1rem;
+    margin-bottom: 0.18rem;
+}
+.BabyInfo .baby_message ul li .changeSex{
+    width: 4.4rem;
+}
+.BabyInfo .baby_message ul li .changeSex select{
+    width: 4.4rem;
+    border: none;
+    outline: none;
+    margin-left: 0.4rem;
+    appearance:none;
+    direction: rtl;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+
+.BabyInfo .baby_message ul li .changeSex select option::-ms-expand{
+    display: none;
+}
+.BabyInfo .baby_message ul li .changeSex select option{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    appearance:none;
+}
+.BabyInfo .baby_message{
+    width: 100%;
+}
+.BabyInfo .baby_message ul{
+    width: 100%;
+}
+.BabyInfo .baby_message ul li{
+    width: 100%;
+    height: 0.92rem;
+    line-height: 0.92rem;
+    border-bottom: 1px solid #E8E8E8;
+}
+.BabyInfo .baby_message ul li span{
+    width: 1.5rem;
+    margin-left: 0.27rem;
+    display: inline-block;
+    color: #666666;
+}
+.BabyInfo .baby_message ul li .content{
+    width: 4.6rem;
+    border: none;
+    outline: none;
+    text-align: right;
+    margin-left: 0.4rem;
+}
+.BabyInfo .baby_message ul li .arrows{
+    width: 1.6rem;
+    float: right;
+    background: no-repeat right center;
+    background-size: 0.16rem 0.25rem;
+    margin-right: 0.3rem;
+    overflow: hidden;
+}
+.BabyInfo .baby_message ul li .arrows span{
+    width: 1rem;
+    color: #000000;
+    margin-right: 0.3rem;
+    font-size: 0.32rem;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #B2B2B2;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#B2B2B2;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:#B2B2B2;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:#B2B2B2;
+}
+.BabyInfo .baby_empty{
+    width: 100%;
+    height: 2.79rem;
+}
+.BabyInfo .button-save {
+    line-height: 0.98rem;
+    color: #fff;
+    text-align: center;
+    background: #e2041b;
+}
+.BabyInfo .baby_save_btn {
+    width: 100%;
+    background: #E2041B;
+    text-align: center;
+}
+.BabyInfo .baby_save_btn span{
+    line-height: 0.98rem;
+    font-size: 0.32rem;
+    color: #ffffff;
+}

@@ -1,0 +1,90 @@
+.OrderCreateComment {
+    background: #fff;
+    padding: 0.2rem;
+    overflow: auto;
+}
+
+.OrderCreateComment .logo {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+}
+
+.OrderCreateComment .label-rate {
+    float: left;
+    margin: 0.3rem 0 0 0.2rem;
+    width: 4rem;
+}
+
+.OrderCreateComment .rate {
+    float: left;
+    margin: 0.2rem 0 0 0.18rem;
+    overflow: hidden;
+}
+
+.OrderCreateComment .rate a {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.38rem;
+    margin-right: 0.25rem;
+    background: no-repeat center;
+    background-size: 0.4rem 0.38rem;
+}
+
+.OrderCreateComment textarea {
+    width: 100%;
+    background: #f9f9f9;
+    border: 0;
+    height: 2.7rem;
+    border-radius: 0.04rem;
+    float: left;
+    padding: 0.08rem 0.18rem;
+    font-size: 0.28rem;
+    margin-top: 0.2rem;
+}
+
+.OrderCreateComment .content-hint {
+    float: left;
+    width: 100%;
+    text-align: right;
+    color: #999;
+    padding-right: 0.2rem;
+    margin-top: -0.6rem;
+    font-size: 0.3rem;
+}
+
+.OrderCreateComment .comment-pic {
+    float: left;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.3rem;
+    margin-right: 0.16rem;
+    background: no-repeat center;
+    background-size: 1.6rem 1.6rem;
+}
+
+.OrderCreateComment .button-upload {
+    float: left;
+    border: 1px dashed #999;
+    padding: 0.9rem 0 0.16rem 0;
+    font-size: 0.28rem;
+    text-align: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.3rem;
+    margin-right: 0.2rem;
+    color: #999;
+    background: no-repeat top 0.36rem center;
+    background-size: 0.4rem 0.38rem;
+}
+
+.OrderCreateComment .button-submit {
+    display: block;
+    margin: 0 0.5rem 0.2rem 0.5rem;
+    text-align: center;
+    padding: 0.24rem 0;
+    background: #ff4242;
+    font-size: 0.3rem;
+    border-radius: 0.06rem;
+    color: #fff;
+}

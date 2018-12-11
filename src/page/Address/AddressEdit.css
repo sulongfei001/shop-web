@@ -1,0 +1,65 @@
+.AddressEdit {
+
+}
+
+.AddressEdit ul {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+
+.AddressEdit ul>li {
+    border-top: 0;
+    border-bottom: 1px solid #eee;
+    padding: 0 0.22rem;
+    background: #fff;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.AddressEdit ul>li>label {
+    padding: 0.22rem 0;
+    font-size: 0.32rem;
+    display: inline-block;
+    vertical-align: middle;
+    width: 2rem;
+}
+
+.AddressEdit ul>li>input[type=text], .AddressEdit ul>li>input[type=tel], .AddressEdit ul>li>input[type=number]{
+    width: 5rem;
+    padding: 0.22rem;
+    border: 0;
+    background: #fff;
+    font-size: 0.32rem;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.AddressEdit ul>li>a.district {
+    padding: 0.22rem 0;
+    background: no-repeat right center;
+    background-size: 0.2048rem 0.32rem;
+    display: block;
+    width: 100%;
+}
+
+.AddressEdit a.default {
+    margin-left: 0.22rem;
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    display: block;
+    font-size: 0.32rem;
+    background: no-repeat left center;
+    background-size: 0.28rem 0.28rem;
+}
+
+.AddressEdit a.save {
+    display: block;
+    margin: 0.22rem 0.32rem;
+    background: #ff4242;
+    color: #fff;
+    font-size: 0.32rem;
+    text-align: center;
+    padding: 0.18rem 0;
+    border-radius: 4px;
+}

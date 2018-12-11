@@ -1,0 +1,19 @@
+.Picker {
+
+}
+
+.Picker .picker-item {
+    text-align: center;
+}
+
+.Picker .cursor_top {
+    height: 1px;
+    background: #ff4242;
+    margin-bottom: -1px;
+}
+
+.Picker .cursor_bottom {
+    height: 1px;
+    background: #ff4242;
+    margin-bottom: -1px;
+}

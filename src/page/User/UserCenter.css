@@ -1,0 +1,116 @@
+.UserCenter {
+
+}
+
+.UserCenter .user-info {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    background: #fff no-repeat right 0.3rem center;
+    background-size: 0.16rem 0.25rem;
+    overflow: hidden;
+    padding: 0.35rem 0.3rem;
+}
+
+.UserCenter .user-info>div {
+    width: 1.36rem;
+    height: 1.36rem;
+    float: left;
+    border-radius: 1.36rem;
+    background: no-repeat center;
+    background-size: 1.36rem 1.36rem;
+}
+
+.UserCenter .user-info h6 {
+    font-size: 0.3rem;
+    padding: 0.46rem 0 0.03rem 0.22rem;
+    width: 5rem;
+    float: left;
+}
+
+.UserCenter .user-info label {
+    font-size: 0.24rem;
+    padding-left: 0.22rem;
+    width: 5rem;
+    float: left;
+}
+
+.UserCenter .user-orders {
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0.2rem;
+}
+
+.UserCenter .user-orders .all-order {
+    background: no-repeat right 0.3rem center;
+    background-size: 0.16rem 0.25rem;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.UserCenter .user-orders .all-order label {
+    font-size: 0.3rem;
+    width: 50%;
+    float: left;
+}
+
+.UserCenter .user-orders .all-order label:first-child {
+    padding: 0.24rem 0 0.24rem 0.4rem;
+}
+
+.UserCenter .user-orders .all-order label:nth-child(2) {
+    padding: 0.24rem 0.8rem 0.24rem 0;
+    color: #999;
+    text-align: right;
+}
+
+.UserCenter .user-orders .order-items {
+    overflow: hidden;
+}
+
+.UserCenter .user-orders .order-items a {
+    width: 20%;
+    float: left;
+    height: 1.2rem;
+    background: no-repeat top 0.2rem center;
+    background-size: 0.52rem 0.52rem;
+    text-align: center;
+    padding-top: 0.72rem;
+    font-size: 0.24rem;
+    color: #666;
+}
+
+.UserCenter .user-orders .order-items a em {
+    position: absolute;
+    color: #fff;
+    background: #ff4242;
+    font-size: 0.2rem;
+    line-height: 0.3rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    min-width: 0.3rem;
+    margin: -0.6rem 0 0 -0.26rem;
+}
+
+.UserCenter .user-buttons {
+    margin-top: 0.2rem;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.UserCenter .user-buttons a {
+    display: block;
+    background: no-repeat right 0.3rem center;
+    background-size: 0.16rem 0.25rem;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.UserCenter .user-buttons a label {
+    padding: 0.24rem 0 0.24rem 1.12rem;
+    font-size: 0.3rem;
+    background: no-repeat left 0.4rem center;
+    background-size: 0.4rem 0.4rem;
+    float: left;
+}
