@@ -13,28 +13,30 @@ class ActivityPandect extends Page {
         Screen.loading(true);
     }
 
-    componentDidMount(){
+    componentDidMount() {
         Screen.loading(false);
     }
 
     render() {
         return (
-            <div className="ActivityPandect">
-                <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
-                   <label>即将报名</label>
-                </Link>
-                <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
-                   <label>即将报名</label>
-                </Link>
-                <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
-                   <label>即将报名</label>
-                </Link>
-                <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
-                   <label>即将报名</label>
-                </Link>
-                <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
-                   <label>即将报名</label>
-                </Link>
+            <div>
+                <div className="ActivityPandect">
+                    <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
+                        <label>即将报名</label>
+                    </Link>
+                    <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
+                        <label>即将报名</label>
+                    </Link>
+                    <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
+                        <label>即将报名</label>
+                    </Link>
+                    <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
+                        <label>即将报名</label>
+                    </Link>
+                    <Link to={'/baby/activity/redirect/type1'} style={{ backgroundImage: 'url(' + test + ')' }}>
+                        <label>即将报名</label>
+                    </Link>
+                </div>
             </div>
         );
     };

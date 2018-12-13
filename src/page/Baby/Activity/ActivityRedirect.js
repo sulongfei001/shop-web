@@ -14,7 +14,7 @@ class ActivityRedirect extends Page {
 
     componentDidMount() {
         let { history } = this.props;
-        let partnerId = this.props.match.params.partnerId;
+        let { partnerId, type } = this.props.match.params;
         if (!partnerId) partnerId = 0;
         let organizationContext = OrganizationContext.get();
         organizationContext.organizationId = partnerId;
@@ -22,6 +22,9 @@ class ActivityRedirect extends Page {
         if (!this.checkUserLoggedIn()) {
             return;
         }
+        // TODO:   
+        history.replace("/baby/activity/list_" + type);
+        return;
         let userContext = UserContext.get();
         if (userContext.agreement === undefined) {
             history.replace("/baby/activity/agreement");
@@ -35,7 +38,7 @@ class ActivityRedirect extends Page {
                 if (state === 1) {
                     history.replace("/baby/activity/none");
                 } else if (state === 2) {
-                    history.replace("/baby/activity/list");
+                    history.replace("/baby/activity/list_" + type);
                 } else if (state === 3) {
                     history.replace("/baby/activity/applySuccess");
                 } else if (state === 4) {

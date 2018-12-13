@@ -38,6 +38,7 @@ import ActivityNone from "./page/Baby/Activity/ActivityNone";
 import ApplyAuditions from "./page/Baby/Activity/ApplyAuditions";
 import ApplyAuditionsPass from "./page/Baby/Activity/ApplyAuditionsPass";
 import ActivityList from "./page/Baby/Activity/ActivityList";
+import ActivityList1 from "./page/Baby/Activity/ActivityList1";
 import ApplySuccess from "./page/Baby/Activity/ApplySuccess";
 import ApplyChangeBaby from "./page/Baby/Activity/ApplyChangeBaby";
 import RedirectPage from "./page/Home/RedirectPage";
@@ -70,6 +71,7 @@ class App extends Component {
             //isWeixin: true
         };
         Screen.setInstance(this);
+        console.log("APP构造函数执行完毕");
     }
 
     componentDidMount() {
@@ -147,7 +149,9 @@ class App extends Component {
                             <Route path="/baby/activity/none" component={ActivityNone} />
                             <Route path="/baby/activity/applyAuditions" component={ApplyAuditions} />
                             <Route path="/baby/activity/applyAuditionsPass" component={ApplyAuditionsPass} />
-                            <Route path="/baby/activity/list" component={ActivityList} />
+                            // TODO:
+                            {/* <Route path="/baby/activity/list" component={ActivityList} /> */}
+                            <Route path="/baby/activity/list_type1" component={ActivityList1} />
                             <Route path="/baby/activity/applySuccess" component={ApplySuccess} />
                             <Route path="/baby/activity/applyChangeBaby/:changeId" component={ApplyChangeBaby} />
                             <Route path="/baby/activity/partner/:partnerId" component={ActivityRedirect} />
