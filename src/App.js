@@ -35,11 +35,13 @@ import CustomerService from "./page/User/CustomerService";
 import BabyList from "./page/Baby/BabyList";
 import ActivityAgreement from "./page/Baby/Activity/ActivityAgreement";
 import ActivityNone from "./page/Baby/Activity/ActivityNone";
+import ActivityNone1 from "./page/Baby/Activity/ActivityNone1";
 import ApplyAuditions from "./page/Baby/Activity/ApplyAuditions";
 import ApplyAuditionsPass from "./page/Baby/Activity/ApplyAuditionsPass";
 import ActivityList from "./page/Baby/Activity/ActivityList";
 import ActivityList1 from "./page/Baby/Activity/ActivityList1";
 import ApplySuccess from "./page/Baby/Activity/ApplySuccess";
+import ApplySuccess1 from "./page/Baby/Activity/ApplySuccess1";
 import ApplyChangeBaby from "./page/Baby/Activity/ApplyChangeBaby";
 import RedirectPage from "./page/Home/RedirectPage";
 import UserContext from "./model/UserContext";
@@ -144,17 +146,18 @@ class App extends Component {
                             <Route path="/activity" component={ActivityPandect} />
                             <Route path="/baby/list" component={BabyList} />
                             <Route path="/baby/edit" component={BabyEdit} />
-                            <Route path="/baby/activity/redirect/:type" component={ActivityRedirect} />
-                            <Route path="/baby/activity/agreement" component={ActivityAgreement} />
-                            <Route path="/baby/activity/none" component={ActivityNone} />
+                            <Route path="/baby/activity/agreement/:typeId" component={ActivityAgreement} />
+                            {/* <Route path="/baby/activity/none" component={ActivityNone} /> */}
+                            <Route path="/baby/activity/none_type1" component={ActivityNone1} />
                             <Route path="/baby/activity/applyAuditions" component={ApplyAuditions} />
                             <Route path="/baby/activity/applyAuditionsPass" component={ApplyAuditionsPass} />
                             // TODO:
                             {/* <Route path="/baby/activity/list" component={ActivityList} /> */}
                             <Route path="/baby/activity/list_type1" component={ActivityList1} />
-                            <Route path="/baby/activity/applySuccess" component={ApplySuccess} />
+                            {/* <Route path="/baby/activity/applySuccess" component={ApplySuccess} /> */}
+                            <Route path="/baby/activity/applySuccess_type1" component={ApplySuccess1} />
                             <Route path="/baby/activity/applyChangeBaby/:changeId" component={ApplyChangeBaby} />
-                            <Route path="/baby/activity/partner/:partnerId" component={ActivityRedirect} />
+                            <Route path="/baby/activity/partner/:partnerId/:typeId" component={ActivityRedirect} />
                         </Switch>
                     </div>
                 </Router>

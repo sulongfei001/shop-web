@@ -11,7 +11,7 @@ import FullScreenPage from "../../../ui/FullScreenPage/FullScreenPage";
 import { height } from "window-size";
 // TODO: 习游活动图片标记
 import ICON_ACTIVITY from './xiyou_activity.jpeg'
-class ActivityApply extends Page {
+class ActivityNone extends Page {
     constructor(props) {
         super(props);
         this.state = {};
@@ -74,4 +74,4 @@ class ActivityApply extends Page {
     }
 }
 
-export default ActivityApply;
+export default ActivityNone;

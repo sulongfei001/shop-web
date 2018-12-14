@@ -4,12 +4,12 @@ import Page from "../../../ui/Page/Page";
 import Screen from "../../../utils/Screen";
 import UserContext from "../../../model/UserContext";
 import OrganizationContext from "../../../model/OrganizationContext";
-import ApplySessionTitle1 from "./ApplySessionTitle1.png";
-import ActivityPrompt from "./ActivityPrompt.png";
-import ActivityHelp from "./ActivityHelp.png";
-import ActivityList1BG from './ActivityList1BG.png';
-import ActivityList1Left from "./ActivityList1Left.png";
-import ActivityList1Right from "./ActivityList1Right.png";
+import ApplySessionTitle1 from "../img/ApplySessionTitle1.png";
+import ActivityPrompt from "../img/ActivityPrompt.png";
+import ActivityHelp from "../img/ActivityHelp.png";
+import ActivityList1BG from '../img/ActivityList1BG.png';
+import PhotoDog from "../img/PhotoDog.png";
+import PhotoBalloon from "../img/PhotoBalloon.png";
 import ActivityApi from "../../../api/BabyActivityApi";
 import { Route } from 'react-router-dom';
 import ApplyChangeBaby from "./ApplyChangeBaby";
@@ -61,6 +61,16 @@ class ActivityList1 extends Page {
                             {
                                 auditionItemId: 1,
                                 stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 2,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 3,
+                                stock: 0,
                                 activityDate: "10:30"
                             }
                         ]
@@ -180,9 +190,9 @@ class ActivityList1 extends Page {
         let { auditionList, unBabyShow, changeId, confirm,array, flag } = this.state;
         return (
             <div>
+                <TopTitle title="外景模特报名" onClick={() => { history.goBack(); }} />
                 <FullScreenPage style={{background: '#B7F2D5', zIndex: -1}}/>
                 <div className="ActivityList1" style={{ backgroundImage: 'url(' + ActivityList1BG + ')' }}>
-                    <TopTitle title="外景模特报名" onClick={() => { history.goBack(); }} />
                     <div className="title" style={{ backgroundImage: 'url(' + ApplySessionTitle1 + ')' }} />
                     <div className="SessionContent">
                         {auditionList && auditionList.length > 0 && auditionList.map(audition => {
@@ -248,7 +258,7 @@ class ActivityList1 extends Page {
                                 })
                                 }
                             </div>
-                        <div className="ButtonContainer" style={{ backgroundImage: 'url(' + ActivityList1Right + '),url(' + ActivityList1Left + ')' }}>
+                        <div className="ButtonContainer" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
                             <div className="SessionButton">
                                 <span className="btn" onClick={this.sessionBtn}>提交</span>
                             </div>

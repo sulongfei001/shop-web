@@ -43,7 +43,6 @@
 .ActivityList1 .SessionContent .ContentList .ListChange .ChangeOption{
     width: 5.84rem;
     height: auto;
-    margin-left: 0.16rem;
     padding: 0  0.2rem 0.06rem 0.2rem;
     overflow: hidden;
 }

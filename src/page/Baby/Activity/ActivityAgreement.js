@@ -24,17 +24,20 @@ class ActivityAgreement extends Page {
 
     AgreeProtocol() {
         this.setState({
-            show:!this.state.show
+            show: !this.state.show
         });
     }
 
     AgreementAgree() {
-        let { history } = this.props;
+        let { history, match } = this.props;
+        let { typeId } = this.props.match.params;
+        console.log(this.props.match);
+        console.log(this.typeId)
         let userContext = UserContext.get();
         userContext.agreement = "a";
         UserContext.set(userContext);
         let organizationContext = OrganizationContext.get();
-        history.push("/baby/activity/partner/" + (organizationContext.organizationId ? organizationContext.organizationId : 0));
+        history.push("/baby/activity/partner/" + (organizationContext.organizationId ? organizationContext.organizationId : 0) + "/" + typeId);
     }
 
     render() {
@@ -71,7 +74,7 @@ class ActivityAgreement extends Page {
                             <p>4.3 具体退费规定详见参加报名海选系统内《取消报名须知》</p>
                             <br />
                             <p>5. 本活动最终解释权归《咿呀咿呀》出品方所有。</p>
-                         <p>《咿呀咿呀》感谢您的配合。</p>
+                            <p>《咿呀咿呀》感谢您的配合。</p>
 
                             <p>上海习游文化传播有限公司</p>
                         </div>
