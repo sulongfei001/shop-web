@@ -5,7 +5,7 @@ import Page from "../../../ui/Page/Page";
 import UserContext from "../../../model/UserContext";
 import OrganizationContext from "../../../model/OrganizationContext";
 import ActivityApi from "../../../api/BabyActivityApi";
-import ApplySuccessTitle1 from "../img/ApplySuccessTitle1.png";
+import ApplySuccessTitle from "../img/ApplySuccessTitle1.png";
 import ColourSpot from "../img/ColourSpot.png";
 import PhotoDogBearFlow from "../img/PhotoDogBearFlow.png";
 import ActivityCap from "./ActivityCap.png";
@@ -67,10 +67,10 @@ class ApplySuccess1 extends Page {
         let { history } = this.props;
         return (
             <div>
-                <TopTitle title="外景模特报名" onClick={() => { history.goBack(); }} />
+                <TopTitle title="外景模特报名" onClickBack={() => { history.goBack(); }} />
                 <FullScreenPage style={{ background: '#B7F2D5', zIndex: -1 }} />
                 <div className="ApplySuccess1" style={{ backgroundImage: 'url(' + ColourSpot + ')' }}>
-                    <div className="SuccessTitle" style={{ backgroundImage: 'url(' + ApplySuccessTitle1 + ')' }} />
+                    <div className="SuccessTitle" style={{ backgroundImage: 'url(' + ApplySuccessTitle + ')' }} />
                     <div className="PhotoDogBear" style={{ backgroundImage: 'url(' + PhotoDogBearFlow + ')' }} />
                     <div className="SuccessMessage">
                         <div className="MessageBaby">

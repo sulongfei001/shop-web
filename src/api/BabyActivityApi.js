@@ -24,6 +24,8 @@ class ActivityApi extends Api{
         }, onFail);
     }
     static PassMessage(request, onSuccess, onFail) {
+        // TODO:
+        onSuccess();return;
         HttpClient.post(ROUTE_PREFIX + '/home/successfulGet', request, data => {
             if (!data.babyInfo && onFail) {
                 onFail(SYSTEM_ERROR);

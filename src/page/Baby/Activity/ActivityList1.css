@@ -1,15 +1,28 @@
 .ActivityList1{
+}
+
+.ActivityList1 .BDUp{
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    padding-top: 3.2rem;
+    height: 3.5rem;
+    background:no-repeat top center;
+    background-size: 100% 100%;
+}
+.ActivityList1 .BDMiddle{
+    width: 100%;
+    margin-top: -50px;
+}
+.ActivityList1 .BDMiddle div{
+    width:100%;
+    height: 1px;
+    background: #B7F2D5;
 }
 
 .ActivityList1 .title {
+    position: relative;
     height: 1.4rem;
     background: no-repeat center center;
     background-size: 5rem 1.4rem;
-    margin: 0 0 0.25rem 0;
+    margin: -0.8rem 0 0.25rem 0;
 }
 
 .ActivityList1 .SessionContent{
@@ -25,9 +38,12 @@
 }
 .ActivityList1 .SessionContent .ContentList .ListTitle span img{
     float: right;
-    width: 0.35rem;
-    height: 0.35rem;
+    width: 0.5rem;
+    height: 0.5rem;
     margin-right: 0.4rem;
+    margin-top: -0.05rem;
+    background-color: #02C7BC;
+    border-radius: 50%;
 }
 .ActivityList1 .SessionContent .ContentList .ListTitle span {
     font-size: 0.29rem;
@@ -100,16 +116,20 @@
     color: #005693;
     width: 100%;
     padding-left: 0.4rem;
+    margin-bottom: 0.3rem;
 }
 .ActivityList1 .SessionReminder img{
-    width: 0.4rem;
-    height: 0.4rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #02C7BC;
+    border-radius: 50%;
     transform: translate(-0.4rem,0.12rem);
 }
-.ActivityList1 .ButtonContainer{
+.ActivityList1 .ButtonContainer{    
     background: no-repeat,no-repeat;
-    background-position: left 0 bottom 0.18rem,right 0 bottom 0;
-    background-size: 1.6rem 1.6rem, 1.7rem 1.7rem;
+    background-position: left 0.18rem bottom 0.1rem,right 0.18rem bottom 0;
+    background-size: 1.4rem 1.5rem, 1.4rem 1.5rem;
+    background-color: #B7F2D5;
 }
 .ActivityList1 .SessionButton{
     width: 100%;
@@ -118,7 +138,6 @@
 .ActivityList1 .ButtonContainer .SessionButton .btn{
     width: 4.76rem;
     height: 0.84rem;
-    background: #02C7BC;
     text-align: center;
     display: block;
     font-size: 0.33rem;

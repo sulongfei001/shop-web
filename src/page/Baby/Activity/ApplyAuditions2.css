@@ -1,0 +1,57 @@
+.ApplyAuditions2{
+    padding: 0.9rem 0 0 0;
+}
+.ApplyAuditions2 .AuditionsTitle{
+
+}
+.ApplyAuditions2 .AuditionsTitle .TitleImg{
+    height: 2rem;
+    background: no-repeat center center;
+    background-size: 2.8rem 2rem;
+}
+.ApplyAuditions2 .AuditionsTitle .Title{
+    margin-top: 0.2rem;
+    height: 1.4rem;
+    background: no-repeat center center;
+    background-size: 5rem 1.4rem;
+}
+.ApplyAuditions2 .AuditionsPhoto{
+    margin-top: 0.7rem;
+}
+.ApplyAuditions2 .AuditionsPhoto .PhotoImg{
+    height: 3.5rem;
+    background: no-repeat center center;
+    background-size: 4.1rem 3.5rem;
+}
+.ApplyAuditions2 .AuditionsContent{
+    margin-top: 0.3rem;
+}
+.ApplyAuditions2 .AuditionsContent p{
+    height: 0.4rem;
+    color: #005693;
+    text-align: center;
+    font-size: 0.33rem;
+    font-weight: bold;
+}
+.ApplyAuditions2 .AuditionsButton{
+    margin-top: 0.5rem;
+}
+.ApplyAuditions2 .AuditionsButton span{
+    width: 4.76rem;
+    height: 0.84rem;
+    background: #DB5116;
+    font-family: JCuYuan;
+    color: #ffffff;
+    font-size: 0.33rem;
+    border-radius: 0.66rem;
+    display: block;
+    text-align: center;
+    line-height: 0.84rem;
+    margin-left: 1.38rem;
+}
+.ApplyAuditions2 .footer {
+    font-size: 0.22rem;
+    text-align: center;
+    color: #666666;
+    padding: 1.2rem 0 0.6rem 0;
+}

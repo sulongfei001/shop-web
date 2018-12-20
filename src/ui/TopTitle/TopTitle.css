@@ -17,13 +17,26 @@
 
 .TopTitle .topBack{
     position: absolute;
-    float: left;
+    left: 0;
     width: 20%;
     height: 1rem;
     padding-top: 0.1rem;
 }
 
 .TopTitle .topBack img{
+    width: 0.45rem;
+    height: 0.45rem;
+}
+
+.TopTitle .moreIcon{
+    position: absolute;
+    right: 0;
+    width: 20%;
+    height: 1rem;
+    padding-top: 0.1rem;
+}
+
+.TopTitle .moreIcon img{
     width: 0.45rem;
     height: 0.45rem;
 }

@@ -1,13 +1,14 @@
 import "./ActivityList1.css";
 import React from 'react';
+import { TransitionGroup } from 'react-transition-group';
 import Page from "../../../ui/Page/Page";
 import Screen from "../../../utils/Screen";
 import UserContext from "../../../model/UserContext";
 import OrganizationContext from "../../../model/OrganizationContext";
-import ApplySessionTitle1 from "../img/ApplySessionTitle1.png";
+import ApplySessionTitle from "../img/ApplySessionTitle1.png";
 import ActivityPrompt from "../img/ActivityPrompt.png";
 import ActivityHelp from "../img/ActivityHelp.png";
-import ActivityList1BG from '../img/ActivityList1BG.png';
+import Test from "../img/test1.png";
 import PhotoDog from "../img/PhotoDog.png";
 import PhotoBalloon from "../img/PhotoBalloon.png";
 import ActivityApi from "../../../api/BabyActivityApi";
@@ -16,7 +17,6 @@ import ApplyChangeBaby from "./ApplyChangeBaby";
 import ApplySuccess from "./ApplySuccess";
 import BabyEdit from "../BabyEdit";
 import BabyList from "../BabyList";
-import FixedBottom from "../../../ui/FixedBottom/FixedBottom";
 import TopTitle from '../../../ui/TopTitle/TopTitle';
 import Fade from "../../../ui/Fade/Fade";
 import Confirm from "../../../ui/Confirm/Confirm";
@@ -27,12 +27,20 @@ class ActivityList1 extends Page {
     constructor(props) {
         super(props);
         this.state = {
+            showTitle: false,
+            btn: {
+                style: {
+                    backgroundColor: "#02C7BC",
+                }
+            }
         };
         this.sessionBtn = this.sessionBtn.bind(this);
         this.addTransition = this.addTransition.bind(this);
+        this.topTitleScroll = this.topTitleScroll.bind(this);
         Screen.loading(true);
     }
     componentDidMount() {
+        window.addEventListener("scroll", this.topTitleScroll);
         let { history, match } = this.props;
         if (!UserContext.isLoggedIn(history, match)) {
             return;
@@ -72,6 +80,95 @@ class ActivityList1 extends Page {
                                 auditionItemId: 3,
                                 stock: 0,
                                 activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 4,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 5,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 6,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 7,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 8,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 9,
+                                stock: 0,
+                                activityDate: "10:30"
+                            }
+                        ]
+                    },
+                    {
+                        auditionId: 59,
+                        auditionDetailId: 118,
+                        auditionDate: 1546012800001,
+                        activityEndDate: 1545148800001,
+                        activityDistrictId: 694,
+                        activityDistrictList: ["上海", "长宁区"],
+                        activityAddress: "长宁路1436号3号楼2楼",
+                        babyInfoIds: [18644],
+                        ageStartDate: 1104508800001,
+                        ageEndDate: 1548950399001,
+                        auditionItems: [
+                            {
+                                auditionItemId: 10,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 11,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 12,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 13,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 14,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 15,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 16,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 17,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 18,
+                                stock: 0,
+                                activityDate: "10:30"
                             }
                         ]
                     }
@@ -99,6 +196,9 @@ class ActivityList1 extends Page {
         });
         this.addTransition();
     }
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.topTitleScroll);
+    }
     addTransition() {
         let newArray = [];
         for (let i = 0; i <= 50; i++) {
@@ -107,6 +207,31 @@ class ActivityList1 extends Page {
         }
         this.setState({
             array: newArray
+        });
+    }
+    topTitleScroll() {
+        let { showTitle } = this.state;
+        if (Screen.scrollTop() > 50) {
+            showTitle = true;
+        } else {
+            showTitle = false;
+        }
+        this.setState({
+            showTitle: showTitle
+        });
+    }
+    btnMouseDown = () => {
+        let { btn } = this.state;
+        btn.style.backgroundColor = "#02ADA5";
+        this.setState({
+            btn: btn
+        });
+    }
+    btnMouseUp = () => {
+        let { btn } = this.state;
+        btn.style.backgroundColor = "#02C7BC";
+        this.setState({
+            btn: btn
         });
     }
     sessionBtn() {
@@ -187,13 +312,30 @@ class ActivityList1 extends Page {
 
     render() {
         let { match, history } = this.props;
-        let { auditionList, unBabyShow, changeId, confirm,array, flag } = this.state;
+        let { auditionList, unBabyShow, changeId, confirm, array, btn, showTitle } = this.state;
         return (
             <div>
-                <TopTitle title="外景模特报名" onClick={() => { history.goBack(); }} />
-                <FullScreenPage style={{background: '#B7F2D5', zIndex: -1}}/>
-                <div className="ActivityList1" style={{ backgroundImage: 'url(' + ActivityList1BG + ')' }}>
-                    <div className="title" style={{ backgroundImage: 'url(' + ApplySessionTitle1 + ')' }} />
+                {!showTitle &&
+                    <TopTitle title="外景模特报名" style={{ backgroundColor: "" }} onClickBack={() => { history.goBack(); }} />}
+                <TransitionGroup>
+                    {showTitle && <Fade>
+                        <TopTitle title="外景模特报名" style={{ backgroundColor: "#333333" }} onClickBack={() => { history.goBack(); }} />
+                    </Fade>}
+                </TransitionGroup>
+                <FullScreenPage style={{ background: '#B7F2D5', zIndex: -1 }} />
+                <div className="ActivityList1">
+                    <div className="BDUp" style={{ backgroundImage: 'url(' + Test + ')' }}></div>
+                    <div className="BDMiddle">
+                        {array && array.length > 0 && array.map((v, k) => {
+                            return (
+                                <div key={k} style={{ opacity: v }}>
+
+                                </div>
+                            )
+                        })
+                        }
+                    </div>
+                    <div className="title" style={{ backgroundImage: 'url(' + ApplySessionTitle + ')' }} />
                     <div className="SessionContent">
                         {auditionList && auditionList.length > 0 && auditionList.map(audition => {
                             let activityDistrictAddress = audition.activityDistrictList.length === 1 ? audition.activityDistrictList[0] + audition.activityAddress : audition.activityDistrictList[0] + audition.activityDistrictList[1] + audition.activityAddress;
@@ -240,33 +382,17 @@ class ActivityList1 extends Page {
 
                         )}
                     </div>
-                    {flag &&
-                        <div className="SessionReminder">
-                            <img src={ActivityHelp} onClick={() => { alert("此处跳转页面") }} />需要会员等级达到4级
+                    <div className="SessionReminder">
+                        <img src={ActivityHelp} onClick={() => { alert("此处跳转页面") }} />需要会员等级达到4级
                         </div>
-                    }
-                    <div style={{ height: '51px' }} />
-                    <div style={{ height: '2.1rem' }} />
-                    <FixedBottom>
-                    <div className="SessionChange" id="SessionChange">
-                                {array && array.length > 0 && array.map((v, k) => {
-                                    return (
-                                        <div key={k} style={{ opacity: v }}>
-
-                                        </div>
-                                    )
-                                })
-                                }
-                            </div>
-                        <div className="ButtonContainer" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
-                            <div className="SessionButton">
-                                <span className="btn" onClick={this.sessionBtn}>提交</span>
-                            </div>
-                            <div className="SessionAnnotation">
-                                <p>本次活动最终解释权归“咿呀咿呀”所有</p>
-                            </div>
+                    <div className="ButtonContainer" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
+                        <div className="SessionButton">
+                            <span className="btn" style={btn.style} onClick={this.sessionBtn} onTouchStart={this.btnMouseDown} onTouchEnd={this.btnMouseUp}>提交</span>
                         </div>
-                    </FixedBottom>
+                        <div className="SessionAnnotation">
+                            <p>本次活动最终解释权归“咿呀咿呀”所有</p>
+                        </div>
+                    </div>
                     {unBabyShow &&
                         <Fade>
                             <Confirm title={confirm.title} message={confirm.message} onConfirm={confirm.onConfirm} onCancel={confirm.onCancel} />

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FixedTop from '../FixedTop/FixedTop';
 import back from './back.png';
+import moreIcon from './moreIcon.png';
 
 class TopTitle extends Component {
     constructor(props) {
@@ -14,10 +15,11 @@ class TopTitle extends Component {
 
     render() {
         return (
-            <FixedTop>
+            <FixedTop {...this.props}>
                 <div className="TopTitle">
                     <div className="topTitle">{this.props.title}</div>
-                    <div className="topBack" onClick={this.props.onClick}><img src={back} /></div>
+                    <div className="topBack" onClick={this.props.onClickBack}><img src={back} /></div>
+                    <div className="moreIcon" onClick={this.props.onClickMore}><img src={moreIcon} /></div>
                 </div>
             </FixedTop>
         )

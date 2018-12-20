@@ -29,15 +29,14 @@ class ActivityAgreement extends Page {
     }
 
     AgreementAgree() {
-        let { history, match } = this.props;
-        let { typeId } = this.props.match.params;
-        console.log(this.props.match);
-        console.log(this.typeId)
+        let { history } = this.props;
         let userContext = UserContext.get();
         userContext.agreement = "a";
         UserContext.set(userContext);
         let organizationContext = OrganizationContext.get();
-        history.push("/baby/activity/partner/" + (organizationContext.organizationId ? organizationContext.organizationId : 0) + "/" + typeId);
+        let organizationId = organizationContext.organizationId ? organizationContext.organizationId : 0;
+        let typeId = organizationContext.typeId ? organizationContext.typeId : "type1";
+        history.push("/baby/activity/partner/" + organizationId + "/" + typeId);
     }
 
     render() {

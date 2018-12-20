@@ -1,0 +1,164 @@
+.ApplySuccess5{
+    width: 100%;
+    height: 640px;
+    background: no-repeat;
+    background-position: top 1rem left 0.4rem;
+    background-size: 1.6rem 2rem;
+    padding: 1.25rem 0.46rem 0.6rem 0.46rem;
+}
+.ApplySuccess5 .SuccessTitle{
+    height: 1.4rem;
+    background: no-repeat center center;
+    background-size: 5rem 1.4rem;
+}
+
+.ApplySuccess5 .PhotoDogBear{
+    height: 1rem;
+    background: no-repeat;
+    background-position: bottom -0.05rem right 0.14rem;
+    background-size: 2rem 1rem;
+    margin-top: -0.4rem;
+}
+
+.ApplySuccess5 .SuccessMessage{
+    
+}
+.ApplySuccess5 .SuccessMessage .MessageBaby{
+    height: 1.8rem;
+    background: #5303FF;
+    border-radius: 0.30rem 0.30rem 0 0;
+    position: relative;
+}
+.ApplySuccess5 .SuccessMessage .MessageBaby .TitleCap{
+    width: 1.2rem;
+    height: 1.9rem;
+    background: no-repeat center center;
+    background-size: 1.2rem 1.9rem;
+    margin-left: 0.98rem;
+    position: absolute;
+    left: -0.2rem;
+    top: -1.98rem;
+    z-index: 100;
+}
+.ApplySuccess5 .SuccessMessage .MessageBaby .BabyPhoto{
+    width: 1.65rem;
+    height: 1.65rem;
+    background: no-repeat center center;
+    background-size: 1.65rem 1.65rem;
+    border: 2px solid #19B5F3;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.95rem;
+    top: -0.45rem;
+}
+.ApplySuccess5 .SuccessMessage .MessageBaby .BabyNumber {
+    width: 3rem;
+    height: 0.26rem;
+    position: absolute;
+    left: 0.8rem;
+    top: 1.3rem;
+}
+.ApplySuccess5 .SuccessMessage .MessageBaby .BabyNumber p{
+    font-size: 0.25rem;
+    color: #ffffff;
+ }
+
+.ApplySuccess5 .SuccessMessage .MessageBaby .BabyMessage{
+    width: 3.03rem;
+    height: 1.5rem;
+    margin-left: 2.85rem;
+    padding-top: 0.15rem;
+}
+.ApplySuccess5 .SuccessMessage .MessageBaby .BabyMessage p{
+    font-size: 0.28rem;
+    color: #ffffff;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent{
+    border-radius: 0 0 0.3rem 0.3rem;
+    background: #EEEEEE;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentTitle{
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    background: #C7C261;
+    overflow: hidden;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentTitle label{
+    height: 0.35rem;
+    line-height: 0.35rem;
+    display: block;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentTitle label p:first-child{
+    width: 25%;
+    font-size: 0.2rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    float: left;
+    text-align: right;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentTitle label p:last-child{
+    width: 75%;
+    font-size: 0.2rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    float: left;
+    text-align: left;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentProgram{
+    text-align: center;
+    padding-top: 0.4rem;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentProgram .ProgramTitle{
+    height: 0.53rem;
+    line-height: 0.53rem;
+    background: #C7BD02;
+    border-radius: 0.19rem;
+    padding: 0.05rem 0.15rem;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentProgram .ProgramTitle span{
+    color: #ffffff;
+    font-size: 0.28rem;
+    font-weight: 800;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentPrompt{
+    text-align: center;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentPrompt span{
+    font-size: 0.24rem;
+    font-weight: 500;
+}
+
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentImg{
+    padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent .ContentImg .Img{
+    height: 3rem;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    display: block;
+    border-radius: 0.19rem;
+}
+.ApplySuccess5 .SuccessMessage .MessageContent hr{
+    margin: 0.1rem 0.2rem 0.1rem 0.2rem;
+}
+
+.ApplySuccess5 .SuccessMessage .MessageAddress{
+    overflow: hidden;
+    padding-bottom: 0.2rem;
+}
+.ApplySuccess5 .SuccessMessage .MessageAddress p:first-child{
+    font-size: 0.22rem;
+    margin-left: 0.2rem;
+    color: #005693;
+}
+.ApplySuccess5 .SuccessMessage .MessageAddress p:last-child{
+    font-size: 0.22rem;
+    margin-left: 0.85rem;
+    color: #005693;
+}
+.ApplySuccess5 .footer {
+    font-size: 0.22rem;
+    text-align: center;
+    color: #666666;
+    margin: 0.6rem 0 0 0;
+}

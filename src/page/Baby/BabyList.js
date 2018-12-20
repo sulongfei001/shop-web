@@ -113,7 +113,7 @@ class BabyList extends Page {
                         </div>
                         <FixedBottom>
                         {babyList && babyList.length === maxBaby &&
-                        <Link to={'/baby/activity/redirect'} className="baby_button">去参加活动</Link>
+                        <Link to={'/activity'} className="baby_button">去参加活动</Link>
                         }
                         </FixedBottom>
                     </div>

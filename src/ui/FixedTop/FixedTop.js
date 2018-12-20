@@ -1,5 +1,5 @@
 import './FixedTop.css';
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Screen from "../../utils/Screen";
 
 class FixedTop extends Component {
@@ -9,12 +9,15 @@ class FixedTop extends Component {
     }
 
     componentDidMount() {
+        //this.resize();
+        //window.addEventListener('resize', this.resize);
+    }
+    componentDidUpdate() {
         this.resize();
-        window.addEventListener('resize', this.resize);
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.resize);
+        //window.removeEventListener('resize', this.resize);
     }
 
     resize() {
@@ -25,7 +28,7 @@ class FixedTop extends Component {
 
     render() {
         return (
-            <div className="FixedTop" style={{...this.props.style}} ref={container => this.container = container}>
+            <div className="FixedTop" style={{ ...this.props.style }} ref={container => this.container = container}>
                 {this.props.children}
             </div>
         );

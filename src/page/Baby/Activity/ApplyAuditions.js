@@ -38,7 +38,7 @@ class ApplyAuditions extends Page {
             accessToken: userContext.userToken,
             babyAuditionId: babyAuditionId,
         }, () => {
-            history.push("/baby/activity/redirect");
+            history.push("/activity");
         });
     }
     render() {

@@ -4,7 +4,7 @@
     background: no-repeat;
     background-position: top 1rem left 0.4rem;
     background-size: 1.6rem 2rem;
-    padding: 1.25rem 0.46rem 0 0.46rem;
+    padding: 1.25rem 0.46rem 0.6rem 0.46rem;
 }
 .ApplySuccess1 .SuccessTitle{
     height: 1.4rem;
@@ -52,7 +52,7 @@
     top: -0.45rem;
 }
 .ApplySuccess1 .SuccessMessage .MessageBaby .BabyNumber {
-    width: 2rem;
+    width: 3rem;
     height: 0.26rem;
     position: absolute;
     left: 0.8rem;
@@ -79,29 +79,30 @@
 }
 .ApplySuccess1 .SuccessMessage .MessageContent .ContentTitle{
     padding-top: 0.1rem;
-    padding-left: 0.32rem;
-    line-height: 0.35rem;
     padding-bottom: 0.1rem;
     background: #62C7C1;
     overflow: hidden;
 }
 .ApplySuccess1 .SuccessMessage .MessageContent .ContentTitle label{
-    height: auto;
+    height: 0.35rem;
+    line-height: 0.35rem;
     display: block;
 }
 .ApplySuccess1 .SuccessMessage .MessageContent .ContentTitle label p:first-child{
-    width: 18%;
+    width: 25%;
     font-size: 0.2rem;
     color: #FFFFFF;
     font-weight: 500;
     float: left;
+    text-align: right;
 }
 .ApplySuccess1 .SuccessMessage .MessageContent .ContentTitle label p:last-child{
-    width: 82%;
+    width: 75%;
     font-size: 0.2rem;
     color: #FFFFFF;
     font-weight: 500;
     float: left;
+    text-align: left;
 }
 .ApplySuccess1 .SuccessMessage .MessageContent .ContentProgram{
     text-align: center;
@@ -156,5 +157,6 @@
 .ApplySuccess1 .footer {
     font-size: 0.22rem;
     text-align: center;
-    margin: 0.6rem 0 0.2rem 0;
+    color: #666666;
+    margin: 0.6rem 0 0 0;
 }

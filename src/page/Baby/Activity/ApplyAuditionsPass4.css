@@ -1,0 +1,156 @@
+.ApplyAuditionsPass4{
+    width: 100%;
+    height: 100%;
+    background: no-repeat,no-repeat;
+    background-position: left 0 bottom 0.1rem,right 0 bottom 0.1rem;
+    background-size: 1.4rem 1.5rem, 1.4rem 1.5rem;
+}
+.ApplyAuditionsPass4 .PassEmpty{
+    width: 100%;
+    height:1rem;
+}
+.ApplyAuditionsPass4 .PassTitle{
+    width: 100%;
+    height: 2.5rem;
+    background: no-repeat center center;
+    background-size: 6.8rem 2rem;
+}
+.ApplyAuditionsPass4 .PassMessage{
+    width: 6.52rem;
+    margin-left: 0.46rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageBaby{
+    width: 6.53rem;
+    height: 1.54rem;
+    background: #FF8103;
+    border-radius: 0.3rem 0.3rem 0 0;
+    position: relative;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageBaby .BabyPhoto{
+    width: 1.65rem;
+    height: 1.65rem;
+    background: no-repeat center center;
+    background-size: 1.65rem 1.65rem;
+    border: 2px solid #19B5F3;
+    border-radius: 50%;
+    position: absolute;
+    left: 0.95rem;
+    top: -0.45rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageBaby .BabyMessage{
+    width: 3.03rem;
+    height: 1.5rem;
+    margin-left: 2.85rem;
+    padding-top: 0.15rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageBaby .BabyMessage p{
+    font-size: 0.28rem;
+    color: #ffffff;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent{
+    width: 6.52rem;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentTitle{
+    width: 100%;
+    height: 1.47rem;
+    padding-top: 0.35rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentTitle p{
+    font-family: JCuYuan;
+    font-size: 0.33rem;
+    color: #FF8B22;
+    font-weight: 400;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentReminder{
+    width: 100%;
+    height: 1.9rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentReminder label{
+    width: 100%;
+    height: 0.3rem;
+    display: block;
+    padding-left: 0.3rem;
+    font-size: xx-small;
+    font-weight: bold;
+    text-align: left;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentReminder label p:first-child{
+    width: 60%;
+    float: left;
+    font-size: xx-small;
+    font-weight: bold;
+    font-family: PingFangSC-Regular;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentReminder label p:last-child{
+    width: 40%;
+    float: left;
+    font-size: 0.2rem;
+    font-weight: 500;
+    color: #189FCA;
+    font-family: PingFangSC-Regular;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentProgram{
+    width: 100%;
+    height: 0.9rem;
+    text-align: center;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentProgram .Program{
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentProgram .Program .ProgramTitle{
+    background: #0299C7;
+    border-radius: 0.19rem;
+    padding: 0.05rem 0.1rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentProgram .Program .ProgramTitle span{
+    color: #ffffff;
+    font-size: 0.3rem;
+    font-family: PingFangSC-Medium;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentProgram .Reminder{
+    width: 100%;
+    height: 0.36rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentProgram .Reminder p{
+    font-size: 0.24rem;
+    font-family: PingFangSC-Regular;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentImg{
+    padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent .ContentImg .Img{
+    height: 3rem;
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    display: block;
+    border-radius: 0.19rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageContent hr{
+    margin: 0.1rem 0.2rem 0.1rem 0.2rem;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageAddress{
+    overflow: hidden;
+    padding-bottom: 0.2rem;
+    text-align: left;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageAddress p:first-child{
+    margin-left: 0.2rem;
+    font-size: xx-small;
+    color: #A0A0A0;
+}
+.ApplyAuditionsPass4 .PassMessage .MessageAddress p:last-child{
+    margin-left: 0.2rem;
+    font-size: xx-small;
+    color: #A0A0A0;
+}
+.ApplyAuditionsPass4 .PassAnnotation{
+    margin: 0.8rem 0 0.6rem 0;
+    font-size: 0.22rem;
+    color: #666666;
+    text-align: center;
+}

@@ -1,0 +1,78 @@
+.ActivityNone5{
+    padding: 1.3rem 0.5rem 0.6rem 0.5rem;
+    background: no-repeat,no-repeat;
+    background-position: left 0.18rem bottom 0.1rem,right 0.18rem bottom 0.1rem;
+    background-size: 1.4rem 1.5rem, 1.4rem 1.5rem;
+}
+
+.ActivityNone5 .ActivityIntroduce {
+}
+
+.ActivityNone5 .ActivityIntroduce .IntroduceUp{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #9B9B9B;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.ActivityNone5 .ActivityIntroduce .IntroduceDown{
+    height: 6rem;
+    background-color: #EEEEEE;
+    border-radius: 0 0 0.2rem 0.2rem;
+}
+.ActivityNone5 .VIPIntroduce {
+    margin-top: 1.3rem;
+}
+
+.ActivityNone5 .VIPIntroduce .IntroduceUp{
+    height: 0.9rem;
+    line-height: 0.9rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #9B9B9B;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.ActivityNone5 .VIPIntroduce .IntroduceDown{
+    height: 6rem;
+    background-color: #EEEEEE;
+    border-radius: 0 0 0.2rem 0.2rem;
+}
+
+.ActivityNone5 .ActivityPoster{
+    height: 3.5rem;
+    margin: 0.5rem 0.3rem 0 0.3rem;
+    border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+    background-color: #9B9B9B;
+    -moz-box-shadow:0.13rem 0.13rem 0 #02C7BC, -0.13rem -0.13rem 0 #FF8A02; 
+    -webkit-box-shadow:0.13rem 0.13rem 0 #02C7BC, -0.13rem -0.13rem 0 #FF8A02; 
+    box-shadow:0.13rem 0.13rem 0 #02C7BC, -0.13rem -0.13rem 0 #FF8A02;
+}
+.ActivityNone5 .ActivityPoster img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.ActivityNone5 .ApplyTerrace{
+    height: 2.1rem;
+    margin: 0.5rem 0.2rem 0 0.2rem;
+}
+.ActivityNone5 .ApplyTerrace img{
+    width: 100%;
+    height: 100%;
+}
+
+.ActivityNone5 .PassAnnotation{
+    margin: 0.8rem 0 0 0;
+    font-size: 0.24rem;
+    color: #666666;
+    text-align: center;
+}
+
+
+

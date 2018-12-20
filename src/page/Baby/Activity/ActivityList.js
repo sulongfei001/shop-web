@@ -44,6 +44,129 @@ class ActivityList extends Page {
             accessToken: userContext.userToken,
             mechanismCategoryId: organizationContext.organizationId
         }, data => {
+            data = {
+                flag: true,
+                auditionList: [
+                    {
+                        auditionId: 58,
+                        auditionDetailId: 117,
+                        auditionDate: 1546012800000,
+                        activityEndDate: 1545148800000,
+                        activityDistrictId: 693,
+                        activityDistrictList: ["上海", "长宁区"],
+                        activityAddress: "长宁路1436号3号楼2楼",
+                        babyInfoIds: [18643],
+                        ageStartDate: 1104508800000,
+                        ageEndDate: 1548950399000,
+                        auditionItems: [
+                            {
+                                auditionItemId: 1,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 2,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 3,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 4,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 5,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 6,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 7,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 8,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 9,
+                                stock: 0,
+                                activityDate: "10:30"
+                            }
+                        ]
+                    },
+                    {
+                        auditionId: 59,
+                        auditionDetailId: 118,
+                        auditionDate: 1546012800001,
+                        activityEndDate: 1545148800001,
+                        activityDistrictId: 694,
+                        activityDistrictList: ["上海", "长宁区"],
+                        activityAddress: "长宁路1436号3号楼2楼",
+                        babyInfoIds: [18644],
+                        ageStartDate: 1104508800001,
+                        ageEndDate: 1548950399001,
+                        auditionItems: [
+                            {
+                                auditionItemId: 10,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 11,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 12,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 13,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 14,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 15,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 16,
+                                stock: 0,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 17,
+                                stock: 1,
+                                activityDate: "10:30"
+                            },
+                            {
+                                auditionItemId: 18,
+                                stock: 0,
+                                activityDate: "10:30"
+                            }
+                        ]
+                    }
+                ]
+            }
             let showOption = [];
             let dataMsg = data.auditionList;
             if (dataMsg.length === 0) {
