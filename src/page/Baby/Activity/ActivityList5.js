@@ -196,7 +196,7 @@ class ActivityList5 extends Page {
         });
         this.addTransition();
     }
-    componentWillMount() {
+    componentWillUnmount() {
         window.removeEventListener("scroll", this.topTitleScroll);
     }
     addTransition() {

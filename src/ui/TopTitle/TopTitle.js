@@ -14,12 +14,13 @@ class TopTitle extends Component {
     }
 
     render() {
+        let { onClickBack, onClickMore, title, style } = this.props;
         return (
             <FixedTop>
-                <div className="TopTitle" {...this.props}>
-                    <div className="topTitle">{this.props.title}</div>
-                    <div className="topBack" onClick={this.props.onClickBack}><img src={back} /></div>
-                    <div className="moreIcon" onClick={this.props.onClickMore}><img src={moreIcon} /></div>
+                <div className="TopTitle" style={style}>
+                    <div className="topTitle">{title}</div>
+                    <div className="topBack" onClick={onClickBack}><img src={back} /></div>
+                    <div className="moreIcon" onClick={onClickMore}><img src={moreIcon} /></div>
                 </div>
             </FixedTop>
         )
@@ -27,7 +28,7 @@ class TopTitle extends Component {
 }
 
 TopTitle.propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string.isRequired
 };
 
 TopTitle.defaultProps = {
