@@ -15,8 +15,8 @@ class TopTitle extends Component {
 
     render() {
         return (
-            <FixedTop {...this.props}>
-                <div className="TopTitle">
+            <FixedTop>
+                <div className="TopTitle" {...this.props}>
                     <div className="topTitle">{this.props.title}</div>
                     <div className="topBack" onClick={this.props.onClickBack}><img src={back} /></div>
                     <div className="moreIcon" onClick={this.props.onClickMore}><img src={moreIcon} /></div>

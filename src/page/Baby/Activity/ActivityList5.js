@@ -316,10 +316,10 @@ class ActivityList5 extends Page {
         return (
             <div>
                 {!showTitle &&
-                    <TopTitle title="直播棚录报名" style={{ backgroundColor: "" }} onClickBack={() => { history.goBack(); }} />}
+                    <TopTitle title="直播棚录报名" style={{ backgroundColor: "" , opacity: 0.9}} onClickBack={() => { history.goBack(); }} />}
                 <TransitionGroup>
                     {showTitle && <Fade>
-                        <TopTitle title="直播棚录报名" style={{ backgroundColor: "#333333" }} onClickBack={() => { history.goBack(); }} />
+                        <TopTitle title="直播棚录报名" style={{ backgroundColor: "#333333" , opacity: 0.9}} onClickBack={() => { history.goBack(); }} />
                     </Fade>}
                 </TransitionGroup>
                 <FullScreenPage style={{ background: '#F2E4B8', zIndex: -1 }} />
