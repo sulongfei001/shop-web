@@ -6,7 +6,7 @@ import Screen from "../../../utils/Screen";
 import FullScreenPage from "../../../ui/FullScreenPage/FullScreenPage";
 import TopTitle from '../../../ui/TopTitle/TopTitle';
 import Fade from "../../../ui/Fade/Fade";
-import ApplyTerrace from "../img/ApplyTerrace.png";
+import ApplyTerrace from "../img/ApplyTerrace1.png";
 import PhotoDog from "../img/PhotoDog2.png";
 import PhotoBalloon from "../img/PhotoBalloon2.png";
 import test from "../img/test1.png";

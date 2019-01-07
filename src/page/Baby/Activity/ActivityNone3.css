@@ -48,9 +48,9 @@
     margin: 0.5rem 0.3rem 0 0.3rem;
     border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
     background-color: #9B9B9B;
-    -moz-box-shadow:0.13rem 0.13rem 0 #02C7BC, -0.13rem -0.13rem 0 #FF8A02; 
-    -webkit-box-shadow:0.13rem 0.13rem 0 #02C7BC, -0.13rem -0.13rem 0 #FF8A02; 
-    box-shadow:0.13rem 0.13rem 0 #02C7BC, -0.13rem -0.13rem 0 #FF8A02;
+    -moz-box-shadow:0.13rem 0.13rem 0 #C67202, -0.13rem -0.13rem 0 #03A2FF; 
+    -webkit-box-shadow:0.13rem 0.13rem 0 #C67202, -0.13rem -0.13rem 0 #03A2FF; 
+    box-shadow:0.13rem 0.13rem 0 #C67202, -0.13rem -0.13rem 0 #03A2FF;
 }
 .ActivityNone3 .ActivityPoster img{
     width: 100%;

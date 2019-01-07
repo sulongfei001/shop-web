@@ -25,9 +25,9 @@ class ActivityRedirect extends Page {
             return;
         }
         // TODO:   
-        history.replace("/baby/activity/list_" + typeId);
+        //history.replace("/baby/activity/list_" + typeId);
         //history.replace("/baby/activity/none_" + typeId);
-        //history.replace("/baby/activity/applySuccess_" + typeId);
+        history.replace("/baby/activity/applySuccess_" + typeId);
         //history.replace("/baby/activity/applyAuditionsPass_" + typeId);
         //history.replace("/baby/activity/applyAuditions_" + typeId);
         return;
