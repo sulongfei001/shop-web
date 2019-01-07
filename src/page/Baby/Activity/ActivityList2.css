@@ -131,7 +131,7 @@
     background-size: 1.4rem 1.5rem, 1.4rem 1.5rem;
     background-color: #F2B8B8;
 }
-.ActivityList2 .SessionButton{
+.ActivityList2 .ButtonContainer .SessionButton{
     width: 100%;
     height: 1.3rem;
 }
@@ -162,5 +162,14 @@
     display: inline-block;
     border-radius: 0.125rem;
     border: 0.01rem solid #979797;
+}
+
+.ActivityList2 .SessionChange{
+    width: 100%;
+}
+.ActivityList2 .SessionChange div{
+    width:100%;
+    height: 1px;
+    background: #F2B8B8;
 }
 

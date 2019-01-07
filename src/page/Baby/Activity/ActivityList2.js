@@ -18,6 +18,7 @@ import ApplySuccess from "./ApplySuccess";
 import BabyEdit from "../BabyEdit";
 import BabyList from "../BabyList";
 import TopTitle from '../../../ui/TopTitle/TopTitle';
+import FixedBottom from "../../../ui/FixedBottom/FixedBottom";
 import Fade from "../../../ui/Fade/Fade";
 import Confirm from "../../../ui/Confirm/Confirm";
 import DateFormatterBeijing from "../../../utils/DateFormatterBeijing";
@@ -316,10 +317,10 @@ class ActivityList2 extends Page {
         return (
             <div>
                 {!showTitle &&
-                    <TopTitle title="电视模特报名" style={{ backgroundColor: "" , opacity: 0.9}} onClickBack={() => { history.goBack(); }} />}
+                    <TopTitle title="电视模特报名" style={{ backgroundColor: "", opacity: 0.9 }} onClickBack={() => { history.goBack(); }} />}
                 <TransitionGroup>
                     {showTitle && <Fade>
-                        <TopTitle title="电视模特报名" style={{ backgroundColor: "#333333" , opacity: 0.9}} onClickBack={() => { history.goBack(); }} />
+                        <TopTitle title="电视模特报名" style={{ backgroundColor: "#333333", opacity: 0.9 }} onClickBack={() => { history.goBack(); }} />
                     </Fade>}
                 </TransitionGroup>
                 <FullScreenPage style={{ background: '#F2B8B8', zIndex: -1 }} />
@@ -384,15 +385,29 @@ class ActivityList2 extends Page {
                     </div>
                     <div className="SessionReminder">
                         <img src={ActivityHelp} onClick={() => { alert("此处跳转页面") }} />需要会员等级达到4级
-                        </div>
-                    <div className="ButtonContainer" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
-                        <div className="SessionButton">
-                            <span className="btn" style={btn.style} onClick={this.sessionBtn} onTouchStart={this.btnMouseDown} onTouchEnd={this.btnMouseUp}>提交</span>
-                        </div>
-                        <div className="SessionAnnotation">
-                            <p>本次活动最终解释权归“咿呀咿呀”所有</p>
-                        </div>
                     </div>
+                    <div style={{ height: '51px' }} />
+                    <div style={{ height: '2.1rem' }} />
+                    <FixedBottom>
+                        <div className="SessionChange" id="SessionChange">
+                            {array && array.length > 0 && array.map((v, k) => {
+                                return (
+                                    <div key={k} style={{ opacity: v }}>
+
+                                    </div>
+                                )
+                            })
+                            }
+                        </div>
+                        <div className="ButtonContainer" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
+                            <div className="SessionButton">
+                                <span className="btn" style={btn.style} onClick={this.sessionBtn} onTouchStart={this.btnMouseDown} onTouchEnd={this.btnMouseUp}>提交</span>
+                            </div>
+                            <div className="SessionAnnotation">
+                                <p>本次活动最终解释权归“咿呀咿呀”所有</p>
+                            </div>
+                        </div>
+                    </FixedBottom>
                     {unBabyShow &&
                         <Fade>
                             <Confirm title={confirm.title} message={confirm.message} onConfirm={confirm.onConfirm} onCancel={confirm.onCancel} />

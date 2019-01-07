@@ -1,5 +1,5 @@
 import './FixedBottom.css';
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Screen from "../../utils/Screen";
 
 class FixedBottom extends Component {
@@ -9,12 +9,16 @@ class FixedBottom extends Component {
     }
 
     componentDidMount() {
+        //this.resize();
+        //window.addEventListener('resize', this.resize);
+    }
+
+    componentDidUpdate() {
         this.resize();
-        window.addEventListener('resize', this.resize);
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.resize);
+        //window.removeEventListener('resize', this.resize);
     }
 
     resize() {

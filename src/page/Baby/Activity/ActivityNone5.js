@@ -53,7 +53,7 @@ class ActivityNone5 extends Page {
                         <TopTitle title="直播棚录报名" style={{ backgroundColor: "#333333" , opacity: 0.9}} onClickBack={() => { history.goBack(); }} />
                     </Fade>}
                 </TransitionGroup>
-                <FullScreenPage style={{ background: '#F2E4B8', zIndex: -1 }} />
+                <FullScreenPage style={{ background: '#DCB8F2', zIndex: -1 }} />
                 <div className="ActivityNone5" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
                     <div className="ActivityIntroduce">
                         <div className="IntroduceUp">
