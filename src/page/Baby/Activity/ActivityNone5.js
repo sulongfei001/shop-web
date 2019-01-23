@@ -6,7 +6,7 @@ import Screen from "../../../utils/Screen";
 import FullScreenPage from "../../../ui/FullScreenPage/FullScreenPage";
 import TopTitle from '../../../ui/TopTitle/TopTitle';
 import Fade from "../../../ui/Fade/Fade";
-import ApplyTerrace from "../img/ApplyTerrace5.png";
+import ApplyTerrace from "../img/ApplyTerrace.png";
 import PhotoDog from "../img/PhotoDog2.png";
 import PhotoBalloon from "../img/PhotoBalloon2.png";
 import test from "../img/test1.png";
@@ -53,7 +53,7 @@ class ActivityNone5 extends Page {
                         <TopTitle title="直播棚录报名" style={{ backgroundColor: "#333333" , opacity: 0.9}} onClickBack={() => { history.goBack(); }} />
                     </Fade>}
                 </TransitionGroup>
-                <FullScreenPage style={{ background: '#DCB8F2', zIndex: -1 }} />
+                <FullScreenPage style={{ background: '#DCFCEF', zIndex: -1 }} />
                 <div className="ActivityNone5" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
                     <div className="ActivityIntroduce">
                         <div className="IntroduceUp">
@@ -73,6 +73,11 @@ class ActivityNone5 extends Page {
                     </div>
                     <div className="ActivityPoster">
                         <img src={test} />
+                    </div>
+                    <div className="AuthorityText">
+                        <span className="text1">快来</span>
+                        <span className="text2">官方商城</span>
+                        <span className="text3">看看吧</span>
                     </div>
                     <div className="ApplyTerrace">
                         <img src={ApplyTerrace} />

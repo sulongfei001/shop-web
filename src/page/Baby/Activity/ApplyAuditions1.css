@@ -28,7 +28,7 @@
 }
 .ApplyAuditions1 .AuditionsContent p{
     height: 0.4rem;
-    color: #005693;
+    color: #940000;
     text-align: center;
     font-size: 0.33rem;
     font-weight: bold;
@@ -39,7 +39,7 @@
 .ApplyAuditions1 .AuditionsButton span{
     width: 4.76rem;
     height: 0.84rem;
-    background: #02C7BC;
+    background: #FF8C8C;
     font-family: JCuYuan;
     color: #ffffff;
     font-size: 0.33rem;

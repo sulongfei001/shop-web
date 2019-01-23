@@ -68,8 +68,8 @@ class ApplySuccess2 extends Page {
         return (
             <div>
                 <TopTitle title="电视模特报名" onClickBack={() => { history.goBack(); }} />
-                <FullScreenPage style={{ background: '#F2B8B8', zIndex: -1 }} />
-                <div className="ApplySuccess2" style={{ backgroundImage: 'url(' + ColourSpot + ')' }}>
+                <FullScreenPage style={{ background: '#E5E8FF', zIndex: -1 }} />
+                <div className="ApplySuccess2">
                     <div className="SuccessTitle" style={{ backgroundImage: 'url(' + ApplySuccessTitle + ')' }} />
                     <div className="PhotoDogBear" style={{ backgroundImage: 'url(' + PhotoDogBearFlow + ')' }} />
                     <div className="SuccessMessage">

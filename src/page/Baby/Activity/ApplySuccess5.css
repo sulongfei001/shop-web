@@ -25,7 +25,7 @@
 }
 .ApplySuccess5 .SuccessMessage .MessageBaby{
     height: 1.8rem;
-    background: #FFDD03;
+    background: #FFFFFF;
     border-radius: 0.30rem 0.30rem 0 0;
     position: relative;
 }
@@ -60,7 +60,7 @@
 }
 .ApplySuccess5 .SuccessMessage .MessageBaby .BabyNumber p{
     font-size: 0.25rem;
-    color: #ffffff;
+    color: #FF8A02;
  }
 
 .ApplySuccess5 .SuccessMessage .MessageBaby .BabyMessage{
@@ -71,16 +71,16 @@
 }
 .ApplySuccess5 .SuccessMessage .MessageBaby .BabyMessage p{
     font-size: 0.28rem;
-    color: #ffffff;
+    color: #FF8A02;
 }
 .ApplySuccess5 .SuccessMessage .MessageContent{
     border-radius: 0 0 0.3rem 0.3rem;
-    background: #EEEEEE;
+    background: #FFFFFF;
 }
 .ApplySuccess5 .SuccessMessage .MessageContent .ContentTitle{
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    background: #AE61C7;
+    background: #8CFFCF;
     overflow: hidden;
 }
 .ApplySuccess5 .SuccessMessage .MessageContent .ContentTitle label{
@@ -111,7 +111,7 @@
 .ApplySuccess5 .SuccessMessage .MessageContent .ContentProgram .ProgramTitle{
     height: 0.53rem;
     line-height: 0.53rem;
-    background: #8202AD;
+    background: #FF8A02;
     border-radius: 0.19rem;
     padding: 0.05rem 0.15rem;
 }
@@ -149,12 +149,12 @@
 .ApplySuccess5 .SuccessMessage .MessageAddress p:first-child{
     font-size: 0.22rem;
     margin-left: 0.2rem;
-    color: #0F5E97;
+    color: #23A16C;
 }
 .ApplySuccess5 .SuccessMessage .MessageAddress p:last-child{
     font-size: 0.22rem;
     margin-left: 0.85rem;
-    color: #0F5E97;
+    color: #23A16C;
 }
 .ApplySuccess5 .footer {
     font-size: 0.22rem;

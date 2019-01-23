@@ -22,7 +22,7 @@
 .ApplyAuditionsPass2 .PassMessage .MessageBaby{
     width: 6.53rem;
     height: 1.54rem;
-    background: #00B39B;
+    background: #8C9AFF;
     border-radius: 0.3rem 0.3rem 0 0;
     position: relative;
 }
@@ -73,14 +73,14 @@
     height: 0.3rem;
     display: block;
     padding-left: 0.3rem;
-    font-size: xx-small;
+    font-size: 0.2rem;
     font-weight: bold;
     text-align: left;
 }
 .ApplyAuditionsPass2 .PassMessage .MessageContent .ContentReminder label p:first-child{
     width: 60%;
     float: left;
-    font-size: xx-small;
+    font-size: 0.2rem;
     font-weight: bold;
     font-family: PingFangSC-Regular;
 }
@@ -88,8 +88,8 @@
     width: 40%;
     float: left;
     font-size: 0.2rem;
-    font-weight: 500;
-    color: #DB5116;
+    font-weight: bold;
+    color: #1A289C;
     font-family: PingFangSC-Regular;
 }
 .ApplyAuditionsPass2 .PassMessage .MessageContent .ContentProgram{
@@ -103,7 +103,7 @@
     line-height: 0.5rem;
 }
 .ApplyAuditionsPass2 .PassMessage .MessageContent .ContentProgram .Program .ProgramTitle{
-    background: #DB5116;
+    background: #FF8A02;
     border-radius: 0.19rem;
     padding: 0.05rem 0.1rem;
 }
@@ -140,13 +140,15 @@
 }
 .ApplyAuditionsPass2 .PassMessage .MessageAddress p:first-child{
     margin-left: 0.2rem;
-    font-size: xx-small;
-    color: #A2A2A2;
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #9C9C9C;
 }
 .ApplyAuditionsPass2 .PassMessage .MessageAddress p:last-child{
     margin-left: 0.2rem;
-    font-size: xx-small;
-    color: #A2A2A2;
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #9C9C9C;
 }
 .ApplyAuditionsPass2 .PassAnnotation{
     margin: 0.8rem 0 0.6rem 0;

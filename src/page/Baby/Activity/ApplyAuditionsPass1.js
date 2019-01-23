@@ -105,7 +105,7 @@ class ApplyAuditionsPass1 extends Page {
                         <TopTitle title="外景模特报名" style={{ backgroundColor: "#333333" , opacity: 0.9}} onClickBack={() => { history.goBack(); }} />
                     </Fade>}
                 </TransitionGroup>
-                <FullScreenPage style={{ background: '#B7F2D5', zIndex: -1 }} />
+                <FullScreenPage style={{ background: '#FFE5E5', zIndex: -1 }} />
                 <div className="PassEmpty">
                 </div>
                 <div className="PassTitle" style={{ backgroundImage: 'url(' + ApplyPass + ')' }}>

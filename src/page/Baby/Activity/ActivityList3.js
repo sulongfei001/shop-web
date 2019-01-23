@@ -31,7 +31,7 @@ class ActivityList3 extends Page {
             showTitle: false,
             btn: {
                 style: {
-                    backgroundColor: "#C77202",
+                    backgroundColor: "#FFB48C",
                 }
             }
         };
@@ -230,7 +230,7 @@ class ActivityList3 extends Page {
     }
     btnMouseUp = () => {
         let { btn } = this.state;
-        btn.style.backgroundColor = "#C77202";
+        btn.style.backgroundColor = "#FFB48C";
         this.setState({
             btn: btn
         });
@@ -323,7 +323,7 @@ class ActivityList3 extends Page {
                         <TopTitle title="平面模特报名" style={{ backgroundColor: "#333333", opacity: 0.9 }} onClickBack={() => { history.goBack(); }} />
                     </Fade>}
                 </TransitionGroup>
-                <FullScreenPage style={{ background: '#F2CCB8', zIndex: -1 }} />
+                <FullScreenPage style={{ background: '#FFEEE5', zIndex: -1 }} />
                 <div className="ActivityList3">
                     <div className="BDUp" style={{ backgroundImage: 'url(' + Test + ')' }}></div>
                     <div className="BDMiddle">

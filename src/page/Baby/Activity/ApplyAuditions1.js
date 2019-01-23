@@ -49,7 +49,7 @@ class ApplyAuditions1 extends Page {
         return (
             <div>
                 <TopTitle title="外景模特报名" onClickBack={() => { history.goBack(); }} />
-                <FullScreenPage style={{background: '#B7F2D5', zIndex: -1}}/>
+                <FullScreenPage style={{background: '#FFE5E5', zIndex: -1}}/>
                 <div className="ApplyAuditions1">
                     <div className="AuditionsTitle">
                         <div className="TitleImg" style={{ backgroundImage: 'url(' + ApplyAuditionTitleImg + ')' }}>
