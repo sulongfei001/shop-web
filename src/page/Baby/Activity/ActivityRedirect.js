@@ -14,43 +14,36 @@ class ActivityRedirect extends Page {
 
     componentDidMount() {
         let { history } = this.props;
-        let { partnerId, typeId } = this.props.match.params;
+        let { partnerId, activityCategoryId } = this.props.match.params;
         if (!partnerId) partnerId = 0;
-        if (!typeId) typeId = "type1";
+        if (!activityCategoryId) activityCategoryId = 1;
         let organizationContext = OrganizationContext.get();
         organizationContext.organizationId = partnerId;
-        organizationContext.typeId = typeId;
+        organizationContext.activityCategoryId = activityCategoryId;
         OrganizationContext.set(organizationContext);
         if (!this.checkUserLoggedIn()) {
             return;
         }
-        // TODO:   
-        //history.replace("/baby/activity/list_" + typeId);
-        //history.replace("/baby/activity/none_" + typeId);
-        history.replace("/baby/activity/applySuccess_" + typeId);
-        //history.replace("/baby/activity/applyAuditionsPass_" + typeId);
-        //history.replace("/baby/activity/applyAuditions_" + typeId);
-        return;
         let userContext = UserContext.get();
         if (userContext.agreement === undefined) {
             history.replace("/baby/activity/agreement");
         } else {
             ActivityApi.BabyEnter({
                 accessToken: userContext.userToken,
-                mechanismCategoryId: organizationContext.organizationId
+                mechanismCategoryId: organizationContext.organizationId,
+                activityCategoryId: activityCategoryId
             }, data => {
-                console.log('判断用户跳转===>', data)
-                let state = data.state
+                let state = data.state;
                 if (state === 1) {
-                    history.replace("/baby/activity/none_" + typeId);
+                    history.replace("/baby/activity/none_type" + activityCategoryId);
                 } else if (state === 2) {
-                    history.replace("/baby/activity/list_" + typeId);
+                    history.replace("/baby/activity/list_type" + activityCategoryId);
                 } else if (state === 3) {
-                    history.replace("/baby/activity/applySuccess_" + typeId);
+                    history.replace("/baby/activity/applySuccess_type" + activityCategoryId);
                 } else if (state === 4) {
-                    history.replace("/baby/activity/applyAuditionsPass_" + typeId);
+                    history.replace("/baby/activity/applyAuditionsPass_type" + activityCategoryId);
                 } else if (state === 5) {
-                    history.replace("/baby/activity/applyAuditions_" + typeId);
+                    history.replace("/baby/activity/applyAuditions_type" + activityCategoryId);
                 } else if (state === 6) {
                     history.replace("/baby/list");
                 }

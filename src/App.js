@@ -100,7 +100,6 @@ class App extends Component {
             //isWeixin: true
         };
         Screen.setInstance(this);
-        console.log("APP构造函数执行完毕");
     }
 
     componentDidMount() {
@@ -175,37 +174,37 @@ class App extends Component {
                             <Route path="/baby/edit" component={BabyEdit} />
                             <Route path="/baby/activity/agreement" component={ActivityAgreement} />
                             {/* <Route path="/baby/activity/none" component={ActivityNone} /> */}
-                            <Route path="/baby/activity/none_type1" component={ActivityNone1} />
-                            <Route path="/baby/activity/none_type2" component={ActivityNone2} />
-                            <Route path="/baby/activity/none_type3" component={ActivityNone3} />
-                            <Route path="/baby/activity/none_type4" component={ActivityNone4} />
-                            <Route path="/baby/activity/none_type5" component={ActivityNone5} />
+                            <Route path="/baby/activity/none_type1" component={ActivityNone4} />
+                            <Route path="/baby/activity/none_type2" component={ActivityNone5} />
+                            <Route path="/baby/activity/none_type3" component={ActivityNone2} />
+                            <Route path="/baby/activity/none_type5" component={ActivityNone1} />
+                            <Route path="/baby/activity/none_type6" component={ActivityNone3} />
                             {/* <Route path="/baby/activity/applyAuditions" component={ApplyAuditions} /> */}
-                            <Route path="/baby/activity/applyAuditions_type1" component={ApplyAuditions1} />
-                            <Route path="/baby/activity/applyAuditions_type2" component={ApplyAuditions2} />
-                            <Route path="/baby/activity/applyAuditions_type3" component={ApplyAuditions3} />
-                            <Route path="/baby/activity/applyAuditions_type4" component={ApplyAuditions4} />
-                            <Route path="/baby/activity/applyAuditions_type5" component={ApplyAuditions5} />
+                            <Route path="/baby/activity/applyAuditions_type1" component={ApplyAuditions4} />
+                            <Route path="/baby/activity/applyAuditions_type2" component={ApplyAuditions5} />
+                            <Route path="/baby/activity/applyAuditions_type3" component={ApplyAuditions2} />
+                            <Route path="/baby/activity/applyAuditions_type5" component={ApplyAuditions1} />
+                            <Route path="/baby/activity/applyAuditions_type6" component={ApplyAuditions3} />
                             {/* <Route path="/baby/activity/applyAuditionsPass" component={ApplyAuditionsPass} /> */}
-                            <Route path="/baby/activity/applyAuditionsPass_type1" component={ApplyAuditionsPass1} />
-                            <Route path="/baby/activity/applyAuditionsPass_type2" component={ApplyAuditionsPass2} />
-                            <Route path="/baby/activity/applyAuditionsPass_type3" component={ApplyAuditionsPass3} />
-                            <Route path="/baby/activity/applyAuditionsPass_type4" component={ApplyAuditionsPass4} />
-                            <Route path="/baby/activity/applyAuditionsPass_type5" component={ApplyAuditionsPass5} />
+                            <Route path="/baby/activity/applyAuditionsPass_type1" component={ApplyAuditionsPass4} />
+                            <Route path="/baby/activity/applyAuditionsPass_type2" component={ApplyAuditionsPass5} />
+                            <Route path="/baby/activity/applyAuditionsPass_type3" component={ApplyAuditionsPass2} />
+                            <Route path="/baby/activity/applyAuditionsPass_type5" component={ApplyAuditionsPass1} />
+                            <Route path="/baby/activity/applyAuditionsPass_type6" component={ApplyAuditionsPass3} />
                             {/* <Route path="/baby/activity/list" component={ActivityList} /> */}
-                            <Route path="/baby/activity/list_type1" component={ActivityList1} />
-                            <Route path="/baby/activity/list_type2" component={ActivityList2} />
-                            <Route path="/baby/activity/list_type3" component={ActivityList3} />
-                            <Route path="/baby/activity/list_type4" component={ActivityList4} />
-                            <Route path="/baby/activity/list_type5" component={ActivityList5} />
+                            <Route path="/baby/activity/list_type1" component={ActivityList4} />
+                            <Route path="/baby/activity/list_type2" component={ActivityList5} />
+                            <Route path="/baby/activity/list_type3" component={ActivityList2} />
+                            <Route path="/baby/activity/list_type5" component={ActivityList1} />
+                            <Route path="/baby/activity/list_type6" component={ActivityList3} />
                             {/* <Route path="/baby/activity/applySuccess" component={ApplySuccess} /> */}
-                            <Route path="/baby/activity/applySuccess_type1" component={ApplySuccess1} />
-                            <Route path="/baby/activity/applySuccess_type2" component={ApplySuccess2} />
-                            <Route path="/baby/activity/applySuccess_type3" component={ApplySuccess3} />
-                            <Route path="/baby/activity/applySuccess_type4" component={ApplySuccess4} />
-                            <Route path="/baby/activity/applySuccess_type5" component={ApplySuccess5} />
+                            <Route path="/baby/activity/applySuccess_type1" component={ApplySuccess4} />
+                            <Route path="/baby/activity/applySuccess_type2" component={ApplySuccess5} />
+                            <Route path="/baby/activity/applySuccess_type3" component={ApplySuccess2} />
+                            <Route path="/baby/activity/applySuccess_type5" component={ApplySuccess1} />
+                            <Route path="/baby/activity/applySuccess_type6" component={ApplySuccess3} />
                             <Route path="/baby/activity/applyChangeBaby/:changeId" component={ApplyChangeBaby} />
-                            <Route path="/baby/activity/partner/:partnerId/:typeId" component={ActivityRedirect} />
+                            <Route path="/baby/activity/partner/:partnerId/:activityCategoryId" component={ActivityRedirect} />
                         </Switch>
                     </div>
                 </Router>

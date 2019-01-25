@@ -48,137 +48,16 @@ class ActivityList5 extends Page {
         }
         let userContext = UserContext.get();
         let organizationContext = OrganizationContext.get();
+        let activityCategoryId = organizationContext.activityCategoryId ? organizationContext.activityCategoryId : 1;
         ActivityApi.SessionList({
             accessToken: userContext.userToken,
-            mechanismCategoryId: organizationContext.organizationId
+            mechanismCategoryId: organizationContext.organizationId,
+            activityCategoryId: activityCategoryId
         }, data => {
-            data = {
-                flag: true,
-                auditionList: [
-                    {
-                        auditionId: 58,
-                        auditionDetailId: 117,
-                        auditionDate: 1546012800000,
-                        activityEndDate: 1545148800000,
-                        activityDistrictId: 693,
-                        activityDistrictList: ["上海", "长宁区"],
-                        activityAddress: "长宁路1436号3号楼2楼",
-                        babyInfoIds: [18643],
-                        ageStartDate: 1104508800000,
-                        ageEndDate: 1548950399000,
-                        auditionItems: [
-                            {
-                                auditionItemId: 1,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 2,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 3,
-                                stock: 0,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 4,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 5,
-                                stock: 0,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 6,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 7,
-                                stock: 0,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 8,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 9,
-                                stock: 0,
-                                activityDate: "10:30"
-                            }
-                        ]
-                    },
-                    {
-                        auditionId: 59,
-                        auditionDetailId: 118,
-                        auditionDate: 1546012800001,
-                        activityEndDate: 1545148800001,
-                        activityDistrictId: 694,
-                        activityDistrictList: ["上海", "长宁区"],
-                        activityAddress: "长宁路1436号3号楼2楼",
-                        babyInfoIds: [18644],
-                        ageStartDate: 1104508800001,
-                        ageEndDate: 1548950399001,
-                        auditionItems: [
-                            {
-                                auditionItemId: 10,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 11,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 12,
-                                stock: 0,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 13,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 14,
-                                stock: 0,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 15,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 16,
-                                stock: 0,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 17,
-                                stock: 1,
-                                activityDate: "10:30"
-                            },
-                            {
-                                auditionItemId: 18,
-                                stock: 0,
-                                activityDate: "10:30"
-                            }
-                        ]
-                    }
-                ]
-            }
             let showOption = [];
             let dataMsg = data.auditionList;
             if (dataMsg.length === 0) {
-                this.props.history.replace("/baby/activity/none");
+                this.props.history.replace("/baby/activity/none_type" + activityCategoryId + "/" + activityCategoryId);
             } else {
                 dataMsg.forEach((v, k) => {
                     let arr = [];
@@ -189,6 +68,7 @@ class ActivityList5 extends Page {
                 });
                 this.setState({
                     total: data.total,
+                    bannerUrl: data.bannerUrl,
                     flag: data.flag,
                     auditionList: data.auditionList,
                     showOption,
@@ -313,7 +193,7 @@ class ActivityList5 extends Page {
 
     render() {
         let { match, history } = this.props;
-        let { auditionList, unBabyShow, changeId, confirm, array, btn, showTitle } = this.state;
+        let { auditionList, unBabyShow, changeId, confirm, array, btn, showTitle, bannerUrl } = this.state;
         return (
             <div>
                 {!showTitle &&
@@ -325,7 +205,7 @@ class ActivityList5 extends Page {
                 </TransitionGroup>
                 <FullScreenPage style={{ background: '#E5FFF4', zIndex: -1 }} />
                 <div className="ActivityList5">
-                    <div className="BDUp" style={{ backgroundImage: 'url(' + Test + ')' }}></div>
+                    <div className="BDUp" style={{ backgroundImage: 'url(' + bannerUrl + ')' }}></div>
                     <div className="BDMiddle">
                         {array && array.length > 0 && array.map((v, k) => {
                             return (
@@ -377,14 +257,14 @@ class ActivityList5 extends Page {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className="SessionReminder">
+                                        <img src={ActivityHelp} onClick={() => { alert("此处跳转页面") }} />需要会员等级达到{audition.memberLevelName}级
+                                    </div>
                                 </div>
                             )
                         }
 
                         )}
-                    </div>
-                    <div className="SessionReminder">
-                        <img src={ActivityHelp} onClick={() => { alert("此处跳转页面") }} />需要会员等级达到4级
                     </div>
                     <div style={{ height: '51px' }} />
                     <div style={{ height: '2.1rem' }} />

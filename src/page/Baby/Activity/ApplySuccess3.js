@@ -63,7 +63,7 @@ class ApplySuccess3 extends Page {
     }
 
     render() {
-        let { babyBirthday, babyName, competitionNo, gender, babyPicture, auditionDate, auditionNo, districtNames, activityDate, subtitle, title, picture, viewLink, organizationId } = this.state;
+        let { babyBirthday, babyName, competitionNo, gender, babyPicture, auditionDate, auditionNo, districtNames, activityDate, subtitle, title, picture, viewLink, organizationId, promptMessage } = this.state;
         let { history } = this.props;
         return (
             <div>
@@ -97,11 +97,11 @@ class ApplySuccess3 extends Page {
                             </div>
                             <div className="ContentProgram">
                                 <label className="ProgramTitle">
-                                    <span>表演节目《</span><span>{title}</span><span>》</span>
+                                    <span>海选表演节目《</span><span>{title}</span><span>》</span>
                                 </label>
                             </div>
                             <div className="ContentPrompt">
-                                <span>{subtitle}</span>
+                                <span>（{subtitle}）</span>
                             </div>
                             <div className="ContentImg">
                                 {viewLink && viewLink.indexOf('https://v.qq.com/iframe/player.html') === 0 &&
@@ -113,8 +113,9 @@ class ApplySuccess3 extends Page {
                             </div>
                             <hr />
                             <div className="MessageAddress">
-                                <p>注意：请家长带着宝宝准时参加海选</p>
-                                <p>若你未准时出席，则视为主动放弃</p>
+                                <div>注意：</div>
+                                {/* <div>请家长带着宝宝准时参加海选<br/>若你未准时出席，则视为主动放弃</div> */}
+                                <div>{promptMessage}</div>
                             </div>
                         </div>
                     </div>

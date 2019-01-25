@@ -29,7 +29,7 @@
     margin:0 0.49rem 0 0.49rem;
 }
 .ActivityList1 .SessionContent .ContentList{
-    margin-bottom: 0.32rem;
+    margin-bottom: 0.2rem;
 }
 .ActivityList1 .SessionContent .ContentList .ListTitle{
     background: #FF8C8C;
@@ -115,7 +115,7 @@
     color: #940000;
     width: 100%;
     padding-left: 0.4rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
 }
 .ActivityList1 .SessionReminder img{
     width: 0.5rem;

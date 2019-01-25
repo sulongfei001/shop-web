@@ -11,7 +11,6 @@ import UserContext from "./model/UserContext";
 import RouteData from "./storage/RouteData";
 import GlobalErrorApi from './api/GlobalErrorApi'
 
-console.log("index初始化");
 window.onerror = function(message, source, lineNo, colNo, error){
     // console.log('会直接调用',message, source, lineNo, colNo, error)
     let body = {

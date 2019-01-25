@@ -30,6 +30,15 @@ class BabyApi extends Api {
             } else if (onSuccess) onSuccess(data);
         }, onFail);
     }
+
+    // 以下为新接口
+    static isHaveBaby(request, onSuccess, onFail) {
+        HttpClient.post(ROUTE_PREFIX + '/home/isHaveBaby', request, data => {
+            if (!data.result && onFail) {
+                onFail(SYSTEM_ERROR);
+            } else if (onSuccess) onSuccess(data);
+        }, onFail);
+    }
 }
 
 const ROUTE_PREFIX = '/baby-service';

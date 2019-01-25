@@ -17,7 +17,6 @@ class Page extends Component {
             url: 'https://shop.yiyayiyawao.com/?from=singlemessage&isappinstalled=0',
             logo: 'https://cdn.yiyayiyawao.com/brand/logo/38e00a9d-9002-4bc3-bfe0-a8a533c41bcc.jpg?x-oss-process=style/share_logo'
         });
-        console.log("Page构造函数执行完毕");
     }
 
     isChildRoute() {

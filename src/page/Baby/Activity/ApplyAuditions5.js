@@ -45,7 +45,6 @@ class ApplyAuditions5 extends Page {
     }
     render() {
         let { match, history } = this.props;
-        console.log(match.url)
         return (
             <div>
                 <TopTitle title="直播棚录报名" onClickBack={() => { history.goBack(); }} />

@@ -30,26 +30,6 @@ class ApplyAuditionsPass2 extends Page {
         ActivityApi.PassMessage({
             accessToken: userContext.userToken,
         }, data => {
-            data = {
-                babyInfo: {
-                    gender: 1,
-                    babyBirthday: new Date,
-                    babyName: "李哈哈"
-                },
-                audition: {
-                    programAddress: "地址",
-                    auditionPerform: {
-                        districtNames: ["上海市", "长宁区", "中山公园龙之梦2楼B32"],
-                        promptMessage: "这是message",
-                        name: "这是name",
-                        picture: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545049603330&di=7ddd8d55312b983af5d6b12fa8ec9c3b&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F91ef76c6a7efce1b5ef04082a251f3deb58f659b.jpg",
-                        viewLink: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545049603330&di=7ddd8d55312b983af5d6b12fa8ec9c3b&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F91ef76c6a7efce1b5ef04082a251f3deb58f659b.jpg",
-                        weixinNo: "yiyayiyahaixuan",
-                        remark: "海选日期+宝宝姓名"
-                    }
-                }
-
-            }
             let gender = data.babyInfo.gender === 1 ? "男宝宝" : "女宝宝";
             let babyBirthday = DateFormatter.toYMD(new Date(data.babyInfo.babyBirthday));
             let auditionsAddress = data.audition.programAddress;

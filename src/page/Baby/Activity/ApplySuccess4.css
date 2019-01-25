@@ -146,14 +146,19 @@
     overflow: hidden;
     padding-bottom: 0.2rem;
 }
-.ApplySuccess4 .SuccessMessage .MessageAddress p:first-child{
+.ApplySuccess4 .SuccessMessage .MessageAddress div:first-child{
+    float: left;
+    width: 11%;
+    height: 1rem;
     font-size: 0.22rem;
     margin-left: 0.2rem;
     color: #610A98;
 }
-.ApplySuccess4 .SuccessMessage .MessageAddress p:last-child{
+.ApplySuccess4 .SuccessMessage .MessageAddress div:last-child{
+    float: left;
+    width: 80%;
+    height: 1rem;
     font-size: 0.22rem;
-    margin-left: 0.85rem;
     color: #610A98;
 }
 .ApplySuccess4 .footer {

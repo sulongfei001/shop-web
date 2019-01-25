@@ -3,10 +3,10 @@ class OrganizationContext {
     static get() {
         let organizationContext = {};
         organizationContext.organizationId = sessionStorage.getItem('organizationContext.organizationId');
-        OrganizationContext.typeId = sessionStorage.getItem('organizationContext.typeId');
+        organizationContext.activityCategoryId = sessionStorage.getItem('organizationContext.activityCategoryId');
 
         organizationContext.organizationId = Strings.defaultIfEmpty(organizationContext.organizationId, undefined);
-        organizationContext.typeId = Strings.defaultIfEmpty(organizationContext.typeId, undefined);
+        organizationContext.activityCategoryId = Strings.defaultIfEmpty(organizationContext.activityCategoryId, undefined);
         return organizationContext;
     }
 
@@ -14,8 +14,8 @@ class OrganizationContext {
         if (organizationContext.organizationId) {
             sessionStorage.setItem('organizationContext.organizationId', organizationContext.organizationId);
         }
-        if (organizationContext.typeId) {
-            sessionStorage.setItem('organizationContext.typeId', organizationContext.typeId);
+        if (organizationContext.activityCategoryId) {
+            sessionStorage.setItem('organizationContext.activityCategoryId', organizationContext.activityCategoryId);
         }
 
         // if(organizationContext.organizationId){
@@ -27,7 +27,7 @@ class OrganizationContext {
 
     static remove() {
         sessionStorage.removeItem('organizationContext.organizationId');
-        sessionStorage.removeItem('organizationContext.typeId');
+        sessionStorage.removeItem('organizationContext.activityCategoryId');
     }
 }
 
