@@ -78,6 +78,7 @@ class ActivityApi extends Api {
     }
     static queryCommend(request, onSuccess, onFail) {
         HttpClient.post(ROUTE_PREFIX + '/home/queryCommend', request, data => {
+            console.log(data)
             if (!data.url && onFail) {
                 onFail(SYSTEM_ERROR);
             } else if (onSuccess) onSuccess(data);
@@ -85,6 +86,7 @@ class ActivityApi extends Api {
     }
     static beforeSign(request, onSuccess, onFail) {
         HttpClient.post(ROUTE_PREFIX + '/home/beforeSign', request, data => {
+            console.log(data)
             if (!data.type && onFail) {
                 onFail(SYSTEM_ERROR);
             } else if (onSuccess) onSuccess(data);

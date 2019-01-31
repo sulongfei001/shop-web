@@ -54,24 +54,15 @@ class ActivityList5 extends Page {
             mechanismCategoryId: organizationContext.organizationId,
             activityCategoryId: activityCategoryId
         }, data => {
-            let showOption = [];
             let dataMsg = data.auditionList;
             if (dataMsg.length === 0) {
                 this.props.history.replace("/baby/activity/none_type" + activityCategoryId + "/" + activityCategoryId);
             } else {
-                dataMsg.forEach((v, k) => {
-                    let arr = [];
-                    v.auditionItems.forEach((val, key) => {
-                        arr.push("true");
-                    });
-                    showOption.push(arr);
-                });
                 this.setState({
                     total: data.total,
                     bannerUrl: data.bannerUrl,
                     flag: data.flag,
-                    auditionList: data.auditionList,
-                    showOption,
+                    auditionList: data.auditionList
                 }, Screen.loading(false));
             }
         });
@@ -80,6 +71,37 @@ class ActivityList5 extends Page {
     componentWillUnmount() {
         window.removeEventListener("scroll", this.topTitleScroll);
     }
+
+    changeAudition(auditionItemId, e) {
+        let userContext = UserContext.get();
+        this.setState({
+            changeId: auditionItemId
+        });
+        ActivityApi.beforeSign({
+            accessToken: userContext.userToken,
+            auditionItemId: auditionItemId
+        }, data => {
+            let tipMessage = "";
+            if (data.type == 1) {
+                tipMessage = "需要成为会员并且达到" + data.signLevelName + "可报名";
+            } else if (data.type == 2) {
+                tipMessage = "需要达到" + data.signLevelName + "才可报名,你还需要" + (data.signGrowRate - data.memberGrowRate) + "成长值可达到" + data.signLevelName;
+            } else if (data.type == 3) {
+                tipMessage = "还未激活会员请激活";
+            } else if (data.type == 4) {
+                if (data.nextEnrollDate) {
+                    tipMessage = "等待期至" + data.nextEnrollDate;
+                }
+            } else if (data.type == 99) {
+                tipMessage == "你已符合要求，可报名"
+            }
+            this.setState({
+                tipMessage: tipMessage,
+                signData: data
+            });
+        });
+    }
+
     addTransition() {
         let newArray = [];
         for (let i = 0; i <= 50; i++) {
@@ -103,14 +125,14 @@ class ActivityList5 extends Page {
     }
     btnMouseDown = () => {
         let { btn } = this.state;
-        btn.style.backgroundColor = "#8202AD";
+        btn.style = { backgroundColor: "#7ee5ba" };
         this.setState({
             btn: btn
         });
     }
     btnMouseUp = () => {
         let { btn } = this.state;
-        btn.style.backgroundColor = "#8CFFCF";
+        btn.style = { backgroundColor: "#8CFFCF" };
         this.setState({
             btn: btn
         });
@@ -119,90 +141,139 @@ class ActivityList5 extends Page {
         let { changeId } = this.state;
         if (changeId && changeId !== "") {
             let userContext = UserContext.get();
-            Screen.loading(true, () => ActivityApi.BabyConform({
-                accessToken: userContext.userToken,
-                auditionItemId: changeId,
-            }, data => {
-                if (data.code && data.code === "error") {
-                    Screen.loading(false, () => Screen.alert(data.message));
-                } else if (data.babyInfos && data.babyInfos.length === 0) {
-                    this.setState({
-                        unBabyShow: true,
-                        confirm: {
-                            title: "您没有符合年龄的宝宝",
-                            message: "请前往添加！",
-                            onConfirm: () => {
-                                let { history } = this.props;
-                                history.push("/babyInformation");
-                            },
-                            onCancel: () => {
-                                this.setState({
-                                    unBabyShow: false,
-                                });
+            Screen.loading(true, () => {
+                ActivityApi.beforeSign({
+                    accessToken: userContext.userToken,
+                    auditionItemId: changeId
+                }, data => {
+                    let { history } = this.props;
+                    let { type, nextEnrollDate, signLevelName, signGrowRate, memberGrowRate } = data;
+                    let message, confirm, now;
+                    //nextEnrollDate = "2019-07-10 10:21:12";
+                    now = DateFormatterBeijing.toYMDHMS(new Date());
+                    //type = 4;
+                    if (type == 1) {
+                        message = "需要成为会员并且达到" + signLevelName + "可报名";
+                        confirm = () => { window.location.href = "https://shop.yiyayiyawao.com/#/UserVip"; }
+                    } else if (type == 2) {
+                        message = "需要达到" + signLevelName + "才可报名,你还需要" + (signGrowRate - memberGrowRate) + "成长值可达到" + signLevelName;
+                        confirm = () => { this.setState({ unVipShow: false }); }
+                    } else if (type == 3) {
+                        message = "成为会员即可报名";
+                        confirm = () => { window.location.href = "https://shop.yiyayiyawao.com/#/UserVip"; }
+                    } else if (type == 4) {
+                        if (nextEnrollDate) {
+                            let nextDate = new Date(nextEnrollDate.replace("//-/g", "//"));
+                            let nowDate = new Date(now.replace("//-/g", "//"));
+                            if (nextDate > nowDate) {
+                                message = "你在等待期，暂无法报名，等待期至" + nextEnrollDate;
+                                confirm = () => {
+                                    this.setState({ unVipShow: false });
+                                    ActivityApi.queryCommend({
+                                        auditionItemId: changeId
+                                    }, data => { window.location.href = data.url; }, error => { Screen.loading(false, Screen.alert(error)) });
+                                }
                             }
+                        } else if (false) {
+                            // 报名次数限定
                         }
-                    });
-                } else if (data.babyInfos && data.babyInfos.length === 1) {
-                    let babyInfoId = data.babyInfos[0].babyInfoId;
-                    ActivityApi.changeBaby({
-                        accessToken: userContext.userToken,
-                        babyInfoId: babyInfoId,
-                        auditionItemId: changeId,
-                    }, data => {
-                        let uuid = data.uuid;
-                        let interval = 1000;
-                        let run = () => {
-                            let timer = setTimeout(() => {
-                                clearTimeout(timer);
-                                Screen.loading(true);
-                                ActivityApi.BabyResult({
-                                    accessToken: userContext.userToken,
-                                    uuid: uuid,
-                                }, data => Screen.loading(false, () => {
-                                    if (data.state === 500) {
-                                        Screen.alert("报名失败，请重试！")
-                                    } else if (data.state === 200) {
-                                        let { history } = this.props;
-                                        history.push("/baby/activity/applySuccess");
-                                    } else {
-                                        if (interval <= 3000) {
-                                            interval += 1000;
+                    }
+                    if (message && confirm) {
+                        this.setState({
+                            unVipShow: true,
+                            confirm: {
+                                title: "提示",
+                                message: message,
+                                onConfirm: confirm,
+                                onCancel: () => {
+                                    this.setState({
+                                        unVipShow: false
+                                    });
+                                }
+                            }
+                        }, Screen.loading(false));
+                    } else if (type == 99) {
+                        ActivityApi.BabyConform({
+                            accessToken: userContext.userToken,
+                            auditionItemId: changeId,
+                        }, data => {
+                            if (data.babyInfos && data.babyInfos.length === 0) {
+                                this.setState({
+                                    unBabyShow: true,
+                                    confirm: {
+                                        title: "您没有符合年龄的宝宝",
+                                        message: "请前往添加！",
+                                        onConfirm: () => {
+                                            history.push("/baby/list");
+                                        },
+                                        onCancel: () => {
+                                            this.setState({
+                                                unBabyShow: false,
+                                            });
                                         }
+                                    }
+                                });
+                            } else if (data.babyInfos && data.babyInfos.length === 1) {
+                                let babyInfoId = data.babyInfos[0].babyInfoId;
+                                ActivityApi.changeBaby({
+                                    accessToken: userContext.userToken,
+                                    babyInfoId: babyInfoId,
+                                    auditionItemId: changeId,
+                                }, data => {
+                                    let uuid = data.uuid;
+                                    let interval = 1000;
+                                    let run = () => {
+                                        let timer = setTimeout(() => {
+                                            clearTimeout(timer);
+                                            ActivityApi.BabyResult({
+                                                accessToken: userContext.userToken,
+                                                uuid: uuid,
+                                            }, data => Screen.loading(false, () => {
+                                                if (data.state === 500) {
+                                                    Screen.alert("报名失败，请重试！")
+                                                } else if (data.state === 200) {
+                                                    history.push("/baby/activity/applySuccess");
+                                                } else {
+                                                    if (interval <= 3000) {
+                                                        interval += 1000;
+                                                    }
+                                                    run();
+                                                }
+                                            }), error => Screen.loading(false, () => Screen.alert(error)));
+                                        }, interval);
+                                    };
+                                    if (data.uuid && data.uuid.length !== "") {
                                         run();
                                     }
-                                }), error => Screen.loading(false, () => Screen.alert(error)));
-                            }, interval);
-                        };
-                        if (data.uuid && data.uuid.length !== "") {
-                            run();
-                        }
-                    }, error => Screen.loading(false, () => Screen.alert(error)));
-                } else if (data.babyInfos && data.babyInfos.length > 1) {
-                    let { history } = this.props;
-                    let { changeId } = this.state;
-                    let Path = '/baby/activity/applyChangeBaby/' + changeId;
-                    history.push(Path);
-                }
-            }, error => Screen.loading(false, () => Screen.alert(error))));
-
+                                }, error => Screen.loading(false, () => Screen.alert(error)));
+                            } else if (data.babyInfos && data.babyInfos.length > 1) {
+                                let { changeId } = this.state;
+                                let Path = '/baby/activity/applyChangeBaby/' + changeId;
+                                history.push(Path);
+                            }
+                        }, error => Screen.loading(false, () => Screen.alert(error)));
+                    }
+                }, error => { Screen.loading(false, () => Screen.alert(error)) });
+            });
         } else {
             Screen.alert("请选择场次！");
         }
-
     }
 
     render() {
         let { match, history } = this.props;
-        let { auditionList, unBabyShow, changeId, confirm, array, btn, showTitle, bannerUrl } = this.state;
+        let { auditionList, unBabyShow, unVipShow, changeId, confirm, array, btn, showTitle, bannerUrl, tipMessage } = this.state;
         return (
             <div>
                 {!showTitle &&
                     <TopTitle title="直播棚录报名" style={{ backgroundColor: "", opacity: 0.9 }} onClickBack={() => { history.goBack(); }} />}
-                <TransitionGroup>
-                    {showTitle && <Fade>
-                        <TopTitle title="直播棚录报名" style={{ backgroundColor: "#333333", opacity: 0.9 }} onClickBack={() => { history.goBack(); }} />
-                    </Fade>}
-                </TransitionGroup>
+                {showTitle &&
+                    <TransitionGroup>
+                        <Fade>
+                            <TopTitle title="直播棚录报名" style={{ backgroundColor: "#333333", opacity: 0.9 }} onClickBack={() => { history.goBack(); }} />
+                        </Fade>
+                    </TransitionGroup>
+                }
                 <FullScreenPage style={{ background: '#E5FFF4', zIndex: -1 }} />
                 <div className="ActivityList5">
                     <div className="BDUp" style={{ backgroundImage: 'url(' + bannerUrl + ')' }}></div>
@@ -238,7 +309,7 @@ class ActivityList5 extends Page {
                                                         stockName = item.stock;
                                                     }
                                                     return (
-                                                        <div key={item.auditionItemId} className="Option" onClick={() => this.setState({ changeId: item.auditionItemId })}>
+                                                        <div key={item.auditionItemId} className="Option" onClick={this.changeAudition.bind(this, item.auditionItemId)}>
                                                             {clickable &&
                                                                 <span className={changeId === item.auditionItemId ? 'changeOptionNext' : 'changeOption'} />
                                                             }
@@ -257,9 +328,6 @@ class ActivityList5 extends Page {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="SessionReminder">
-                                        <img src={ActivityHelp} onClick={() => { alert("此处跳转页面") }} />需要会员等级达到{audition.memberLevelName}级
-                                    </div>
                                 </div>
                             )
                         }
@@ -267,7 +335,7 @@ class ActivityList5 extends Page {
                         )}
                     </div>
                     <div style={{ height: '51px' }} />
-                    <div style={{ height: '2.1rem' }} />
+                    <div style={{ height: '2.7rem' }} />
                     <FixedBottom>
                         <div className="SessionChange" id="SessionChange">
                             {array && array.length > 0 && array.map((v, k) => {
@@ -280,6 +348,12 @@ class ActivityList5 extends Page {
                             }
                         </div>
                         <div className="ButtonContainer" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
+                            {tipMessage &&
+                                <div className="SessionReminder">
+                                    <img src={ActivityHelp} onClick={() => { alert("此处跳转页面") }} />
+                                    <label>{tipMessage}</label>
+                                </div>
+                            }
                             <div className="SessionButton">
                                 <span className="btn" style={btn.style} onClick={this.sessionBtn} onTouchStart={this.btnMouseDown} onTouchEnd={this.btnMouseUp}>提交</span>
                             </div>
@@ -289,6 +363,11 @@ class ActivityList5 extends Page {
                         </div>
                     </FixedBottom>
                     {unBabyShow &&
+                        <Fade>
+                            <Confirm title={confirm.title} message={confirm.message} onConfirm={confirm.onConfirm} onCancel={confirm.onCancel} />
+                        </Fade>
+                    }
+                    {unVipShow &&
                         <Fade>
                             <Confirm title={confirm.title} message={confirm.message} onConfirm={confirm.onConfirm} onCancel={confirm.onCancel} />
                         </Fade>

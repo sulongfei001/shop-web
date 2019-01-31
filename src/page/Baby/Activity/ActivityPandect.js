@@ -1,11 +1,6 @@
 import './ActivityPandect.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import test1 from '../img/test1.png';
-import test2 from '../img/test2.jpg';
-import test3 from '../img/test3.png';
-import test4 from '../img/test4.png';
-import test5 from '../img/test5.png';
 import Page from '../../../ui/Page/Page';
 import Screen from "../../../utils/Screen";
 import TopTitle from '../../../ui/TopTitle/TopTitle';
@@ -45,7 +40,7 @@ class ActivityPandect extends Page {
         let organizationId = (organizationContext.organizationId ? organizationContext.organizationId : 0);
         return (
             <div>
-                <TopTitle title="活动总览" style={{ backgroundColor: "#333333" }} onClickBack={() => { history.goBack(); }} />
+                <TopTitle title="活动总览" style={{ backgroundColor: "#333333", opacity: 0.9 }} onClickBack={() => { history.goBack(); }} />
                 <div className="ActivityPandect">
                     {activityInfoList && activityInfoList.length > 0 && activityInfoList.map(activityInfo => {
                         let { activityCategoryId, activityCategoryName, activityComUrl, bannerUrl, pictureUrl, status } = activityInfo;
@@ -82,11 +77,11 @@ class ActivityPandect extends Page {
                             statusName = <span style={{ border: "1px solid #FFFFFF" }}>立即报名</span>;
                         } else if (status == 3) {
                             statusName = <span style={{ border: "1px solid #FFFFFF" }}>完成报名</span>;
-                        } else if (status == 4 || status == 5) {
+                        } else if (status == 4) {
                             statusName = <span style={{ border: "1px solid #FFFFFF" }}>查询结果</span>;
                         }
                         return (
-                            <Link key={activityCategoryId} to={'/baby/activity/partner/' + organizationId + '/' + activityCategoryId} style={{ backgroundImage: 'url(' + activityComUrl + ')' }}>
+                            <Link key={activityCategoryId} to={'/baby/activity/partner/' + organizationId + '/' + activityCategoryId} style={{ backgroundImage: 'url(' + pictureUrl + ')' }}>
                                 <div className="ActivityState" style={styleName}>
                                     <div className="TextLeft">{activityCategoryName}</div>
                                     <div className="TextRight">

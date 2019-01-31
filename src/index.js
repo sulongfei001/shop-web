@@ -16,11 +16,11 @@ window.onerror = function(message, source, lineNo, colNo, error){
     let body = {
         message,source,lineNo,colNo
     }
-    GlobalErrorApi.submitError(body,data=>{
-        console.log('提交成功', data)
-    },err => {
-        console.error('提交报错', err)
-    })
+    // GlobalErrorApi.submitError(body,data=>{
+    //     console.log('提交成功', data)
+    // },err => {
+    //     console.error('提交报错', err)
+    // })
 }
 
 let rootElement = Screen.rootElement();

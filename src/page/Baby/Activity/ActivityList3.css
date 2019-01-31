@@ -29,7 +29,7 @@
     margin:0 0.49rem 0 0.49rem;
 }
 .ActivityList3 .SessionContent .ContentList{
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.32rem;
 }
 .ActivityList3 .SessionContent .ContentList .ListTitle{
     background: #FFB48C;
@@ -107,15 +107,15 @@
     font-weight: 600;
 }
 .ActivityList3 .SessionReminder{
-    height: 0.5rem;
-    line-height: 0.5rem;
+    height: 0.9rem;
+    line-height: 0.3rem;
     text-align: center;
-    font-size: 0.26rem;
+    margin: 0 1rem 0.1rem 1rem;
+}
+.ActivityList3 .SessionReminder label{
+    font-size: 0.25rem;
     font-weight: bold;
     color: #943400;
-    width: 100%;
-    padding-left: 0.4rem;
-    margin-bottom: 0.5rem;
 }
 .ActivityList3 .SessionReminder img{
     width: 0.5rem;
