@@ -263,6 +263,8 @@ class ActivityList5 extends Page {
     render() {
         let { match, history } = this.props;
         let { auditionList, unBabyShow, unVipShow, changeId, confirm, array, btn, showTitle, bannerUrl, tipMessage } = this.state;
+        let organizationContext = OrganizationContext.get();
+        let activityCategoryId = organizationContext.activityCategoryId ? organizationContext.activityCategoryId : 1;
         return (
             <div>
                 {!showTitle &&
@@ -295,7 +297,7 @@ class ActivityList5 extends Page {
                                 <div key={audition.auditionDetailId}>
                                     <div className="ContentList">
                                         <div className="ListTitle">
-                                            <span>{audition.activityDistrictList[0]} {DateFormatterBeijing.toMDZhcn(new Date(audition.auditionDate))}<img src={ActivityPrompt} onClick={() => { alert("将要跳转的页面") }} /></span>
+                                            <span>{audition.activityDistrictList[0]} {DateFormatterBeijing.toMDZhcn(new Date(audition.auditionDate))}<img src={ActivityPrompt} onClick={() => { history.push("/baby/activity/none_type" + activityCategoryId); }} /></span>
                                             <span>{activityDistrictAddress}</span>
                                         </div>
                                         <div className="ListChange">
@@ -350,7 +352,7 @@ class ActivityList5 extends Page {
                         <div className="ButtonContainer" style={{ backgroundImage: 'url(' + PhotoBalloon + '),url(' + PhotoDog + ')' }}>
                             {tipMessage &&
                                 <div className="SessionReminder">
-                                    <img src={ActivityHelp} onClick={() => { alert("此处跳转页面") }} />
+                                    <img src={ActivityHelp} onClick={() => { window.location.href = "https://shop.yiyayiyawao.com/#/UserVip"; }} />
                                     <label>{tipMessage}</label>
                                 </div>
                             }

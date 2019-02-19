@@ -26,7 +26,6 @@ class ActivityPandect extends Page {
         ActivityApi.queryActivityCategory({
             accessToken: userContext.userToken
         }, data => {
-            console.log(data)
             this.setState({
                 activityInfoList: data.activityInfoList
             }, Screen.loading(false));
@@ -77,7 +76,7 @@ class ActivityPandect extends Page {
                             statusName = <span style={{ border: "1px solid #FFFFFF" }}>立即报名</span>;
                         } else if (status == 3) {
                             statusName = <span style={{ border: "1px solid #FFFFFF" }}>完成报名</span>;
-                        } else if (status == 4) {
+                        } else if (status == 4 || status == 5) {
                             statusName = <span style={{ border: "1px solid #FFFFFF" }}>查询结果</span>;
                         }
                         return (
@@ -91,49 +90,6 @@ class ActivityPandect extends Page {
                             </Link>
                         );
                     })}
-
-
-
-                    {/* <Link to={'/baby/activity/partner/' + organizationId + '/type1'} style={{ backgroundImage: 'url(' + test1 + ')' }}>
-                        <div className="ActivityState" style={{ backgroundColor: "#FF8C8C" }}>
-                            <div className="TextLeft">外景模特报名</div>
-                            <div className="TextRight">
-                                <span style={{ border: "1px solid #FFFFFF" }}>立即报名</span>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={'/baby/activity/partner/' + organizationId + '/type2'} style={{ backgroundImage: 'url(' + test2 + ')', opacity: 0.5 }}>
-                        <div className="ActivityState" style={{ backgroundColor: "#8C9AFF" }}>
-                            <div className="TextLeft">电视模特报名</div>
-                            <div className="TextRight">
-                                <span>即将开始</span>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={'/baby/activity/partner/' + organizationId + '/type3'} style={{ backgroundImage: 'url(' + test3 + ')', opacity: 0.5 }}>
-                        <div className="ActivityState" style={{ backgroundColor: "#FFB48C" }}>
-                            <div className="TextLeft">平面模特报名</div>
-                            <div className="TextRight">
-                                <span style={{ border: "1px solid #FFFFFF" }}>完成报名</span>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={'/baby/activity/partner/' + organizationId + '/type4'} style={{ backgroundImage: 'url(' + test4 + ')' }}>
-                        <div className="ActivityState" style={{ backgroundColor: "#D38CFF" }}>
-                            <div className="TextLeft">粉丝会预约报名</div>
-                            <div className="TextRight">
-                                <span style={{ border: "1px solid #FFFFFF" }}>查询结果</span>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={'/baby/activity/partner/' + organizationId + '/type5'} style={{ backgroundImage: 'url(' + test5 + ')' }}>
-                        <div className="ActivityState" style={{ backgroundColor: "#8CFFCF" }}>
-                            <div className="TextLeft">直播棚录报名</div>
-                            <div className="TextRight">
-                                <span style={{ border: "1px solid #FFFFFF" }}>查询结果</span>
-                            </div>
-                        </div>
-                    </Link> */}
                 </div>
             </div>
         );

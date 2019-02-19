@@ -146,7 +146,7 @@
     overflow: hidden;
     padding-bottom: 0.2rem;
 }
-.ApplySuccess4 .SuccessMessage .MessageAddress div:first-child{
+.ApplySuccess3 .SuccessMessage .MessageAddress div:first-child{
     float: left;
     width: 11%;
     height: 1rem;
@@ -154,7 +154,7 @@
     margin-left: 0.2rem;
     color: #610A98;
 }
-.ApplySuccess4 .SuccessMessage .MessageAddress div:last-child{
+.ApplySuccess3 .SuccessMessage .MessageAddress div:last-child{
     float: left;
     width: 80%;
     height: 1rem;

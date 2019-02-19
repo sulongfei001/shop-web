@@ -36,7 +36,7 @@ class ActivityAgreement extends Page {
         let organizationContext = OrganizationContext.get();
         let organizationId = organizationContext.organizationId ? organizationContext.organizationId : 0;
         let activityCategoryId = organizationContext.activityCategoryId ? organizationContext.activityCategoryId : 1;
-        history.push("/baby/activity/partner/" + organizationId + "/" + activityCategoryId);
+        history.replace("/baby/activity/partner/" + organizationId + "/" + activityCategoryId);
     }
 
     render() {
