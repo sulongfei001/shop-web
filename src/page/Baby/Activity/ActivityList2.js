@@ -139,6 +139,8 @@ class ActivityList2 extends Page {
     }
     sessionBtn() {
         let { changeId } = this.state;
+        let organizationContext = OrganizationContext.get();
+        let activityCategoryId = organizationContext.activityCategoryId ? organizationContext.activityCategoryId : 1;
         if (changeId && changeId !== "") {
             let userContext = UserContext.get();
             Screen.loading(true, () => {
@@ -196,6 +198,7 @@ class ActivityList2 extends Page {
                         ActivityApi.BabyConform({
                             accessToken: userContext.userToken,
                             auditionItemId: changeId,
+                            activityCategoryId: activityCategoryId
                         }, data => {
                             if (data.babyInfos && data.babyInfos.length === 0) {
                                 this.setState({
@@ -219,6 +222,7 @@ class ActivityList2 extends Page {
                                     accessToken: userContext.userToken,
                                     babyInfoId: babyInfoId,
                                     auditionItemId: changeId,
+                                    activityCategoryId: activityCategoryId
                                 }, data => {
                                     let uuid = data.uuid;
                                     let interval = 1000;
@@ -228,18 +232,20 @@ class ActivityList2 extends Page {
                                             ActivityApi.BabyResult({
                                                 accessToken: userContext.userToken,
                                                 uuid: uuid,
-                                            }, data => Screen.loading(false, () => {
+                                            }, data => {
                                                 if (data.state === 500) {
+                                                    Screen.loading(false);
                                                     Screen.alert("报名失败，请重试！")
                                                 } else if (data.state === 200) {
-                                                    history.push("/baby/activity/applySuccess");
+                                                    Screen.loading(false);
+                                                    history.replace("/baby/activity/applySuccess_type" + activityCategoryId);
                                                 } else {
                                                     if (interval <= 3000) {
                                                         interval += 1000;
                                                     }
                                                     run();
                                                 }
-                                            }), error => Screen.loading(false, () => Screen.alert(error)));
+                                            }, error => Screen.loading(false, () => Screen.alert(error)));
                                         }, interval);
                                     };
                                     if (data.uuid && data.uuid.length !== "") {
@@ -376,7 +382,6 @@ class ActivityList2 extends Page {
                     }
                 </div>
                 <Route path={match.url + '/applyChangeBaby/:changeId'} component={ApplyChangeBaby} />
-                <Route path={match.url + '/applySuccess'} component={ApplySuccess} />
                 <Route path={match.url + '/addBaby'} component={BabyEdit} />
                 <Route path={match.url + '/listBaby'} component={BabyList} />
             </div>

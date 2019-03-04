@@ -153,7 +153,7 @@ class BabyEdit extends Page {
                         //设置父级的state
                         let organizationContext =  OrganizationContext.get();
                         if(organizationContext.organizationId && organizationContext.organizationId> 0){
-                            this.props.history.push("/baby/activity/list");
+                            this.props.history.push("/activity");
                         }else{
                             this.props.history.push("/baby/list");
                         }

@@ -23,11 +23,13 @@ class ApplySuccess4 extends Page {
     componentWillMount() {
         let userContext = UserContext.get();
         let organizationContext = OrganizationContext.get();
+        let activityCategoryId = organizationContext.activityCategoryId ? organizationContext.activityCategoryId : 1;
         this.setState({
             organizationId: organizationContext.organizationId
         });
         ActivityApi.SuccessMessage({
             accessToken: userContext.userToken,
+            activityCategoryId: activityCategoryId
         }, data => {
             let gender = data.babyInfo.gender === 1 ? "男宝宝" : "女宝宝";
             let babyBirthday = DateFormatterBeijing.toYMD(new Date(data.babyInfo.babyBirthday));

@@ -41,7 +41,7 @@ class ActivityApi extends Api {
     }
     static changeBaby(request, onSuccess, onFail) {
         HttpClient.post(ROUTE_PREFIX + '/home/babyEnroll', request, data => {
-            if (!data.UUID && onFail) {
+            if (!data.uuid && onFail) {
                 onFail(SYSTEM_ERROR);
             } else if (onSuccess) onSuccess(data);
         }, onFail);
@@ -55,7 +55,7 @@ class ActivityApi extends Api {
     }
     static BabyResult(request, onSuccess, onFail) {
         HttpClient.post(ROUTE_PREFIX + '/home/redisGet', request, data => {
-            if (!data.state && onFail) {
+            if (!data && onFail) {
                 onFail(SYSTEM_ERROR);
             } else if (onSuccess) onSuccess(data);
         }, onFail);

@@ -4,9 +4,8 @@ import imageEmpty from "../defaultAvatar.png";
 import Page from "../../../ui/Page/Page";
 import {Link, Route} from 'react-router-dom';
 import AddBaby from "../BabyEdit";
-import ApplySuccess from "../Activity/ApplySuccess";
-import ApplySession from "./ActivityList";
 import UserContext from "../../../model/UserContext";
+import OrganizationContext from "../../../model/OrganizationContext";
 import Screen from "../../../utils/Screen";
 import ActivityApi from "../../../api/BabyActivityApi";
 import FullScreenPage from "../../../ui/FullScreenPage/FullScreenPage";
@@ -87,6 +86,8 @@ class ApplyChangeBaby extends Page {
     countDown() {
         let {uuid} = this.state;
         let userContext = UserContext.get();
+        let organizationContext = OrganizationContext.get();
+        let activityCategoryId = organizationContext.activityCategoryId ? organizationContext.activityCategoryId : 1;
         let interval = 1000;
         let run = () => {
             let timer = setTimeout(() => {
@@ -100,7 +101,7 @@ class ApplyChangeBaby extends Page {
                         Screen.alert("报名失败，请重试！")
                     } else if (data.state === 200) {
                         let {history} = this.props;
-                        history.push("/baby/activity/applySuccess");
+                        history.push("/baby/activity/applySuccess_type" + activityCategoryId);
                     } else {
                         if (interval <= 3000) {
                             interval += 1000;
@@ -157,10 +158,12 @@ class ApplyChangeBaby extends Page {
 
     ResultActivity(state) {
         let {history} = this.props;
+        let organizationContext = OrganizationContext.get();
+        let activityCategoryId = organizationContext.activityCategoryId ? organizationContext.activityCategoryId : 1;
         if (state === 200) {
-            history.push("/applySuccess");
+            history.push("/baby/activity/applySuccess_type" + activityCategoryId);
         } else if (state === 500) {
-            history.push("/applySession");
+            history.push("/baby/activity/list_type" + activityCategoryId);
         }
     }
 
@@ -238,8 +241,6 @@ class ApplyChangeBaby extends Page {
                 </div>
                 }
                 <Route path={match.url + '/addBaby'} component={AddBaby}/>
-                <Route path={match.url + '/applySuccess'} component={ApplySuccess}/>
-                <Route path={match.url + '/applySession'} component={ApplySession}/>
             </div>
         );
     }
